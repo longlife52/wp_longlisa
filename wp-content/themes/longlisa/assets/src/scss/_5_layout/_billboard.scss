@@ -1,0 +1,91 @@
+/* BILLBOARD */
+
+.billboard {
+    max-width: 775px;
+    margin: auto;
+    overflow: hidden;
+
+
+    h2 {
+        font-family: $roboto;
+        margin: 0;
+        animation-duration: 1s;
+        animation-name: fadeAndScale;
+        animation-timing-function: cubic-bezier(0.71, 0.55, 0.62, 1.57);
+
+        &:first-of-type {
+            padding-top: 0.5em;
+        }
+    }
+
+    p {
+        font-size: em(22px);
+        margin-top: 0;
+    }
+}
+
+@keyframes fadeAndScale {
+        from {
+            opacity: 0;
+            transform: scale (0.9, 0.9);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+    }
+
+.billboard_blue_wrapper {
+    background: $main-blue;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+        h2,
+        p {
+            color: $white;
+        }
+
+        p {
+            padding-right: 1em;
+            padding-left: 1em;
+        }
+}
+
+.billboard_title_top {
+    text-transform: lowercase;
+    font-size: 10em;
+}
+
+.billboard_title_bottom {
+    text-transform: uppercase;
+    font-size: 5em;
+    line-height: 0.40em;
+}
+
+.billboard_para {
+    margin-top: 3em;
+}
+
+@include breakpoint(small) {
+
+    .billboard {
+        p {
+            font-size: em(32px);
+            margin: 1.25em;
+        }
+    }
+
+    .billboard_title_top {
+        font-size: 15em;
+    }
+
+    .billboard_title_bottom {
+        font-size: 10em;
+    }
+
+    .billboard_para {
+        margin-top: 8em;
+    }
+
+}

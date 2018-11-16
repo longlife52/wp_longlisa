@@ -1,0 +1,207 @@
+/* ABOUT PAGE STYLES */
+
+.about_lisa {
+    background-color: $dark-blue;
+    padding-top: 6.5em;
+    border-top: none;
+}
+
+.about_background {
+    background: url("../img/about_lisabkg.jpg");
+    margin-bottom: 0;
+}
+
+.about_content {
+    h1 {
+        font-size: 2em;
+        text-align: center;
+        color: $main-blue;
+    }
+    ul {
+
+        li {
+            font-size: 1.5em;
+            font-family: roboto;
+            color: $dark-blue;
+            padding-bottom: 0.5em;
+        }
+    }
+}
+
+.about_content_space {
+    margin-top: 2em;
+}
+
+.lisa_story {
+    margin-top: 4em;
+}
+
+.lisa_story_title {
+    display: grid;
+    place-items: center center;
+    margin-bottom: 3em;
+
+    h1 {
+        margin: 0;
+        font-size: 3em;
+        color: $dark-blue;
+    }
+
+    h3 {
+        margin: 0;
+        font-size: 2em;
+        color: $dark-blue;
+    }
+}
+
+.title_justify_right {
+    padding-left: 2em;
+}
+
+/* this class is for when the layout is used on other pages beyond the about page; like on the privates page */
+.story_title_pad {
+    padding-left: 1em;
+}
+
+.lisa_story_para {
+
+    p:first-of-type {
+        border-left: em(3px) solid $yellow;
+        font-weight: bold;
+        font-size: 1.75em;
+        margin-left: em(20px);
+        padding-left: 1em;
+        padding-right: em(20px);
+    }
+
+    a {
+        color: $red;
+
+        &:hover {
+            color: $yellow;
+        }
+    }
+}
+
+.lisa_story_ul {
+    li:before {
+        content: "•";
+        color: $red;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+}
+
+.lisa_story_ol {
+    li {
+        counter-increment: li;
+    }
+
+    li:before {
+        content: counter(li);
+        color: $red;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+}
+
+.about_picture_bar {
+    margin-bottom: 0;
+}
+
+.community_give {
+    margin: auto;
+    padding: 4em 0;
+
+    h3 {
+        text-align: center;
+        color: $dark-blue;
+        font-size: 3em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+.community_give_description {
+    margin: auto;
+    max-width: 600px;
+    padding: 0  2em;
+
+    p {
+        font-size: 1.5em;
+    }
+}
+
+/* ______________ media queries ____________ */
+
+@include breakpoint(next-mobile) {
+    .lisa_story_title {
+
+        h3 {
+            font-size: 3em;
+        }
+    }
+}
+
+@media (min-width: 700px) {
+
+    .story_title_pad {
+        padding-left: 0;
+    }
+
+    .about_wrapper_space {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .about_content_space {
+        padding-left: 0;
+        margin-top: 6em;
+    }
+
+    .about_content {
+        ul {
+            li {
+                font-size: 1.25em;
+            }
+        }
+    }
+}
+
+@include breakpoint(smaller-screen) {
+    .about_lisa {
+        margin-top: 0;
+        padding-top: 5em;
+    }
+
+    .about_content_space {
+        margin-top: 8em;
+        padding-right: 3em;
+    }
+
+    .about_content {
+        h3 {
+            font-size: 2.5em;
+        }
+        ul {
+            li {
+                font-size: 1.5em;
+                font-family: roboto;
+            }
+        }
+    }
+}
+
+@include breakpoint (landscape) {
+
+    .about_content_space {
+        margin-top: 5em;
+        padding-right: 13em;
+    }
+
+    .lisa_img_wrapper {
+        margin-left: 15em;
+    }
+}

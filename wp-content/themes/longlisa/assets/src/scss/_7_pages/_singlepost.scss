@@ -1,0 +1,317 @@
+/* SINGLE BLOG POST PAGE STYLES */
+
+/* note the contextual callouts using css grid are based on this article https://jonathan-harrell.com/contextual-asides-with-css-grid/*/
+
+.blog_header_img {
+
+    img {
+        height: auto;
+        width: 100%;
+        padding-top: 3em;
+        background-color:$background-blue;
+    }
+}
+
+.blog_post_header {
+    background-color: $background-blue;
+    border-bottom: 10px solid $yellow;
+    margin-top: -0.5em;
+
+    p {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        color: $white;
+        margin: 0;
+        text-transform: uppercase;
+        padding-top: 2em;
+        text-align: center;
+
+        &:before,
+        &:after {
+            background-color: $yellow;
+            content: '\a0';
+            flex-grow: 1;
+            height: em(2px);
+            position: relative;
+            top: .60em;
+            max-width: 50px;
+        }
+
+        &:before {
+            margin-right: em(5px);
+        }
+
+        &:after {
+            margin-left: em(5px);
+        }
+    }
+
+    h1 {
+        color: $white;
+        text-align: center;
+        padding: 0.5em 1em 1em 1em;
+        font-size: 2em;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.blog_post_meta {
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+.blog_post_content {
+
+    h2,
+    p {
+        padding-right: em(20px);
+    }
+
+    h2 {
+        margin-bottom: -0.5em;
+        padding-top: 1em;
+        color: $red;
+        font-size: 2em;
+        padding-left: em(15px);
+
+    }
+
+    p {
+        color: $dark-blue;
+        font-size: 1.5em;
+        padding-left: em(20px);
+    }
+
+    ul,
+    ol {
+        list-style: none;
+
+
+    ol {
+        counter-reset: li;
+
+    }
+
+        li {
+            font-family: $roboto;
+            font-size: 2em;
+            color: $dark-blue;
+            padding-bottom: 0.5em;
+            padding-left: em(20px);
+            padding-right: em(20px);
+
+        }
+    }
+
+    aside {
+        margin-left: 2em;
+        margin-right: 1em;
+
+        h6 {
+            border-left: em(3px) solid $light-blue;
+            color: $main-blue;
+            font-size: 1.5em;
+            padding-left: 0.5em;
+            margin: 0;
+        }
+    }
+
+    figure {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr em(100px);
+        /*
+        grid-column-gap: em(32px);
+        */
+        padding-top: 3em;
+        margin: 0;
+        grid-column-start: 1;
+        grid-column-end: -1;
+
+        img {
+            grid-column-start: 1;
+            grid-column-end: -1;
+            grid-row: 1;
+            height: auto;
+            width: 100%;
+        }
+
+        figcaption {
+            grid-column-start: 2;
+            grid-column-end: span 10;
+            grid-row: 2;
+            font-family: $roboto;
+            color: $main-blue;
+            padding-top: 1em;
+
+            a {
+                color: $grey-blue;
+            }
+        }
+    }
+}
+
+@media (min-width: 350px) {
+    .blog_post_content {
+        aside {
+            margin-left: 4em;
+            margin-right: 0.5em;
+        }
+    }
+}
+
+/* blog post author section; check wp for classes */
+.author_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8em;
+}
+
+.blog_author_area {
+    background-color: $pale_grey_blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog_author_img {
+
+    img {
+        border-radius: 50%;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.blog_author_details {
+    padding-top: 1em;
+
+    p {
+        padding-right: 1em;
+        margin: 0;
+    }
+
+    a {
+        color: $red;
+
+        &:hover {
+            color: $yellow;
+        }
+    }
+}
+
+.blog_author_about {
+    text-align: center;
+}
+
+.blog_author_name {
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: .5em;
+}
+
+.blog_author_bio {
+    padding-left: 2em;
+}
+
+/* styles for large cursive quote block */
+.blog_large_quote {
+    background-color: $main-blue;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    font-family: $cursive;
+    font-size: 5em;
+}
+
+@include breakpoint (large-mobile) {
+
+    .blog_post_header {
+        h1 {
+            font-size: 4em;
+        }
+    }
+}
+
+@include breakpoint (small) {
+
+    .blog_author_area {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 750px;
+        justify-content: center;
+        align-items: center;
+        background-color: $pale_grey_blue;
+    }
+
+    .blog_author_details {
+        padding-top: 2em;
+    }
+}
+
+@include breakpoint (landscape) {
+    .blog_post_header {
+    }
+
+    .blog_post_subtitle {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-column-gap: em(32px);
+
+        h3 {
+            grid-column-start: 5;
+            grid-column-end: span 6;
+        }
+    }
+
+    .blog_post_content {
+            display: grid;
+            grid-template-columns:  repeat(12, 1fr);
+            grid-column-gap: em(32px);
+
+            h2,
+            p {
+                grid-column-start: 5;
+                grid-column-end: span 6;
+                padding-left: 0;
+            }
+
+            h2 {
+
+            }
+
+            ol,
+            ul {
+                grid-column-start: 6;
+                grid-column-end: span 5;
+
+                li {
+                    padding-left: 0;
+                }
+            }
+
+            figure {
+
+                figcaption {
+                    grid-column-start: 5;
+                    grid-column-end: span 6;
+                }
+            }
+
+            aside {
+                margin-left: 0;
+                margin-top: 0;
+                grid-column-start: 2;
+                grid-column-end: 4;
+
+                    h6 {
+                        margin-bottom: 0;
+                    }
+            }
+        }
+}

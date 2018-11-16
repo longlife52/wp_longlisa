@@ -1,0 +1,30 @@
+.home_page_header {
+    background: $main-blue;
+
+    h1 {
+        max-width: 600px;
+        color: $white;
+        margin: 0 1em 0 1em;
+        padding-bottom: 2em;
+    }
+}
+
+.home_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offering_page_header {
+
+    h1 {
+        max-width: 600px;
+        color: $dark-blue;
+        margin: 0 1em 0 1em;
+        padding-bottom: 2em;
+    }
+}
+
+.blog_preview_space {
+    margin-top: 5em;
+}

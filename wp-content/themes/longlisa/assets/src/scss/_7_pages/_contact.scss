@@ -1,0 +1,23 @@
+/* CONTACT page styles */
+
+.contact_lisa {
+    padding: 0 em(20px) 0 em(20px);
+    max-width: 650px;
+    margin: auto;
+    margin-top: 8em;
+
+    h1,
+    p {
+        text-align: center;
+        margin: 0;
+    }
+
+    h1 {
+        font-size:3em;
+    }
+
+    p {
+        font-size: 1.5em;
+
+    }
+}

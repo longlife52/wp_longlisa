@@ -1,0 +1,288 @@
+/* CLASSES PAGE STYLES + INDIVDUAL OFFERINGS such as Retreats, Workshops, Trainings */
+
+.title_space {
+    padding-top: 5em;
+}
+
+/* these styles create the line on either side of the first h2 of the title - taken from http://jessica-eldredge.com/2014/01/26/headings-with-lines/ */
+.title_line {
+    h2,
+    h3  {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+
+    h3:before,
+    h3:after,
+    h2:before,
+    h2:after {
+        background-color: $yellow;
+        content: '\a0';
+        flex-grow: 1;
+        height: em(3px);
+        position: relative;
+        top: 0.25em;
+        max-width: 75px;
+    }
+
+    h3:before,
+    h2:before {
+        margin-right: 10px;
+    }
+
+    h3:after,
+    h2:after {
+        margin-left: 10px;
+    }
+}
+
+.adjust_yellow_line {
+    h3:before,
+    h3:after {
+        top: 0.70em;
+        height: em(2px);
+    }
+}
+
+
+ /* styles for the billboard area; i flipped which h2 is first, so needed to adjust styles */
+.title_uppercase {
+    text-transform: uppercase;
+}
+
+.title_nospace {
+    h2:first-of-type {
+        padding-top: 0;
+    }
+
+    h3 {
+        padding-top: 0;
+    }
+}
+
+/* styles for the schedule items */
+.schedule_details {
+    p {
+        padding-bottom: 0;
+        font-weight: bold;
+    }
+}
+
+.schedule_description {
+    text-align: left;
+}
+
+.schedule_description {
+    p {
+        a {
+            color: $red;
+        }
+    }
+}
+
+/* removes styles on button box to pull it up */
+.no_pad {
+    padding: 0;
+}
+/*  styles for the grid 5 pix/quote block*/
+.five {
+    overflow: hidden;
+    padding-bottom: 5em;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.five_item_one {
+    overflow: hidden;
+    background-color: $yellow;
+}
+
+.five_item_two {
+    background-color: $dark-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        color: $white;
+        padding-left: .25em;
+        padding-right: .25em;
+        font-size: 3em;
+    }
+}
+
+.five_item_three {
+    overflow: hidden;
+    background-color: $yellow;
+}
+
+.five_item_four {
+    background: $main-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        p {
+            color: $white;
+            padding-left: .25em;
+            padding-right: .25em;
+            font-size: 3em;
+        }
+}
+
+.five_item_five {
+    overflow: hidden;
+    background-color: $yellow;
+}
+
+/* BREAKPOINTS for grid for individual listed classes and for the five grid pix/quote block */
+
+@include breakpoint (small){
+    .title_size_increase {
+        font-size: 8em;
+    }
+
+    .schedule_class_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 364px 1fr;
+    }
+
+    .schedule_img {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row: 1;
+    }
+
+    .schedule_details {
+        grid-column-start: 7;
+        grid-column-end: 13;
+        grid-row: 1;
+        justify-self: stretch;
+    }
+
+    .schedule_description {
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row: 2;
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+}
+
+@include breakpoint (portrait) {
+    .five {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows:em(346px) em(346px);
+        grid-gap: em(7px) em(7px);
+        justify-content: stretch;
+        align-content: start;
+    }
+
+    .five_item_one {
+        grid-row: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        jusify-self: stretch;
+    }
+
+    .five_item_two {
+        grid-row: 1;
+        grid-column-start: 3;
+        grid-column-end: 6;
+        jusify-self: stretch;
+
+        p {
+            font-size:2.5em;
+        }
+    }
+
+    .five_item_three {
+        grid-row: 1;
+        grid-column-start: 6;
+        grid-column-end: 13;
+        jusify-self: stretch;
+    }
+
+    .five_item_four {
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        jusify-self: stretch;
+
+            p {
+                font-size: 2.5em;
+            }
+    }
+
+    .five_item_five {
+        grid-row: 2;
+        grid-column-start: 4;
+        grid-column-end: 14;
+        jusify-self: stretch;
+    }
+}
+
+@include breakpoint (medium) {
+
+    .title_size_increase {
+        font-size: 10em;;
+    }
+
+    .schedule_class_wrapper {
+        grid-template-rows: 364px;
+        padding-bottom: 5em;
+    }
+
+    .schedule_img {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left:4em;
+    }
+
+    .schedule_details {
+        grid-column-start: 5;
+        grid-column-end: 8;
+        grid-row: 1;
+    }
+
+    .schedule_description {
+        grid-column-start: 8;
+        grid-column-end: 13;
+        grid-row: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        padding-right:0;
+    }
+}
+
+@include breakpoint (landscape) {
+    .five {
+        grid-gap: em(16px) em(16px);
+    }
+
+    .five_item_two {
+
+        p {
+            font-size: 3em;
+        }
+    }
+
+    .five_item_four {
+            p {
+                font-size: 3em;
+            }
+    }
+}

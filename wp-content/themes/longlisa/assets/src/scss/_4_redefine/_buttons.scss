@@ -1,0 +1,197 @@
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+/*look at this if having trouble with getting buttons to the bottom https://wpbeaches.com/aligning-last-item-bottom-container-flexbox/ */
+
+/* ghost buttons */
+.button-box {
+    padding: 3em 0 3em 0;
+}
+
+.ghost_button {
+    display: inline-block;
+    width: 10em;
+    font-weight: bold;
+    padding: 0.5em;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    text-transform: uppercase;
+}
+
+/* bright blue outline and white */
+.ghost_btn_blue {
+    border: 0.1875em solid $bright_blue;
+
+    &:hover,
+    &:active {
+        background-color: $bright-blue;
+        color: $white;
+        transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    }
+}
+
+/* solid blue button */
+
+.btn_blue {
+    display: block;
+    background: $grey-blue;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: em(10px);
+    font-size: em(16px);
+    width: 10em;
+
+
+    a {
+        text-decoration: none;
+            p {
+                color: $white;
+                margin: 0;
+            }
+    }
+
+    &:hover,
+    &:active {
+        background: $white;
+        color: $grey-blue;
+        border: 0.1875em solid $grey-blue;
+        transition: background-color 0.3s ease-in, color 0.3s ease-in;
+
+        p {
+            color: $grey-blue;
+        }
+    }
+}
+
+/* solid red button */
+.btn_red {
+    background: $red;
+    border: none;
+    color: $white;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: em(10px);
+    font-size: em(16px);
+
+    &:hover,
+    &:active {
+        background: $white;
+        color: $red;
+    }
+}
+
+/* white and white button */
+.ghost_btn_white {
+    border: 0.1875em solid $white;
+    color: $white;
+    &:hover,
+    &:active {
+        background-color: $white;
+        color: $background-blue;
+        transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    }
+}
+
+/* round yellow button */
+.btn_round {
+    display: block;
+    background: $yellow;
+    height: em(75px);
+    width: em(75px);
+    border-radius: 50%;
+    font-weight: bold;
+    text-transform: lowercase;
+    margin-right: em(10px);
+    margin-bottom: em(10px);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    a {
+        text-decoration: none;
+    }
+
+    &:hover,
+    &:active {
+        border: em(3px) $yellow solid;
+        background: $white;
+    }
+
+    p {
+        margin-top: 0.60em;
+    }
+}
+
+/* solid blue button */
+
+.btn_yellow {
+    display: block;
+    background: $yellow;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: em(10px);
+    font-size: em(16px);
+    width: cover;
+
+
+    a {
+        text-decoration: none;
+            p {
+                color: $background-blue;
+                margin: 0;
+                text-align: center;
+            }
+    }
+
+    &:hover,
+    &:active {
+        background: $white;
+        border: 0.1875em solid $yellow;
+        transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    }
+}
+
+.back_to_top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: map-get($zindex, overlay);
+    background-color: rgba(146, 197, 218, .75);
+    color: white;
+    cursor: pointer;
+    padding: em(10px);
+    opacity: 0;
+    border-radius: 50%;
+    transition: opacity 0.5s ease-in-out;
+
+    &:hover {
+        background-color: $dark-blue;
+    }
+
+    &.scroll-down {
+      opacity: 1;
+    }
+
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+// this code from https://www.templatemonster.com/blog/back-to-top-button-css-jquery/
+/*
+#button {
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+*/

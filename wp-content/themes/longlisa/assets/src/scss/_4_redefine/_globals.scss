@@ -1,0 +1,62 @@
+/*------------------------------------*\
+    #GLOBALS
+\*------------------------------------*/
+html,
+html > body,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+    background-color: $background-blue;
+}
+
+::selection {
+}
+
+// HIDE
+.hide {
+    display: none;
+}
+
+// CENTER TEXT
+.center_text {
+    text-align: center;
+}
+
+// CONTAINER
+.container {
+    margin: auto;
+    max-width: 1300px;
+    background-color: $white;
+    display: grid;
+}
+
+// DROP SHADOW ON BOTTOM ONLY FOR CARDS
+.bottom_edge_shadow {
+    box-shadow: 0 em(8px) em(6px) em(-6px) $background-blue;
+}
+
+// USE TO CENTER A PARAGRAPH THAT IS UNDER A MAIN title
+// and to contain its space; must put <p> in a <div>
+// put this class on the <div>
+.sub_title_para {
+    max-width: 750px;
+    margin: auto;
+}
+
+/* this code forces a button to land on the bottom of a card; must use .align_bottom on parent container of the individual card and use .align_button_bottom on the <div> for the button*/
+.align_bottom {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+// this has to added later in style sheet with each //occurance to remove an <p> padding
+.align_button_bottom {
+    margin-top: auto;
+     p {
+         padding-bottom: 0;
+     }
+}

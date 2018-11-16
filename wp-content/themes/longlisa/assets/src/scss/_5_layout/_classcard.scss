@@ -1,0 +1,76 @@
+/*  CLASS CARDS */
+.class_preview_wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 4em;
+
+    h3 {
+        font-size: 4em;
+        margin: 0;
+        margin-top: 1em;
+
+    }
+
+    h4 {
+        text-transform: uppercase;
+        font-size: 2em;
+        color: $white;
+        margin: 0;
+        padding: 1em em(5px) 1em em(5px);
+        background-color: $main-blue;
+    }
+
+    p {
+        font-size: 1.25em;
+
+        padding: 0 em(10px) 1.5em em(10px);
+    }
+}
+
+.responsive_image {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.class_card_text_align {
+    text-align: left;
+}
+
+/* 3 column  class cards */
+.class_preview_wrapper {
+    h4 {
+        font-size: 1.25em;
+    }
+}
+
+.class-card-wrapper {
+    display: grid;
+    grid-gap: em(80px);
+    padding: 3em 0 em(50px) 0;
+}
+
+/* single class type wrapper */
+.class_type_wrapper {
+    background-color: $light-grey-blue;
+}
+
+@include breakpoint (portrait) {
+    .class-card-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: em(20px);
+        max-width: 900px;
+    }
+}
+
+// this must be added to over ride the p styles
+// so button centers; will have to use elsewhere
+// has to be here because of cascading style sheets
+.align_button_bottom {
+     p {
+         padding-bottom: 0;
+     }
+}
