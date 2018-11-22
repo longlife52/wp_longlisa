@@ -21,7 +21,7 @@ get_header(); ?>
     <section class="home_page_header">
         <!-- picture bar -->
         <div class="picture_bar">
-            <img src="assets/dist/img/reverse_table.png">
+            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/reverse_table.png">
         </div>
         <!--close picture bar -->
         <div class="home_title">
@@ -39,7 +39,7 @@ get_header(); ?>
                 <!-- start card one -->
                     <div class="blog_card bottom_edge_shadow">
                         <a href="singlepost.html">
-                            <img src="assets/dist/img/sidebend.jpg">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/sidebend.jpg">
                             <h5>body</h5>
                             <h4>Side Bend for More Length</h4>
 
@@ -57,7 +57,7 @@ get_header(); ?>
                 <!-- start card two -->
                     <div class="blog_card bottom_edge_shadow">
                         <a href="singlepost.html">
-                            <img src="assets/dist/img/wall_jump.jpg">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/wall_jump.jpg">
                             <h5>mind</h5>
                             <h4>Your Mind Changes Movement</h4>
 
@@ -75,7 +75,7 @@ get_header(); ?>
                 <!-- start card three -->
                     <div class="blog_card bottom_edge_shadow">
                         <a href="singlepost.html">
-                            <img src="assets/dist/img/flower_purple.jpg">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/flower_purple.jpg">
                             <h5>spirit</h5>
                             <h4>Parts Becoming Whole</h4>
 
@@ -98,7 +98,7 @@ get_header(); ?>
      <section class="feature">
           <div class="feature_hero">
              <a href="offerings.html">
-                <img src="assets/dist/img/therapy_group.jpg" class="feature_img bottom_edge_shadow">
+                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/therapy_group.jpg" class="feature_img bottom_edge_shadow">
             </a>
         </div>
           <div class="cta cta1">
@@ -123,7 +123,7 @@ get_header(); ?>
     <section class="about bottom_edge_shadow">
         <div class="about_wrapper">
             <div class="about_img_wrapper">
-                <img class="img_circle" src="assets/dist/img/lisa_headshot.jpg">
+                <img class="img_circle" src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_headshot.jpg">
             </div>
             <div class="about_content_wrapper">
             <div class="about_content bottom_edge_shadow">
@@ -153,7 +153,7 @@ get_header(); ?>
                     <div class="class_type_wrapper align_bottom bottom_edge_shadow responsive_image">
                         <a href="singlepost.html">
                             <h4>Therapeutic Yoga</h4>
-                            <img src="assets/dist/img/four_twist.jpg" class="bottom_edge_shadow">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/four_twist.jpg" class="bottom_edge_shadow">
                             <p class="class_card_text_align">Move with greater ease. Connect with your breath. Relax and know peace. Regular therapeutic yoga practice reduces stress and increases vibrancy.</p>
                             <img>
 
@@ -168,7 +168,7 @@ get_header(); ?>
                 <div class="class_type_wrapper align_bottom bottom_edge_shadow responsive_image">
                     <a href="singlepost.html">
                         <h4>Pilates for Resiliency</h4>
-                        <img src="assets/dist/img/teaser.jpg" class="bottom_edge_shadow">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/teaser.jpg" class="bottom_edge_shadow">
                         <p class="class_card_text_align">Strengthen your core. Create greater stability. Pilates helps you to be strong and move from center. Equipment based Pilates teaches you the direction of the movement. </p>
                         <img>
                         <div class="btn_yellow align_button_bottom">
@@ -182,7 +182,7 @@ get_header(); ?>
                 <div class="class_type_wrapper align_bottom bottom_edge_shadow responsive_image">
                     <a href="singlepost.html">
                         <h4>Franklin Method</h4>
-                        <img src="assets/dist/img/bbi_pilates.jpg" class="bottom_edge_shadow">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/bbi_pilates.jpg" class="bottom_edge_shadow">
                         <p class="class_card_text_align">Use the power of your mind and clear imaging to change and connect with greater movement potential. Unlock fascia through clear connections to boney rhythms.</p>
                         <img>
                         <div class="btn_yellow align_button_bottom">
@@ -217,13 +217,13 @@ get_header(); ?>
 
         <!--start square two -->
         <div class="square_two grid_square_two fill">
-            <img  src="assets/dist/img/lisa_teach_four.jpg">
+            <img  src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_teach_four.jpg">
 
         </div> <!-- close square two -->
 
         <!--start square three -->
         <div class="square_three grid_square_three testimonial_link">
-            <img src="assets/dist/img/quote.svg">
+            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote.svg">
             <a href="testimonials.html">
                 <div class="square_testimonial_wrapper">
                     <p class="square_testimonial">Lisa Long is a thoughtful teacher. She helped me relieve pain and discover new ways to move. </p>
@@ -274,7 +274,7 @@ get_header(); ?>
                       <a href="singlepost.html">
                             <div class="card-front bg-bright">
                               <div class="flip_img">
-                                <img src="assets/dist/img/brain.png">
+                                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/brain.png">
                               </div>
                                 <h4>Improve Posture</h4>
                                 <p class="detail">today</p>
@@ -296,7 +296,7 @@ get_header(); ?>
                         <a href="singlepost.html">
                               <div class="card-front bg-dark">
                                 <div class="flip_img">
-                                  <img src="assets/dist/img/power.png">
+                                  <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
                                 </div>
                                   <h4>Sleep Better</h4>
                                   <p class="detail">tonight</p>
@@ -318,7 +318,7 @@ get_header(); ?>
                           <a href="singlepost.html">
                                 <div class="card-front bg-blue">
                                   <div class="flip_img">
-                                    <img src="assets/dist/img/knee.png">
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/knee.png">
                                   </div>
                                     <h4>Increase Vitality</h4>
                                     <p class="detail">now</p>
@@ -340,7 +340,7 @@ get_header(); ?>
                             <a href="singlepost.html">
                                   <div class="card-front bg-bright">
                                     <div class="flip_img">
-                                      <img src="assets/dist/img/power.png">
+                                      <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
                                     </div>
                                       <h4>Relieve Stress</h4>
                                       <p class="detail">fast</p>

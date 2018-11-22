@@ -8,7 +8,7 @@ get_header(); ?>
 <section class="two_grid">
     <div class="two_grid_one">
         <div class="saying_quote">
-            <img src="assets/dist/img/quote_circle.png">
+            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote_circle.png">
         </div>
 
         <h3>What people are saying... </h3>
@@ -25,7 +25,7 @@ get_header(); ?>
     <div class="two_grid_two">
         <div class="fitvids">
             <a href="#" class="js-video">
-                <img src="assets/dist/img/footer_video_thumbnail.jpg" data-video="http://www.youtube.com/embed/co6WMzDOh1o">
+                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/footer_video_thumbnail.jpg" data-video="http://www.youtube.com/embed/co6WMzDOh1o">
             </a>
         </div>
     </div>
@@ -53,7 +53,7 @@ get_header(); ?>
 
             <div class="staggered_content_box">
                 <div class="staggered_saying_quote">
-                    <img src="assets/dist/img/quote_circle.png">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote_circle.png">
                 </div>
                 <p class="staggered_quote_content">It's all been really good. I feel even better. You should try it too. Yout gotta roll with life and Lisa teaches you how to roll.</p>
 
@@ -67,7 +67,7 @@ get_header(); ?>
 
             <div class="staggered_content_box">
                 <div class="staggered_saying_quote">
-                    <img src="assets/dist/img/quote_circle.png">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote_circle.png">
                 </div>
 
                 <p class="staggered_quote_content">I was so excited to let go of my pain.  I learned so much. Lisa does a great job of teaching. It's all been really good. I feel even better. You should try it too.</p>
@@ -82,7 +82,7 @@ get_header(); ?>
 
                 <div class="staggered_content_box">
                     <div class="staggered_saying_quote">
-                        <img src="assets/dist/img/quote_circle.png">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote_circle.png">
                     </div>
 
                     <p class="staggered_quote_content">Life changed from the training that I took.  I help more people in more ways now. I can jump for joy. Every day, I leap out of bed to begin anew.  It's so fun. I was so excited to let go of my pain.  I learned so much. Lisa does a great job of teaching. It's all been really good. I feel even better. You should try it too.</p>
@@ -97,7 +97,7 @@ get_header(); ?>
 
                     <div class="staggered_content_box">
                         <div class="staggered_saying_quote">
-                            <img src="assets/dist/img/quote_circle.png">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote_circle.png">
                         </div>
 
                         <p class="staggered_quote_content">Life changed from the training that I took.  I help more people in more ways now. I can jump for joy. Every day, I leap out of bed to begin anew.  It's so fun. I was so excited to let go of my pain.  I learned so much. Lisa does a great job of teaching. It's all been really good. I feel even better. You should try it too.</p>
@@ -113,7 +113,7 @@ get_header(); ?>
 
                         <div class="staggered_content_box">
                             <div class="staggered_saying_quote">
-                                <img src="assets/dist/img/quote_circle.png">
+                                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote_circle.png">
                             </div>
 
                             <p class="staggered_quote_content">Life changed from the training that I took.  I help more people in more ways now. I can jump for joy. Every day, I leap out of bed to begin anew.  It's so fun. I was so excited to let go of my pain.  I learned so much. Lisa does a great job of teaching. It's all been really good. I feel even better. You should try it too.</p>
@@ -148,7 +148,7 @@ get_header(); ?>
             <!-- start card one -->
             <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
                 <div class="icon_individual_card grow">
-                    <img src="assets/dist/img/brain.png">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/brain.png">
                     <p class="icon_text_color">Deepen your connection to body brain bridge.</p>
                     <img>
                 </div>
@@ -158,7 +158,7 @@ get_header(); ?>
             <!-- start card two -->
             <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
                 <div class="icon_individual_card grow">
-                    <img src="assets/dist/img/knee.png">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/knee.png">
                     <p class="icon_text_color">Understand your boney rhythms and fascial connections.</p>
                     <img>
                 </div>
@@ -168,7 +168,7 @@ get_header(); ?>
             <!-- start card three -->
             <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
                 <div class="icon_individual_card grow">
-                    <img src="assets/dist/img/power.png">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
                     <p class="icon_text_color">Increase your energy through more efficient movement.</p>
                     <img>
                 </div>
@@ -197,7 +197,7 @@ get_header(); ?>
         </p>
 
         <figure>
-            <img src="assets/dist/img/reverse_table.png" />
+            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/reverse_table.png" />
 
             <figcaption>Let's see how this caption works for an image. Testing a really long caption, too. Let's see how it handles a second line. </figcaption>
 
@@ -266,7 +266,7 @@ get_header(); ?>
 
                     <div class="staggered_content_box">
                         <div class="staggered_saying_quote">
-                            <img src="assets/dist/img/quote_circle.png">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote_circle.png">
                         </div>
                         <p class="staggered_quote_content">It's all been really good. I feel even better. You should try it too. Yout gotta roll with life and Lisa teaches you how to roll.</p>
 
@@ -280,7 +280,7 @@ get_header(); ?>
 
                     <div class="staggered_content_box">
                         <div class="staggered_saying_quote">
-                            <img src="assets/dist/img/quote_circle.png">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote_circle.png">
                         </div>
 
                         <p class="staggered_quote_content">I was so excited to let go of my pain.  I learned so much. Lisa does a great job of teaching. It's all been really good. I feel even better. You should try it too.</p>
@@ -295,7 +295,7 @@ get_header(); ?>
 
                         <div class="staggered_content_box">
                             <div class="staggered_saying_quote">
-                                <img src="assets/dist/img/quote_circle.png">
+                                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote_circle.png">
                             </div>
 
                             <p class="staggered_quote_content">Life changed from the training that I took.  I help more people in more ways now. I can jump for joy. Every day, I leap out of bed to begin anew.  It's so fun. I was so excited to let go of my pain.  I learned so much. Lisa does a great job of teaching. It's all been really good. I feel even better. You should try it too.</p>
@@ -310,7 +310,7 @@ get_header(); ?>
 
                             <div class="staggered_content_box">
                                 <div class="staggered_saying_quote">
-                                    <img src="assets/dist/img/quote_circle.png">
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote_circle.png">
                                 </div>
 
                                 <p class="staggered_quote_content">Life changed from the training that I took.  I help more people in more ways now. I can jump for joy. Every day, I leap out of bed to begin anew.  It's so fun. I was so excited to let go of my pain.  I learned so much. Lisa does a great job of teaching. It's all been really good. I feel even better. You should try it too.</p>
@@ -326,7 +326,7 @@ get_header(); ?>
 
                                 <div class="staggered_content_box">
                                     <div class="staggered_saying_quote">
-                                        <img src="assets/dist/img/quote_circle.png">
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote_circle.png">
                                     </div>
 
                                     <p class="staggered_quote_content">Life changed from the training that I took.  I help more people in more ways now. I can jump for joy. Every day, I leap out of bed to begin anew.  It's so fun. I was so excited to let go of my pain.  I learned so much. Lisa does a great job of teaching. It's all been really good. I feel even better. You should try it too.</p>
@@ -352,7 +352,7 @@ get_header(); ?>
 
 <!-- picture bar -->
     <div class="picture_bar">
-        <img src="assets/dist/img/reverse_table.png">
+        <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/reverse_table.png">
     </div>
 <!--close picture bar -->
 
@@ -378,7 +378,7 @@ get_header(); ?>
                   <a href="singlepost.html">
                         <div class="card-front bg-bright">
                           <div class="flip_img">
-                            <img src="assets/dist/img/brain.png">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/brain.png">
                           </div>
                             <h4>Improve Posture</h4>
                             <p class="detail">today</p>
@@ -400,7 +400,7 @@ get_header(); ?>
                     <a href="singlepost.html">
                           <div class="card-front bg-dark">
                             <div class="flip_img">
-                              <img src="assets/dist/img/power.png">
+                              <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
                             </div>
                               <h4>Sleep Better</h4>
                               <p class="detail">tonight</p>
@@ -422,7 +422,7 @@ get_header(); ?>
                       <a href="singlepost.html">
                             <div class="card-front bg-blue">
                               <div class="flip_img">
-                                <img src="assets/dist/img/knee.png">
+                                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/knee.png">
                               </div>
                                 <h4>Increase Vitality</h4>
                                 <p class="detail">now</p>
@@ -444,7 +444,7 @@ get_header(); ?>
                         <a href="singlepost.html">
                               <div class="card-front bg-bright">
                                 <div class="flip_img">
-                                  <img src="assets/dist/img/power.png">
+                                  <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
                                 </div>
                                   <h4>Relieve Stress</h4>
                                   <p class="detail">fast</p>

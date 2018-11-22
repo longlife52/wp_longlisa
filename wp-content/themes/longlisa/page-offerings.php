@@ -20,7 +20,7 @@ get_header(); ?>
     <section class="offering_page_header"> <!-- open h1 area -->
         <!-- picture bar -->
         <div class="picture_bar">
-            <img src="assets/dist/img/reverse_table.png">
+            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/reverse_table.png">
         </div>
         <!--close picture bar -->
         <div class="home_title">
@@ -51,7 +51,7 @@ get_header(); ?>
 
         <div class="offering_tile_three fill">
 
-            <img src="assets/dist/img/garandasanaweb.png">
+            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/garandasanaweb.png">
         </div>
 
         <div class="offering_tile_four">
@@ -73,7 +73,7 @@ get_header(); ?>
         </div>
 
         <div class="offering_tile_six fill">
-            <img src="assets/dist/img/trikonasancutoutweb.png">
+            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/trikonasancutoutweb.png">
         </div>
 
         <div class="offering_tile_seven">
@@ -107,12 +107,12 @@ get_header(); ?>
 
         <!--start square two -->
         <div class="grid_square_one square_two fill">
-            <img src="assets/dist/img/lisa_teach_four.jpg">
+            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_teach_four.jpg">
         </div> <!-- close square two -->
 
         <!--start square three -->
         <div class="grid_square_two square_three testimonial_link">
-            <img src="assets/dist/img/quote.svg">
+            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote.svg">
             <a href="testimonials.html">
                 <div class="square_testimonial_wrapper">
                     <p class="square_testimonial">You will learn so much! Lisa Long has a gift for teaching you how your body works. </p>
@@ -139,7 +139,7 @@ get_header(); ?>
         <!-- start card one -->
         <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
             <div class="icon_individual_card grow">
-                <img src="assets/dist/img/brain.png">
+                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/brain.png">
                 <p class="icon_text_color blog_category_title">mind</p>
             </div>
         </a>
@@ -148,7 +148,7 @@ get_header(); ?>
         <!-- start card two -->
         <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
             <div class="icon_individual_card grow">
-                <img src="assets/dist/img/knee.png">
+                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/knee.png">
                 <p class="icon_text_color blog_category_title">Body</p>
             </div>
         </a>
@@ -157,7 +157,7 @@ get_header(); ?>
         <!-- start card three -->
         <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
             <div class="icon_individual_card grow">
-                <img src="assets/dist/img/power.png">
+                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
                 <p class="icon_text_color blog_category_title">spiRit</p>
             </div>
         </a>

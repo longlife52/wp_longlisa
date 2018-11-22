@@ -35,7 +35,7 @@ get_header(); ?>
                         	<a href="singlepost.html">
                                 <div class="card-front bg-bright">
                                   <div class="flip_img">
-                                    <img src="assets/dist/img/brain.png">
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/brain.png">
                                   </div>
                                     <h4>Improve Posture</h4>
                                     <p class="detail">today</p>
@@ -57,7 +57,7 @@ get_header(); ?>
                           	<a href="singlepost.html">
                                   <div class="card-front bg-dark">
                                     <div class="flip_img">
-                                      <img src="assets/dist/img/power.png">
+                                      <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
                                     </div>
                                       <h4>Sleep Better</h4>
                                       <p class="detail">tonight</p>
@@ -79,7 +79,7 @@ get_header(); ?>
                             	<a href="singlepost.html">
                                     <div class="card-front bg-blue">
                                       <div class="flip_img">
-                                        <img src="assets/dist/img/knee.png">
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/knee.png">
                                       </div>
                                         <h4>Increase Vitality</h4>
                                         <p class="detail">now</p>
@@ -101,7 +101,7 @@ get_header(); ?>
                               	<a href="singlepost.html">
                                       <div class="card-front bg-bright">
                                         <div class="flip_img">
-                                          <img src="assets/dist/img/power.png">
+                                          <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
                                         </div>
                                           <h4>Relieve Stress</h4>
                                           <p class="detail">fast</p>

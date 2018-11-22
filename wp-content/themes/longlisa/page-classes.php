@@ -26,7 +26,7 @@ get_header(); ?>
                         <div class="class_type_wrapper align_bottom bottom_edge_shadow responsive_image">
                             <a href="#yoga_classes">
                                 <h4>Therapeutic Yoga</h4>
-                                <img src="assets/dist/img/four_twist.jpg" class="bottom_edge_shadow">
+                                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/four_twist.jpg" class="bottom_edge_shadow">
 
                                 <div class="btn_yellow align_button_bottom">
                                     <a href="#yoga_classes"><p>see schedule</p></a>
@@ -39,7 +39,7 @@ get_header(); ?>
                     <div class="class_type_wrapper align_bottom bottom_edge_shadow responsive_image">
                         <a href="#pilates_classes">
                             <h4>Pilates for Resiliency</h4>
-                            <img src="assets/dist/img/teaser.jpg" class="bottom_edge_shadow">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/teaser.jpg" class="bottom_edge_shadow">
 
                             <div class="btn_yellow align_button_bottom">
                                 <a href="#pilates_classes"><p>see schedule</p></a>
@@ -52,7 +52,7 @@ get_header(); ?>
                     <div class="class_type_wrapper align_bottom bottom_edge_shadow responsive_image">
                         <a href="#fm_classes">
                             <h4>Franklin Method</h4>
-                            <img src="assets/dist/img/bbi_pilates.jpg" class="bottom_edge_shadow">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/bbi_pilates.jpg" class="bottom_edge_shadow">
 
                             <div class="btn_yellow align_button_bottom">
                                 <a href="#fm_classes"><p>see schedule</p></a>
@@ -69,7 +69,7 @@ get_header(); ?>
         <section class="home_page_header">
             <!-- picture bar -->
             <div class="picture_bar">
-                <img src="assets/dist/img/reverse_table.png">
+                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/reverse_table.png">
             </div>
             <!--close picture bar -->
             <div class="home_title">
@@ -87,7 +87,7 @@ get_header(); ?>
 <!-- start class one -->
             <div class="schedule_class_wrapper">
                 <div class="schedule_img">
-                    <img class="img_circle" src="assets/dist/img/lisa_headshot.jpg">
+                    <img class="img_circle" src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_headshot.jpg">
                 </div>
                 <div class="schedule_details">
                     <h4>Fundamental Yoga</h4>
@@ -108,7 +108,7 @@ get_header(); ?>
 <!-- start class 2 -->
             <div class="schedule_class_wrapper">
                 <div class="schedule_img">
-                    <img class="img_circle" src="assets/dist/img/lisa_headshot.jpg">
+                    <img class="img_circle" src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_headshot.jpg">
                 </div>
                 <div class="schedule_details">
                     <h4>Anusara Yoga</h4>
@@ -140,7 +140,7 @@ get_header(); ?>
 <!-- START grid 5 pix / quote block -->
     <section class="five">
         <div class="five_item_one">
-            <img src="assets/dist/img/lisa_teach_four.jpg">
+            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_teach_four.jpg">
         </div>
 
         <div class="five_item_two">
@@ -148,7 +148,7 @@ get_header(); ?>
         </div>
 
         <div class="five_item_three">
-            <img src="assets/dist/img/lisa_teach_four.jpg">
+            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_teach_four.jpg">
         </div>
 
         <div class="five_item_four">
@@ -156,7 +156,7 @@ get_header(); ?>
         </div>
 
         <div class="five_item_five">
-            <img src="assets/dist/img/lisa_teach_four.jpg">
+            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_teach_four.jpg">
         </div>
     </section>
 
@@ -171,7 +171,7 @@ get_header(); ?>
 <!-- start class one -->
             <div class="schedule_class_wrapper">
                 <div class="schedule_img">
-                    <img class="img_circle" src="assets/dist/img/lisa_headshot.jpg">
+                    <img class="img_circle" src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_headshot.jpg">
                 </div>
                 <div class="schedule_details">
                     <h4>Pilates for Resiliency</h4>
@@ -192,7 +192,7 @@ get_header(); ?>
 <!-- start class 2 -->
             <div class="schedule_class_wrapper">
                 <div class="schedule_img">
-                    <img class="img_circle" src="assets/dist/img/lisa_headshot.jpg">
+                    <img class="img_circle" src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_headshot.jpg">
                 </div>
                 <div class="schedule_details">
                     <h4>Pilates Equipment</h4>
@@ -213,7 +213,7 @@ get_header(); ?>
 <!-- start class 3 -->
             <div class="schedule_class_wrapper">
                 <div class="schedule_img">
-                    <img class="img_circle" src="assets/dist/img/lisa_headshot.jpg">
+                    <img class="img_circle" src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_headshot.jpg">
                 </div>
                 <div class="schedule_details">
                     <h4>Mat Pilates</h4>
@@ -245,7 +245,7 @@ get_header(); ?>
     <!-- START grid 5 pix / quote block -->
         <section class="five">
             <div class="five_item_one">
-                <img src="assets/dist/img/lisa_teach_four.jpg">
+                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_teach_four.jpg">
             </div>
 
             <div class="five_item_two">
@@ -253,7 +253,7 @@ get_header(); ?>
             </div>
 
             <div class="five_item_three">
-                <img src="assets/dist/img/lisa_teach_four.jpg">
+                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_teach_four.jpg">
             </div>
 
             <div class="five_item_four">
@@ -261,7 +261,7 @@ get_header(); ?>
             </div>
 
             <div class="five_item_five">
-                <img src="assets/dist/img/lisa_teach_four.jpg">
+                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_teach_four.jpg">
             </div>
         </section>
 
@@ -276,7 +276,7 @@ get_header(); ?>
 <!-- start class one -->
             <div class="schedule_class_wrapper">
                 <div class="schedule_img">
-                    <img class="img_circle" src="assets/dist/img/lisa_headshot.jpg">
+                    <img class="img_circle" src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_headshot.jpg">
                 </div>
                 <div class="schedule_details">
                     <h4>Healthy Hip Joint</h4>
@@ -310,7 +310,7 @@ get_header(); ?>
 <!-- START grid 5 pix / quote block -->
     <section class="five">
         <div class="five_item_one">
-            <img src="assets/dist/img/lisa_teach_four.jpg">
+            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_teach_four.jpg">
         </div>
 
         <div class="five_item_two">
@@ -318,7 +318,7 @@ get_header(); ?>
         </div>
 
         <div class="five_item_three">
-            <img src="assets/dist/img/lisa_teach_four.jpg">
+            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_teach_four.jpg">
         </div>
 
         <div class="five_item_four">
@@ -326,7 +326,7 @@ get_header(); ?>
         </div>
 
         <div class="five_item_five">
-            <img src="assets/dist/img/lisa_teach_four.jpg">
+            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_teach_four.jpg">
         </div>
     </section>
 
@@ -341,12 +341,12 @@ get_header(); ?>
 
             <!--start square two -->
             <div class="grid_square_one square_two fill">
-                <img src="assets/dist/img/lisa_teach_four.jpg">
+                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_teach_four.jpg">
             </div> <!-- close square two -->
 
             <!--start square three -->
             <div class="grid_square_two square_three testimonial_link">
-                <img src="assets/dist/img/quote.svg">
+                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote.svg">
                 <a href="testimonials.html">
                     <div class="square_testimonial_wrapper">
                         <p class="square_testimonial">You will learn so much! Lisa Long has a gift for teaching you how your body works. </p>
@@ -373,7 +373,7 @@ get_header(); ?>
             <!-- start card one -->
             <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
                 <div class="icon_individual_card grow">
-                    <img src="assets/dist/img/brain.png">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/brain.png">
                     <p class="icon_text_color blog_category_title">mind</p>
                 </div>
             </a>
@@ -382,7 +382,7 @@ get_header(); ?>
             <!-- start card two -->
             <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
                 <div class="icon_individual_card grow">
-                    <img src="assets/dist/img/knee.png">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/knee.png">
                     <p class="icon_text_color blog_category_title">Body</p>
                 </div>
             </a>
@@ -391,7 +391,7 @@ get_header(); ?>
             <!-- start card three -->
             <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
                 <div class="icon_individual_card grow">
-                    <img src="assets/dist/img/power.png">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
                     <p class="icon_text_color blog_category_title">spiRit</p>
                 </div>
             </a>

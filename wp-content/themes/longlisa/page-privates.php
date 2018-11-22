@@ -25,12 +25,12 @@ get_header(); ?>
     <div class="four_square_wrapper two_square_wrapper">
         <!-- open square two -->
         <div class="grid_square_one square_two fill">
-            <img src="assets/dist/img/lisa_teach_four.jpg">
+            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_teach_four.jpg">
         </div> <!-- close square two -->
 
         <!-- open square three -->
         <div class="grid_square_two square_three testimonial_link">
-            <img src="assets/dist/img/quote.svg">
+            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote.svg">
             <a href="testimonials.html">
                 <div class="square_testimonial_wrapper">
                     <p class="square_testimonial">Lisa Long is one of the most conscientious teachers. She helped me relieve pain and discover new ways to move. </p>
@@ -61,7 +61,7 @@ get_header(); ?>
             </p>
 
             <figure>
-                <img src="assets/dist/img/reverse_table.png" />
+                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/reverse_table.png" />
 
                 <figcaption>Let's see how this caption works for an image. Testing a really long caption, too. Let's see how it handles a second line. </figcaption>
 
@@ -139,7 +139,7 @@ get_header(); ?>
                       <a href="singlepost.html">
                             <div class="card-front bg-bright">
                               <div class="flip_img">
-                                <img src="assets/dist/img/brain.png">
+                                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/brain.png">
                               </div>
                                 <h4>Improve Posture</h4>
                                 <p class="detail">today</p>
@@ -161,7 +161,7 @@ get_header(); ?>
                         <a href="singlepost.html">
                               <div class="card-front bg-dark">
                                 <div class="flip_img">
-                                  <img src="assets/dist/img/power.png">
+                                  <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
                                 </div>
                                   <h4>Sleep Better</h4>
                                   <p class="detail">tonight</p>
@@ -183,7 +183,7 @@ get_header(); ?>
                           <a href="singlepost.html">
                                 <div class="card-front bg-blue">
                                   <div class="flip_img">
-                                    <img src="assets/dist/img/knee.png">
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/knee.png">
                                   </div>
                                     <h4>Increase Vitality</h4>
                                     <p class="detail">now</p>
@@ -205,7 +205,7 @@ get_header(); ?>
                             <a href="singlepost.html">
                                   <div class="card-front bg-bright">
                                     <div class="flip_img">
-                                      <img src="assets/dist/img/power.png">
+                                      <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
                                     </div>
                                       <h4>Relieve Stress</h4>
                                       <p class="detail">fast</p>
@@ -243,7 +243,7 @@ get_header(); ?>
             <!-- start card one -->
             <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
                 <div class="icon_individual_card grow">
-                    <img src="assets/dist/img/brain.png">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/brain.png">
                     <p class="icon_text_color">Get moving to help your brain.</p>
                     <img>
                 </div>
@@ -253,7 +253,7 @@ get_header(); ?>
             <!-- start card two -->
             <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
                 <div class="icon_individual_card grow">
-                    <img src="assets/dist/img/knee.png">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/knee.png">
                     <p class="icon_text_color">Move to keep your joints healthy.</p>
                     <img>
                 </div>
@@ -263,7 +263,7 @@ get_header(); ?>
             <!-- start card three -->
             <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
                 <div class="icon_individual_card grow">
-                    <img src="assets/dist/img/power.png">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
                     <p class="icon_text_color">Keep moving for vibrancy.</p>
                     <img>
                 </div>
@@ -276,7 +276,7 @@ get_header(); ?>
 
 <!-- picture bar -->
     <div class="picture_bar">
-        <img src="assets/dist/img/reverse_table.png">
+        <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/reverse_table.png">
     </div>
 <!--close picture bar -->
 

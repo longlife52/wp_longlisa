@@ -8,7 +8,7 @@
                 <h3>Another [ FREE ] way to feel better. </h3>
 
                 <div class="newsletter_video_box grow fade">
-                    <a href="https://youtu.be/zSt7k_q_qRU" target="blank" class="strip"> <img src="assets/dist/img/footer_video_thumbnail.jpg" class="bottom_edge_shadow">
+                    <a href="https://youtu.be/zSt7k_q_qRU" target="blank" class="strip"> <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/footer_video_thumbnail.jpg" class="bottom_edge_shadow">
                     </a>
                 </div>
             </div> <!--close newsletter_video -->
@@ -21,16 +21,16 @@
         <!--open yoga logos -->
         <div class="credentials_box_width">
             <ul>
-        <li class="hvr-bob"><a href="http://www.IAYT.org/" target="blank"><img src="assets/dist/img/iayt.jpg"  width="150"></a></li>
+                <li class="hvr-bob"><a href="http://www.IAYT.org/" target="blank"><img src="<?php bloginfo('template_url'); ?>/assets/dist/img/iayt.jpg"  width="150"></a></li>
 
-        <li class="hvr-bob"><a href="http://www.yogaalliance.org/" target="blank"><img src="assets/dist/img/yacep.png" width="50"></a></li>
+                <li class="hvr-bob"><a href="http://www.yogaalliance.org/" target="blank"><img src="<?php bloginfo('template_url'); ?>/assets/dist/img/yacep.png" width="50"></a></li>
 
-        <li class="hvr-bob"><a href="http://www.yogaalliance.org/" target="blank"><img src="assets/dist/img/ryt.png" width="50"></a></li>
+                <li class="hvr-bob"><a href="http://www.yogaalliance.org/" target="blank"><img src="<?php bloginfo('template_url'); ?>/assets/dist/img/ryt.png" width="50"></a></li>
 
-        <li class="hvr-bob"><a href="http://www.yogaalliance.org/" target="blank"><img src="assets/dist/img/rcyt.png" width="50"></a></li>
+                <li class="hvr-bob"><a href="http://www.yogaalliance.org/" target="blank"><img src="<?php bloginfo('template_url'); ?>/assets/dist/img/rcyt.png" width="50"></a></li>
 
-                <li class="hvr-bob"><a href="https://franklinmethod.com" target="blank"><img src="assets/dist/img/fm_logo.jpg" width="50"></a></li>
-      </ul>
+                <li class="hvr-bob"><a href="https://franklinmethod.com" target="blank"><img src="<?php bloginfo('template_url'); ?>/assets/dist/img/fm_logo.jpg" width="50"></a></li>
+            </ul>
         </div>
         <!-- close yoga lgoos -->
 
