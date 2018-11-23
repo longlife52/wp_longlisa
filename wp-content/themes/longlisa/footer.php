@@ -36,21 +36,25 @@
 
         <!-- open copyright -->
         <ul class="copyright">
-            <li>&copy;2018 </li>
-            <li><a href="#">Terms, Conditions, Privacy Policy Apply.</a></li>
+          <?php html5blank_nav_footer(); ?>
         </ul>
+
+
+        <p class="footer_para">&copy;2018 Lisa Long - all rights reserved</p>
+        <p class="footer_para">custom coded by - <a href="http://www.garrisonridge.com" target="blank">Garrison Ridge</a></p>
+
         <!-- close copyright -->
 
         <!-- open yoga alliance disclaimer -->
         <div class="footer_para">
-      <p class="ya_disclaimer">The yoga therapy components of Lisa Long's teaching are based on her International Association of Yoga Therapists Certificaction (IAYT) and not derived from status as an E-RYT 500, RCYT, YACEP with the Yoga Alliance Registry.</p>
+      <p class="ya_disclaimer">The yoga therapy components of Lisa Long's teaching are based on her International Association of Yoga Therapists Certification (IAYT) and not derived from status as an E-RYT 500, RCYT, YACEP with the Yoga Alliance Registry.</p>
         </div>
         <!-- close yoga alliance disclaimer -->
 
         <!-- scroll to top  -->
         <a href="#" class="js-scroll-to-top" id="button">
             <div class="back_to_top">
-                <img src="assets/dist/img/arrow-up.png" />
+                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/arrow-up.png" />
             </div>
         </a>
 

@@ -40,7 +40,8 @@
             <nav class="nav">
                 <h2 class="hide">navigation
                 </h2>
-
+                <?php html5blank_nav(); ?>
+<!--
                     <ul>
                         <li class="highlight"><a  href="index.html">home</a> </li>
 
@@ -56,6 +57,7 @@
 
                         <li><a href="contact.html">contact</a> </li>
                     </ul>
+-->
             </nav>
     <!-- end nav -->
             <label for="nav-toggle" class="nav-toggle-label">
