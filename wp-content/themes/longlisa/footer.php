@@ -40,7 +40,7 @@
         </ul>
 
 
-        <p class="footer_para">&copy;2018 Lisa Long - all rights reserved</p>
+        <p class="footer_para">&copy; <?= date('Y'); ?> Lisa Long - all rights reserved</p>
         <p class="footer_para">custom coded by - <a href="http://www.garrisonridge.com" target="blank">Garrison Ridge</a></p>
 
         <!-- close copyright -->
