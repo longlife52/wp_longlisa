@@ -27,7 +27,7 @@
                     <div class="blog_card bottom_edge_shadow">
                         <a href="<?php the_permalink() ?>">
                         <div class="blog_card_details">
-                            <img src="<?php the_post_thumbnail();?>">
+                            <?php the_post_thumbnail(); ?>
                             <h5><?php
                                   // GET THE CATEGORY CONTENT
                                   $categories = get_the_category ();
@@ -51,7 +51,7 @@
                             <p><?php the_excerpt() ?></p>
                         </div>
                         <div class="readtime">
-                            <p>3 min read</p>
+                            <p><?php echo do_shortcode('[rt_reading_time label="" postfix="min"]'); ?> read</p>
                         </div>
 
                         <div class="btn_round hvr-wobble-to-top-right">
