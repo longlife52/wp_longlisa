@@ -55,7 +55,7 @@
                         </div>
 
                         <div class="btn_round hvr-wobble-to-top-right">
-                            <a href="singlepost.html"><p >read</p></a>
+                            <a href="<?php the_permalink() ?>"><p >read</p></a>
                         </div>
                         </a>
                     </div> <!-- end individual blog preview card -->
