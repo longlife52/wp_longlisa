@@ -29,8 +29,8 @@
      <div class="container">
          <header>
               <div class="logo_name">
-                <a href="index.html" class="hvr-wobble-to-top-right">
-                    <img src="assets/dist/img/logo_small.png">
+                <a href="<?php bloginfo('url'); ?>" class="hvr-wobble-to-top-right">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/logo_small.png">
                 </a>
                  <h2>Long Life Movement</h2>
              </div>
@@ -41,23 +41,6 @@
                 <h2 class="hide">navigation
                 </h2>
                 <?php html5blank_nav(); ?>
-<!--
-                    <ul>
-                        <li class="highlight"><a  href="index.html">home</a> </li>
-
-                        <li><a  href="offerings.html">OFFERINGS</a> </li>
-
-                        <li><a href="about.html">about</a> </li>
-
-                        <li><a  href="testimonials.html">testimonials</a> </li>
-
-                        <li><a href="ideas.html">ideas</a> </li>
-
-                        <li><a href="store.html">store</a> </li>
-
-                        <li><a href="contact.html">contact</a> </li>
-                    </ul>
--->
             </nav>
     <!-- end nav -->
             <label for="nav-toggle" class="nav-toggle-label">
