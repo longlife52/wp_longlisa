@@ -8,7 +8,7 @@
                   </div>
                   <h2 class="offering_title_big title_uppercase title_size_increase"><?php _e( '', 'html5blank' ); single_cat_title(); ?></h2>
                   <div class="billboard_para">
-                      <p>Enjoy these articles about the <?php _e( '', 'html5blank' ); single_cat_title(); ?>. We curated them especially for you to help deepen your connection and broaden your understanding. </p>
+                      <p>Enjoy these articles about your <?php _e( '', 'html5blank' ); single_cat_title(); ?>. We curated them especially for you to help deepen your connection and broaden your understanding. </p>
                   </div>
               </div>
           </section> <!-- closes .billboard_blue_wrapper -->
