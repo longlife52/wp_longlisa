@@ -4,6 +4,8 @@ Template Name: Home
 */
 get_header(); ?>
 
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
 <!-- BILL BOARD -->
     <section class="billboard_blue_wrapper ">
         <div class="billboard center_text">
@@ -365,5 +367,7 @@ get_header(); ?>
         <div class="circle">
         </div>
     </div>
+
+  <?php endwhile; endif; ?>
 
 <?php get_footer(); ?>
