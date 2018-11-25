@@ -9,6 +9,9 @@ get_header(); ?>
             <h1>Contact Lisa</h1>
             <p>Thank you for reaching out. Please fill out the form below. I look forward to hearing from you! I'll do my best to respond to you as soon as possible.</p>
 
+            <div class="lisa_contact_form">
+            <?php echo do_shortcode("[ninja_form id=1]"); ?>
+            </div>
 
         </section>
         <!-- end contact form section -->
