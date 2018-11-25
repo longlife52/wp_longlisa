@@ -36,7 +36,7 @@ get_header(); ?>
             <p class="offering_para">get the benefits of committed practice with a skillfull teacher</p>
 
             <div class="center_text button-box">
-                <a href="classes.html"><p class="ghost_button ghost_btn_white">see classes</p></a>
+                <a href="/index.php/classes"><p class="ghost_button ghost_btn_white">see classes</p></a>
             </div>
         </div>
 
@@ -45,7 +45,7 @@ get_header(); ?>
             <p class="offering_para">dive into greater understanding + increased function = feeling better</p>
 
             <div class="center_text button-box">
-                <a href="https://youtu.be/zSt7k_q_qRU" target="blank" class="strip"><p class="ghost_button ghost_btn_white">see workshops</p></a>
+                <a href="/index.php/workshops"><p class="ghost_button ghost_btn_white">see workshops</p></a>
             </div>
         </div>
 
@@ -59,7 +59,7 @@ get_header(); ?>
             <p class="offering_para">all you + complete focus </p>
 
             <div class="center_text button-box">
-                <a href="privates.html"><p class="ghost_button ghost_btn_white">learn more</p></a>
+                <a href="/index.php/privates"><p class="ghost_button ghost_btn_white">learn more</p></a>
             </div>
         </div>
 
@@ -68,7 +68,7 @@ get_header(); ?>
             <p class="offering_para">deepen your knowledge + truly understand the who, what, why, where, and when of progressive teaching </p>
 
             <div class="center_text button-box">
-                <a href="https://youtu.be/zSt7k_q_qRU" target="blank" class="strip"><p class="ghost_button ghost_btn_white">learn more</p></a>
+                <a href="/index.php/trainings"><p class="ghost_button ghost_btn_white">learn more</p></a>
             </div>
         </div>
 
@@ -81,7 +81,7 @@ get_header(); ?>
             <p class="offering_para">step out to step back in refreshed and restored</p>
 
             <div class="center_text button-box">
-                <a href="https://youtu.be/zSt7k_q_qRU" target="blank" class="strip"><p class="ghost_button ghost_btn_white">learn more</p></a>
+                <a href="/index.php/retreats"><p class="ghost_button ghost_btn_white">learn more</p></a>
             </div>
         </div>
 
@@ -90,7 +90,7 @@ get_header(); ?>
             <p class="offering_para">learn from home + practice anywhere, any time with clear instruction + enjoy learning at your pace</p>
 
             <div class="center_text button-box">
-                <a href="https://youtu.be/zSt7k_q_qRU" target="blank" class="strip"><p class="ghost_button ghost_btn_white ">start now</p></a>
+                <a href="/index.php/online"><p class="ghost_button ghost_btn_white ">start now</p></a>
             </div>
         </div>
 
@@ -137,7 +137,7 @@ get_header(); ?>
     <!-- start ICON/class card wrapper -->
     <div class="class-card-wrapper">
         <!-- start card one -->
-        <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
+        <a href="/index.php?cat=4">
             <div class="icon_individual_card grow">
                 <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/brain.png">
                 <p class="icon_text_color blog_category_title">mind</p>
@@ -146,7 +146,7 @@ get_header(); ?>
         <!-- end card one -->
 
         <!-- start card two -->
-        <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
+        <a href="/index.php?cat=5">
             <div class="icon_individual_card grow">
                 <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/knee.png">
                 <p class="icon_text_color blog_category_title">Body</p>
@@ -155,7 +155,7 @@ get_header(); ?>
         <!-- end card two -->
 
         <!-- start card three -->
-        <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
+        <a href="/index.php?cat=6">
             <div class="icon_individual_card grow">
                 <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
                 <p class="icon_text_color blog_category_title">spiRit</p>

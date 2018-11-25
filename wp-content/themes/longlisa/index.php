@@ -79,7 +79,7 @@
     <!-- start ICON/class card wrapper -->
     <div class="class-card-wrapper">
         <!-- start card one -->
-        <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
+        <a href="/index.php?cat=4">
             <div class="icon_individual_card grow">
                 <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/brain.png">
                 <p class="icon_text_color blog_category_title">mind</p>
@@ -88,7 +88,7 @@
         <!-- end card one -->
 
         <!-- start card two -->
-        <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
+        <a href="/index.php?cat=5">
             <div class="icon_individual_card grow">
                 <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/knee.png">
                 <p class="icon_text_color blog_category_title">Body</p>
@@ -97,7 +97,7 @@
         <!-- end card two -->
 
         <!-- start card three -->
-        <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
+        <a href="/index.php?cat=6">
             <div class="icon_individual_card grow">
                 <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
                 <p class="icon_text_color blog_category_title">spiRit</p>
