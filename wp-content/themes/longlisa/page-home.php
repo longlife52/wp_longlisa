@@ -9,13 +9,13 @@ get_header(); ?>
 <!-- BILL BOARD -->
     <section class="billboard_blue_wrapper ">
         <div class="billboard center_text">
-            <h2 class="billboard_title_top">Feel</h2>
-            <h2 class="billboard_title_bottom">better</h2>
+            <h2 class="billboard_title_top"><?php the_field('billboard_top_title'); ?></h2>
+            <h2 class="billboard_title_bottom"><?php the_field('billboard_bottom_title'); ?></h2>
             <div class="billboard_para">
-                <p>Movement helps. With clear instruction and precise cues, discover your potential. </p>
+                <p><?php the_field('billboard_copy'); ?></p>
             </div>
             <div class="center_text button-box">
-                <a href="classes.html" target="blank" class="strip"><p class="ghost_button ghost_btn_white">Take a Class</p></a>
+                <a href="<?php the_field('billboard_button_link'); ?>"><p class="ghost_button ghost_btn_white"><?php the_field('billboard_button_label'); ?></p></a>
             </div>
             </div>
     </section> <!-- closes .billboard_blue_wrapper -->
@@ -23,18 +23,25 @@ get_header(); ?>
     <section class="home_page_header">
         <!-- picture bar -->
         <div class="picture_bar">
-            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/reverse_table.png">
+            <?php
+              $image = get_field('billboard_image');
+
+              if ( !empty($image)): ?>
+
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?> title="<?php echo $image['title']; ?>"/>
+
+            <?php endif; ?>
         </div>
         <!--close picture bar -->
         <div class="home_title">
-            <h1>Lisa Long teaches therapeutic yoga, Pilates and Franklin Method in Jacksonville, FL as well as offers retreats and workshops nationally and internationally.</h1>
+            <h1><?php the_field('billboard_h_one'); ?></h1>
         </div>
     </section>
 
     <!-- start blog preview -->
     <section class="blog_preview blog_preview_space">
-            <h3>Get Ideas</h3>
-                <p>Feel better fast. Gather a few tips and try them.</p>
+            <h3><?php the_field('blog_preview_title'); ?></h3>
+                <p><?php the_field('blog_preview_copy'); ?></p>
 
             <!-- start blog card wrapper -->
             <div class="blog-card-wrapper">
@@ -99,23 +106,31 @@ get_header(); ?>
     <!-- start featured event -->
      <section class="feature">
           <div class="feature_hero">
-             <a href="offerings.html">
-                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/therapy_group.jpg" class="feature_img bottom_edge_shadow">
+             <a href="<?php the_field('featured_event_button_link'); ?>">
+
+               <?php
+                 $image = get_field('featured_event_hero');
+
+                 if ( !empty($image)): ?>
+
+                   <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?> title="<?php echo $image['title']; ?> class="feature_img bottom_edge_shadow"/>
+
+               <?php endif; ?>
             </a>
         </div>
           <div class="cta cta1">
-              <h4 class="feature_event_title">Local Mini-Retreat</h4>
-              <h5 class="featured_event_subtitle">a donation based practice </h5>
-                  <p>Dive deep. Refresh and restore in only 4 hours. Feel better fast. Support the Jacksonville Beach Volunteer Life Saving Corps established in 1912.</p>
-                  <p>Drive a short distance and feel like you had a getaway.</p>
+              <h4 class="feature_event_title"><?php the_field('featured_event_title'); ?></h4>
+              <h5 class="featured_event_subtitle"><?php the_field('featured_event_sub_title'); ?></h5>
+                  <p><?php the_field('featured_event_copy'); ?></p>
+                  <p><?php the_field('featured_event_tag_line'); ?></p>
           </div>
           <div class="cta cta2">
-              <p>Saturday, August 25</p>
-              <p>10:30 a.m.-2:30 p.m.</p>
-              <p>Center for Spirituality on San Pablo</p>
+              <p><?php the_field('featured_event_date'); ?></p>
+              <p><?php the_field('featured_event_time'); ?></p>
+              <p><?php the_field('featured_event_location'); ?></p>
 
               <div class="center-text button-box center_text">
-                  <a href="https://youtu.be/zSt7k_q_qRU" target="blank" class="strip"><p class="ghost_button ghost_btn_blue">REGISTER NOW</p></a>
+                  <a href="<?php the_field('featured_event_button_link'); ?>" target="blank"><p class="ghost_button ghost_btn_blue"><?php the_field('featured_event_button_label'); ?></p></a>
               </div>
           </div>
       </section>
@@ -125,16 +140,25 @@ get_header(); ?>
     <section class="about bottom_edge_shadow">
         <div class="about_wrapper">
             <div class="about_img_wrapper">
-                <img class="img_circle" src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_headshot.jpg">
+
+              <?php
+                $image = get_field('about_lisa_image');
+
+                if ( !empty($image)): ?>
+
+                  <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?> title="<?php echo $image['title']; ?> class="img_circle"/>
+
+              <?php endif; ?>
+
             </div>
             <div class="about_content_wrapper">
             <div class="about_content bottom_edge_shadow">
-                <h3>About Lisa Long, M.A.</h3>
-                <p>Teaching since 1990, Lisa Long offers a unique appreciation for an individual's life stage. With a willingness to meet people where they are in the present moment, her specialty remains the therapeutic benefits of movement. </p>
+                <h3><?php the_field('about_lisa_name'); ?></h3>
+                <p><?php the_field('about_lisa_copy'); ?></p>
 
                 <div class="button-box about_button_wrapper">
                     <div class="btn_blue">
-                    <a href="about.html"><p>Learn More</p></a>
+                    <a href="<?php the_field('about_lisa_button_link'); ?>"><p><?php the_field('about_lisa_button_label'); ?></p></a>
                     </div>
                 </div>
             </div>
@@ -145,22 +169,21 @@ get_header(); ?>
 
     <!-- start 3 class cards -->
     <section class="class_preview_wrapper">
-        <h3>Long Life Movement</h3>
+        <h3><?php the_field('class_preview_title'); ?></h3>
         <div class="sub_title_para">
-            <p class="class_card_text_align">We celebrate every day that we can move pain free with full range of motion. Join us in a movement class in Jacksonville, FL. Enjoy all the things you love about your life. Take time for you.</p>
+            <p class="class_card_text_align"><?php the_field('class_preview_copy'); ?></p>
         </div>
             <!-- start class card wrapper -->
             <div class="class-card-wrapper">
                 <!-- start card one -->
                     <div class="class_type_wrapper align_bottom bottom_edge_shadow responsive_image">
-                        <a href="singlepost.html">
-                            <h4>Therapeutic Yoga</h4>
+                        <a href="<?php the_field('class_card_button_link'); ?>">
+                            <h4><?php the_field('class_card_title'); ?></h4>
                             <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/four_twist.jpg" class="bottom_edge_shadow">
-                            <p class="class_card_text_align">Move with greater ease. Connect with your breath. Relax and know peace. Regular therapeutic yoga practice reduces stress and increases vibrancy.</p>
-                            <img>
+                            <p class="class_card_text_align"><?php the_field('class_card_copy'); ?></p>
 
                             <div class="btn_yellow align_button_bottom">
-                                <a href="singlepost.html"><p>learn more</p></a>
+                                <a href="<?php the_field('class_card_button_link'); ?>"><p><?php the_field('class_card_button_label'); ?></p></a>
                             </div>
                         </a>
                     </div>
@@ -205,34 +228,42 @@ get_header(); ?>
         <div class="square square_one grid_square_one">
             <div class="square_details">
                 <div class="square_one_content">
-                    <h6>continuing </h6>
-                    <h6>EDUCATION </h6>
-                    <h6>teacher TRAININGS</h6>
-                    <h6>WORKSHOPS</h6>
+                    <h6><?php the_field('offering_line_one'); ?></h6>
+                    <h6><?php the_field('offering_line_two'); ?></h6>
+                    <h6><?php the_field('offering_line_three'); ?></h6>
+                    <h6><?php the_field('offering_line_four'); ?></h6>
                 </div>
 
                 <div class="center_text button-box">
-                    <a href="https://youtu.be/zSt7k_q_qRU" target="blank" class="strip"><p class="ghost_button ghost_btn_white">check them out</p></a>
+                    <a href="<?php the_field('offering_button_link'); ?>"><p class="ghost_button ghost_btn_white"><?php the_field('offering_button_label'); ?></p></a>
                 </div>
             </div> <!-- close .square_detials -->
         </div> <!-- close square one -->
 
         <!--start square two -->
         <div class="square_two grid_square_two fill">
-            <img  src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_teach_four.jpg">
 
+          <?php
+            $image = get_field('offering_image');
+
+            if ( !empty($image)): ?>
+
+              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?> title="<?php echo $image['title']; ?>"/>
+
+          <?php endif; ?>
+            
         </div> <!-- close square two -->
 
         <!--start square three -->
         <div class="square_three grid_square_three testimonial_link">
             <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote.svg">
-            <a href="testimonials.html">
+            <a href="<?php the_field('offering_testimonial_link'); ?>">
                 <div class="square_testimonial_wrapper">
-                    <p class="square_testimonial">Lisa Long is a thoughtful teacher. She helped me relieve pain and discover new ways to move. </p>
-                    <p class="square_testimonial_name">~Jack W.</p>
+                    <p class="square_testimonial"><?php the_field('offering_testimonial_copy'); ?> </p>
+                    <p class="square_testimonial_name"><?php the_field('offering_testimonial_name'); ?></p>
 
                     <div class="btn_round hvr-wobble-to-top-right square_testimonial_button_align">
-                        <a href="testimonials.html"><p >read</p><p>more</p></a>
+                        <a href="<?php the_field('offering_testimonial_link'); ?>"><p >read</p><p>more</p></a>
                     </div>
                 </div> <!-- close .square_testimonial-->
             </a>
@@ -241,12 +272,12 @@ get_header(); ?>
         <!--start square four -->
         <div class="square square_four grid_square_four">
             <div class="square_details square_four_details">
-                <h6>learn from home</h6>
-                <h6>ONLINE</h6>
-                <h6>classes + training</h6>
+                <h6><?php the_field('online_line_one'); ?></h6>
+                <h6><?php the_field('online_line_two'); ?></h6>
+                <h6><?php the_field('online_line_three'); ?></h6>
 
                 <div class="center_text button-box">
-                    <a href="https://youtu.be/zSt7k_q_qRU" target="blank" class="strip"><p class="ghost_button ghost_btn_white">start now</p></a>
+                    <a href="<?php the_field('online_button_link'); ?>"><p class="ghost_button ghost_btn_white"><?php the_field('online_button_label'); ?></p></a>
                 </div>
             </div> <!-- close .square_four_details -->
         </div> <!-- close square four -->
@@ -255,7 +286,7 @@ get_header(); ?>
     <!--end four square grid layout -->
 
     <!-- start large quote -->
-    <h3 class="large_quote">We become what we repeatedly do. Choose well. </h3>
+    <h3 class="large_quote"><?php the_field('cursive_saying'); ?></h3>
     <!--end large quote -->
 
     <div class="dots dots_hug_up">
@@ -273,20 +304,31 @@ get_header(); ?>
                 <div class="flex_item flip_one">
                   <div class="flex_item_inner">
                       <!-- card -->
-                      <a href="singlepost.html">
+                      <?php
+
+                      //Vars
+                      $flipone = get_field('flip_box');
+
+                      if ($flipone): ?>
+
+                      <a href="<?php echo $flipone['flip_link']; ?>">
                             <div class="card-front bg-bright">
                               <div class="flip_img">
-                                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/brain.png">
+
+                              <img src="<?php echo $flipone['flip_image']['url']; ?>" alt="<?php echo $flipone['flip_image']['alt']; ?>"/>
+
                               </div>
-                                <h4>Improve Posture</h4>
-                                <p class="detail">today</p>
+                                <h4><?php echo $flipone['flip_title']; ?></h4>
+                                <p class="detail"><?php echo $flipone['flip_sub_title']; ?></p>
                             </div>
                             <div class="card-back bg-bright">
-                                <p class="title">Lorem ipsum dolor sit amet</p>
-                                <p class="desc">Pellentesque magna nunc, fermentum nec ipsum non, </p>
+                                <p class="title"><?php echo $flipone['flip_back_header']; ?></p>
+                                <p class="desc"><?php echo $flipone['flip_back_content']; ?></p>
                                 <p class="link">Details</p>
                             </div>
                         </a>
+
+                      <?php endif?>
                         <!-- /card -->
                     </div> <!-- close flex_item_inner ONE -->
                 </div> <!-- close flex_item ONE -->
@@ -295,21 +337,33 @@ get_header(); ?>
                   <div class="flex_item flip_two">
                     <div class="flex_item_inner">
                         <!-- card -->
-                        <a href="singlepost.html">
+                        <?php if( have_rows('flip_box_two') ):
+                            while( have_rows('flip_box_two')): the_row();
+
+                            //vars
+                            $image = get_sub_field('flip_image_two');
+                            $link = get_sub_field('flip_link_two')
+
+                            ?>
+
+                        <a href="<?php echo $link['']; ?>">
                               <div class="card-front bg-dark">
                                 <div class="flip_img">
-                                  <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
+                                  <img src="<?php echo $image['']; ?> alt="<?php echo $image['']; ?>""/>
                                 </div>
-                                  <h4>Sleep Better</h4>
-                                  <p class="detail">tonight</p>
+
+                                <h4><?php the_field('flip_title_two'); ?></h4>
+                                <p class="detail"><?php the_field('flip_sub_title_two'); ?></p>
                               </div>
-                              <div class="card-back bg-dark">
-                                  <p class="title">Lorem ipsum dolor sit amet</p>
-                                  <p class="desc">Pellentesque magna nunc</p>
-                                  <p class="link">Details</p>
+                              <div class="card-back bg-bright">
+                                <p class="title"><?php the_field('flip_back_header_two'); ?></p>
+                                <p class="desc"><?php the_field('flip_back_content_two'); ?></p>
+                                <p class="link">Details</p>
                               </div>
                           </a>
                           <!-- /card -->
+                          <?php endwhile; ?>
+                      <?php endif; ?>
                       </div> <!-- close flex_item_inner TWO -->
                   </div> <!-- close flex_item TWO -->
 
@@ -368,6 +422,6 @@ get_header(); ?>
         </div>
     </div>
 
-  <?php endwhile; endif; ?>
+<?php endwhile; endif; ?>
 
 <?php get_footer(); ?>
