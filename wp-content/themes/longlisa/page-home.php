@@ -251,7 +251,7 @@ get_header(); ?>
               <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?> title="<?php echo $image['title']; ?>"/>
 
           <?php endif; ?>
-            
+
         </div> <!-- close square two -->
 
         <!--start square three -->
@@ -315,7 +315,7 @@ get_header(); ?>
                             <div class="card-front bg-bright">
                               <div class="flip_img">
 
-                              <img src="<?php echo $flipone['flip_image']['url']; ?>" alt="<?php echo $flipone['flip_image']['alt']; ?>"/>
+                                <img src="<?php echo $flipone['flip_image']['url']; ?>" class=""/>
 
                               </div>
                                 <h4><?php echo $flipone['flip_title']; ?></h4>
@@ -336,78 +336,100 @@ get_header(); ?>
                 <!-- open flex_item TWO -->
                   <div class="flex_item flip_two">
                     <div class="flex_item_inner">
-                        <!-- card -->
-                        <?php if( have_rows('flip_box_two') ):
-                            while( have_rows('flip_box_two')): the_row();
+                      <!-- card -->
+                      <?php
 
-                            //vars
-                            $image = get_sub_field('flip_image_two');
-                            $link = get_sub_field('flip_link_two')
+                      //Vars
+                      $flipone = get_field('flip_box_two');
 
-                            ?>
+                      if ($flipone): ?>
 
-                        <a href="<?php echo $link['']; ?>">
-                              <div class="card-front bg-dark">
-                                <div class="flip_img">
-                                  <img src="<?php echo $image['']; ?> alt="<?php echo $image['']; ?>""/>
-                                </div>
+                      <a href="<?php echo $flipone['flip_link_two']; ?>">
+                            <div class="card-front bg-dark">
+                              <div class="flip_img">
 
-                                <h4><?php the_field('flip_title_two'); ?></h4>
-                                <p class="detail"><?php the_field('flip_sub_title_two'); ?></p>
+                                <img src="<?php echo $flipone['flip_image_two']['url']; ?>" class=""/>
+
                               </div>
-                              <div class="card-back bg-bright">
-                                <p class="title"><?php the_field('flip_back_header_two'); ?></p>
-                                <p class="desc"><?php the_field('flip_back_content_two'); ?></p>
+                                <h4><?php echo $flipone['flip_title_two']; ?></h4>
+                                <p class="detail"><?php echo $flipone['flip_sub_title_two']; ?></p>
+                            </div>
+                            <div class="card-back bg-bright">
+                                <p class="title"><?php echo $flipone['flip_back_header_two']; ?></p>
+                                <p class="desc"><?php echo $flipone['flip_back_content_two']; ?></p>
                                 <p class="link">Details</p>
-                              </div>
-                          </a>
-                          <!-- /card -->
-                          <?php endwhile; ?>
-                      <?php endif; ?>
+                            </div>
+                        </a>
+
+                      <?php endif?>
+                        <!-- /card -->
                       </div> <!-- close flex_item_inner TWO -->
                   </div> <!-- close flex_item TWO -->
 
                   <!-- open flex_item THREE -->
                     <div class="flex_item flip_three">
                       <div class="flex_item_inner">
-                          <!-- card -->
-                          <a href="singlepost.html">
-                                <div class="card-front bg-blue">
-                                  <div class="flip_img">
-                                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/knee.png">
-                                  </div>
-                                    <h4>Increase Vitality</h4>
-                                    <p class="detail">now</p>
+
+                        <!-- card -->
+                        <?php
+
+                        //Vars
+                        $flipone = get_field('flip_box_three');
+
+                        if ($flipone): ?>
+
+                        <a href="<?php echo $flipone['flip_link_three']; ?>">
+                              <div class="card-front bg-blue">
+                                <div class="flip_img">
+
+                                  <img src="<?php echo $flipone['flip_image_three']['url']; ?>" class=""/>
+
                                 </div>
-                                <div class="card-back bg-blue">
-                                    <p class="title">Lorem ipsum dolor sit amet</p>
-                                    <p class="desc">Pellentesque magna nunc, fermentum nec ipsum non, consequat scelerisque dui.</p>
-                                    <p class="link">Details</p>
-                                </div>
-                            </a>
-                            <!-- /card -->
+                                  <h4><?php echo $flipone['flip_title_three']; ?></h4>
+                                  <p class="detail"><?php echo $flipone['flip_sub_title_three']; ?></p>
+                              </div>
+                              <div class="card-back bg-bright">
+                                  <p class="title"><?php echo $flipone['flip_back_header_three']; ?></p>
+                                  <p class="desc"><?php echo $flipone['flip_back_content_three']; ?></p>
+                                  <p class="link">Details</p>
+                              </div>
+                          </a>
+
+                        <?php endif ?>
+                          <!-- /card -->
                         </div> <!-- close flex_item_inner THREE -->
                     </div> <!-- close flex_item THREE -->
 
                     <!-- open flex_item FOUR -->
                       <div class="flex_item flip_four">
                         <div class="flex_item_inner">
-                            <!-- card -->
-                            <a href="singlepost.html">
-                                  <div class="card-front bg-bright">
-                                    <div class="flip_img">
-                                      <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
-                                    </div>
-                                      <h4>Relieve Stress</h4>
-                                      <p class="detail">fast</p>
+                          <!-- card -->
+                          <?php
+
+                          //Vars
+                          $flipone = get_field('flip_box_four');
+
+                          if ($flipone): ?>
+
+                          <a href="<?php echo $flipone['flip_link_four']; ?>">
+                                <div class="card-front bg-bright">
+                                  <div class="flip_img">
+
+                                    <img src="<?php echo $flipone['flip_image_four']['url']; ?>" class=""/>
+
                                   </div>
-                                  <div class="card-back bg-bright">
-                                      <p class="title">Lorem ipsum dolor sit amet</p>
-                                      <p class="desc">Pellentesque magna nunc, fermentum nec ipsum non, consequat scelerisque dui.</p>
-                                      <p class="link"> Details</p>
-                                  </div>
-                              </a>
-                              <!-- /card -->
+                                    <h4><?php echo $flipone['flip_title_four']; ?></h4>
+                                    <p class="detail"><?php echo $flipone['flip_sub_title_four']; ?></p>
+                                </div>
+                                <div class="card-back bg-bright">
+                                    <p class="title"><?php echo $flipone['flip_back_header_four']; ?></p>
+                                    <p class="desc"><?php echo $flipone['flip_back_content_four']; ?></p>
+                                    <p class="link">Details</p>
+                                </div>
+                            </a>
+
+                          <?php endif ?>
+                            <!-- /card -->
                           </div> <!-- close flex_item_inner FOUR -->
                       </div> <!-- close flex_item FOUR -->
             </section>
