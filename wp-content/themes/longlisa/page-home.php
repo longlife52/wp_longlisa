@@ -45,8 +45,8 @@ get_header(); ?>
     <!-- start blog preview -->
     <?php $query = new WP_Query( array (
     'posts_per_page' => '3',
-  ));
-  if ($query->have_posts()) : ?>
+      ));
+        if ($query->have_posts()) : ?>
 
     <section class="blog_preview blog_preview_space">
             <h3><?php the_field('blog_preview_title'); ?></h3>
@@ -72,6 +72,8 @@ get_header(); ?>
                         </a>
                     </div> <!-- close blog card -->
                       <?php endwhile; ?>
+                      <!-- after running the blog preview loop - this next php call resets the main loop over the page -->
+                      <?php wp_reset_postdata(); ?>
                 <!-- end card one -->
                 </div> <!-- end blog card wrapper -->
             </section> <!--end blog preview -->
