@@ -23,16 +23,20 @@ get_header(); ?>
     <section class="home_page_header">
         <!-- picture bar -->
         <div class="picture_bar">
-            <?php
-              $image = get_field('billboard_image');
 
-              if ( !empty($image)): ?>
+          <?php
 
-                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?> title="<?php echo $image['title']; ?>"/>
+          $image = get_field('billboard_image');
 
-            <?php endif; ?>
+          if ( !empty($image) ): ?>
+
+            <img src="<?php echo $image['url']; ?> " alt="?php echo $image['alt']; ?>" />
+
+          <?php endif; ?>
+
         </div>
-        <!--close picture bar -->
+        <!-- close picture bar -->
+
         <div class="home_title">
             <h1><?php the_field('billboard_h_one'); ?></h1>
         </div>
@@ -144,7 +148,7 @@ get_header(); ?>
               <?php
                 $image = get_field('about_lisa_image');
 
-                if ( !empty($image)): ?>
+                if( !empty($image)): ?>
 
                   <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?> title="<?php echo $image['title']; ?> class="img_circle"/>
 
@@ -189,6 +193,7 @@ get_header(); ?>
                 $link = get_sub_field('class_card_button_link');
 
                 ?>
+
                 <!-- start card one -->
                     <div class="class_type_wrapper align_bottom bottom_edge_shadow responsive_image">
                         <a href="<?php echo $link; ?>">
@@ -234,8 +239,7 @@ get_header(); ?>
             $image = get_field('offering_image');
 
             if ( !empty($image)): ?>
-
-              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?> title="<?php echo $image['title']; ?>"/>
+              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"/>
 
           <?php endif; ?>
 
