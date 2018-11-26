@@ -168,58 +168,45 @@ get_header(); ?>
     <!-- end about Lisa -->
 
     <!-- start 3 class cards -->
+
     <section class="class_preview_wrapper">
         <h3><?php the_field('class_preview_title'); ?></h3>
         <div class="sub_title_para">
             <p class="class_card_text_align"><?php the_field('class_preview_copy'); ?></p>
         </div>
+
             <!-- start class card wrapper -->
+            <?php if(have_rows('class_card')): ?>
+
             <div class="class-card-wrapper">
+              <?php while(have_rows('class_card')): the_row();
+
+                //Vars
+                $title = get_sub_field('class_card_title');
+                $image = get_sub_field('class_card_image');
+                $content = get_sub_field('class_card_copy');
+                $cta = get_sub_field('class_card_button_label');
+                $link = get_sub_field('class_card_button_link');
+
+                ?>
                 <!-- start card one -->
                     <div class="class_type_wrapper align_bottom bottom_edge_shadow responsive_image">
-                        <a href="<?php the_field('class_card_button_link'); ?>">
-                            <h4><?php the_field('class_card_title'); ?></h4>
-                            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/four_twist.jpg" class="bottom_edge_shadow">
-                            <p class="class_card_text_align"><?php the_field('class_card_copy'); ?></p>
+                        <a href="<?php echo $link; ?>">
+                            <h4><?php echo $title; ?></h4>
+                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"class="bottom_edge_shadow">
+                            <p class="class_card_text_align"><?php echo $content; ?></p>
 
                             <div class="btn_yellow align_button_bottom">
-                                <a href="<?php the_field('class_card_button_link'); ?>"><p><?php the_field('class_card_button_label'); ?></p></a>
+                                <a href="<?php echo $link; ?>"><p><?php echo $cta; ?></p></a>
                             </div>
                         </a>
                     </div>
                 <!-- end card one -->
-
-                <!-- start card two -->
-                <div class="class_type_wrapper align_bottom bottom_edge_shadow responsive_image">
-                    <a href="singlepost.html">
-                        <h4>Pilates for Resiliency</h4>
-                        <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/teaser.jpg" class="bottom_edge_shadow">
-                        <p class="class_card_text_align">Strengthen your core. Create greater stability. Pilates helps you to be strong and move from center. Equipment based Pilates teaches you the direction of the movement. </p>
-                        <img>
-                        <div class="btn_yellow align_button_bottom">
-                            <a href="singlpost.html"><p>learn more</p></a>
-                        </div>
-                    </a>
-                </div>
-                <!-- end card two -->
-
-                <!-- start card three -->
-                <div class="class_type_wrapper align_bottom bottom_edge_shadow responsive_image">
-                    <a href="singlepost.html">
-                        <h4>Franklin Method</h4>
-                        <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/bbi_pilates.jpg" class="bottom_edge_shadow">
-                        <p class="class_card_text_align">Use the power of your mind and clear imaging to change and connect with greater movement potential. Unlock fascia through clear connections to boney rhythms.</p>
-                        <img>
-                        <div class="btn_yellow align_button_bottom">
-                            <a href="singlepost.html"><p>learn more</p></a>
-                        </div>
-                    </a>
-                </div>
-                <!-- end card three -->
+              <?php endwhile; ?>
         </div>
+        <?php endif; ?>
         <!-- end class card wrapper -->
     </section>
-
     <!-- end 3 class cards -->
 
     <!-- start four square grid layout -->
