@@ -34,7 +34,7 @@
                 <h3>and not getting it</h3>
             </div>
 
-            <div class="lisa_story_para blog_post_content">              
+            <div class="lisa_story_para blog_post_content">
                 <p>lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life. it has been challenging. it has been invigorating.
                 </p>
 
@@ -117,6 +117,44 @@
 
 			<?php the_content(); // Dynamic Content ?>
 
+      <!-- related blog posts links TO OTHER BLOG ARTICLES by category -->
+<section class="blog_preview blog_preview_space"> <!-- open related blog posts -->
+    <h3>Check These Out</h3>
+      <p>Based on your interest, we curated these articles just for you.</p>
+
+      <div class="blog-index-wrapper">
+
+        <!-- code from https://wordpress.stackexchange.com/questions/41272/how-to-show-related-posts-by-category -->
+        <?php
+
+        $related = get_posts( array( 'category__in' => wp_get_post_categories($post->ID), 'numberposts' => 3, 'post__not_in' => array($post->ID) ) );
+        if( $related ) foreach( $related as $post ) {
+        setup_postdata($post); ?>
+
+      <!-- start card one -->
+          <div class="blog_card bottom_edge_shadow">
+              <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+                <div class="blog_card_details">
+                  <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/sidebend.jpg">
+                  <h5><?php the_category(); ?></h5>
+                  <h4><?php the_title(); ?></h4>
+                  <p><?php  the_excerpt(); ?></p>
+                </div> <!-- close blog card details -->
+                  <div class="readtime">
+                      <p><?php echo do_shortcode('[rt_reading_time label="" postfix="min"]'); ?>  read</p>
+                  </div>
+
+                  <div class="btn_round hvr-wobble-to-top-right">
+                      <a href="<?php the_permalink(); ?>"><p >read</p></a>
+                  </div>
+              </a>
+          </div> <!-- close blog card -->
+          <!-- end card one -->
+        <?php }
+        wp_reset_postdata(); ?>
+      </div> <!-- end blog index wrapper -->
+</section> <!-- end related blog posts -->
+
 			<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
 
 			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
@@ -142,6 +180,9 @@
 
 	</section>     <!-- end end blog_post_content section -->
 
+  <div class="">
+  <?php get_template_part('partials/searchform'); ?>
+  </div>
 
 <?php get_sidebar(); ?>
 

@@ -114,7 +114,6 @@ get_header(); ?>
 
                <?php
                  $image = get_field('featured_event_hero');
-
                  if ( !empty($image)): ?>
 
                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?> title="<?php echo $image['title']; ?> class="feature_img bottom_edge_shadow"/>
@@ -147,7 +146,6 @@ get_header(); ?>
 
               <?php
                 $image = get_field('about_lisa_image');
-
                 if( !empty($image)): ?>
 
                   <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?> title="<?php echo $image['title']; ?> class="img_circle"/>
@@ -184,14 +182,12 @@ get_header(); ?>
 
             <div class="class-card-wrapper">
               <?php while(have_rows('class_card')): the_row();
-
                 //Vars
                 $title = get_sub_field('class_card_title');
                 $image = get_sub_field('class_card_image');
                 $content = get_sub_field('class_card_copy');
                 $cta = get_sub_field('class_card_button_label');
                 $link = get_sub_field('class_card_button_link');
-
                 ?>
 
                 <!-- start card one -->
@@ -237,7 +233,6 @@ get_header(); ?>
 
           <?php
             $image = get_field('offering_image');
-
             if ( !empty($image)): ?>
               <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"/>
 
@@ -296,10 +291,8 @@ get_header(); ?>
                   <div class="flex_item_inner">
                       <!-- card -->
                       <?php
-
                       //Vars
                       $flipone = get_field('flip_box');
-
                       if ($flipone): ?>
 
                       <a href="<?php echo $flipone['flip_link']; ?>">
@@ -329,10 +322,8 @@ get_header(); ?>
                     <div class="flex_item_inner">
                       <!-- card -->
                       <?php
-
                       //Vars
                       $flipone = get_field('flip_box_two');
-
                       if ($flipone): ?>
 
                       <a href="<?php echo $flipone['flip_link_two']; ?>">
@@ -363,10 +354,8 @@ get_header(); ?>
 
                         <!-- card -->
                         <?php
-
                         //Vars
                         $flipone = get_field('flip_box_three');
-
                         if ($flipone): ?>
 
                         <a href="<?php echo $flipone['flip_link_three']; ?>">
@@ -396,10 +385,8 @@ get_header(); ?>
                         <div class="flex_item_inner">
                           <!-- card -->
                           <?php
-
                           //Vars
                           $flipone = get_field('flip_box_four');
-
                           if ($flipone): ?>
 
                           <a href="<?php echo $flipone['flip_link_four']; ?>">
@@ -434,6 +421,8 @@ get_header(); ?>
         <div class="circle">
         </div>
     </div>
+
+
 
 <?php endwhile; endif; ?>
 
