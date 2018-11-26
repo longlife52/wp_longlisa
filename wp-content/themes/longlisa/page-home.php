@@ -43,69 +43,39 @@ get_header(); ?>
     </section>
 
     <!-- start blog preview -->
+    <?php $query = new WP_Query( array (
+    'posts_per_page' => '3',
+  ));
+  if ($query->have_posts()) : ?>
+
     <section class="blog_preview blog_preview_space">
             <h3><?php the_field('blog_preview_title'); ?></h3>
                 <p><?php the_field('blog_preview_copy'); ?></p>
 
             <!-- start blog card wrapper -->
             <div class="blog-card-wrapper">
+                    <?php while ($query->have_posts()) : $query->the_post(); ?>
                 <!-- start card one -->
                     <div class="blog_card bottom_edge_shadow">
-                        <a href="singlepost.html">
+                        <a href="<?php the_permalink(); ?>">
                             <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/sidebend.jpg">
-                            <h5>body</h5>
-                            <h4>Side Bend for More Length</h4>
+                            <h5><?php the_category(); ?></h5>
+                            <h4><?php the_title(); ?></h4>
 
                             <div class="readtime">
-                                <p>3 min read</p>
+                                <p><?php echo do_shortcode('[rt_reading_time label="" postfix="min"]'); ?> read</p>
                             </div>
 
                             <div class="btn_round hvr-wobble-to-top-right">
-                                <a href="singlepost.html"><p >read</p></a>
+                                <a href="<?php the_permalink(); ?>"><p >read</p></a>
                             </div>
                         </a>
                     </div> <!-- close blog card -->
+                      <?php endwhile; ?>
                 <!-- end card one -->
-
-                <!-- start card two -->
-                    <div class="blog_card bottom_edge_shadow">
-                        <a href="singlepost.html">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/wall_jump.jpg">
-                            <h5>mind</h5>
-                            <h4>Your Mind Changes Movement</h4>
-
-                            <div class="readtime">
-                                <p>7 min read</p>
-                            </div>
-
-                            <div class="btn_round hvr-wobble-to-top-right">
-                                <a href="singlepost.html"><p >read</p></a>
-                            </div>
-                        </a>
-                    </div> <!-- close blog card -->
-                <!-- end card two -->
-
-                <!-- start card three -->
-                    <div class="blog_card bottom_edge_shadow">
-                        <a href="singlepost.html">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/flower_purple.jpg">
-                            <h5>spirit</h5>
-                            <h4>Parts Becoming Whole</h4>
-
-                            <div class="readtime">
-                                <p>11 min read</p>
-                            </div>
-
-                            <div class="btn_round hvr-wobble-to-top-right">
-                                <a href="singlepost.html"><p >read</p></a>
-                            </div>
-                        </a>
-                    </div> <!-- close blog card -->
-                <!-- end card three -->
-                </div>
-        <!-- end blog card wrapper -->
-            </section>
-    <!--end blog preview -->
+                </div> <!-- end blog card wrapper -->
+            </section> <!--end blog preview -->
+                      <?php endif; ?>
 
     <!-- start featured event -->
      <section class="feature">
@@ -312,7 +282,7 @@ get_header(); ?>
                             </div>
                         </a>
 
-                      <?php endif?>
+                      <?php endif; ?>
                         <!-- /card -->
                     </div> <!-- close flex_item_inner ONE -->
                 </div> <!-- close flex_item ONE -->
@@ -343,7 +313,7 @@ get_header(); ?>
                             </div>
                         </a>
 
-                      <?php endif?>
+                      <?php endif; ?>
                         <!-- /card -->
                       </div> <!-- close flex_item_inner TWO -->
                   </div> <!-- close flex_item TWO -->
@@ -375,7 +345,7 @@ get_header(); ?>
                               </div>
                           </a>
 
-                        <?php endif ?>
+                        <?php endif; ?>
                           <!-- /card -->
                         </div> <!-- close flex_item_inner THREE -->
                     </div> <!-- close flex_item THREE -->
@@ -406,7 +376,7 @@ get_header(); ?>
                                 </div>
                             </a>
 
-                          <?php endif ?>
+                          <?php endif; ?>
                             <!-- /card -->
                           </div> <!-- close flex_item_inner FOUR -->
                       </div> <!-- close flex_item FOUR -->
