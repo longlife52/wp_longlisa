@@ -149,7 +149,7 @@ get_header(); ?>
             <p class="class_card_text_align"><?php the_field('class_preview_copy'); ?></p>
         </div>
 
-            <!-- start class card wrapper REPEATER-->
+            <!-- start REPEATER -class card wrapper -->
             <?php if(have_rows('class_card')): ?>
 
             <div class="class-card-wrapper">

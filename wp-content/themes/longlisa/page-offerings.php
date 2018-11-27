@@ -141,21 +141,25 @@ get_header(); ?>
 
       <?php while(have_rows('category_preview_offering')): the_row();
         //Vars
-        $name = get_sub_field('category_name');
         $image = get_sub_field('image');
-        $link = get_sub_field('category_link');
-        ?>
+        $term = get_sub_field('category_name');
+        $taxonomy = 'category_name';
+        $term_link = get_term_link($term, $taxonomy);
+
+        if( $term ): ?>
 
         <div>
         <!-- start card one -->
-        <a href="/index.php?cat=4">
+        <!--  <a href="/index.php?cat=4"> -->
+        <a href="">
             <div class="icon_individual_card grow">
 
                 <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
 
-                <p class="icon_text_color blog_category_title">mind</p>
+                <p class="icon_text_color blog_category_title"><?php echo $term->name; ?></p>
             </div>
         </a>
+      <?php endif; ?>
       </div>
         <!-- end card one -->
       <?php endwhile; ?>
