@@ -7,12 +7,12 @@ get_header(); ?>
 <!-- BILL BOARD -->
     <section class="billboard_blue_wrapper offering_wrapper">
         <div class="billboard center_text offering_billboard">
-            <h2 class="offering_title_big">Choose</h2>
+            <h2 class="offering_title_big"><?php the_field('billboard_title_first_line'); ?></h2>
             <div class="title_line">
-                <h2 class="offering_title_small no_pad">to feel better</h2>
+                <h2 class="offering_title_small no_pad"><?php the_field('billboard_title_second_line'); ?></h2>
             </div>
             <div class="billboard_para">
-                <p>Let's get started increasing your well-being and knowledge today!</p>
+                <p><?php the_field('billboard_para'); ?></p>
             </div>
         </div>
     </section> <!-- closes .billboard_blue_wrapper -->
@@ -24,7 +24,7 @@ get_header(); ?>
         </div>
         <!--close picture bar -->
         <div class="home_title">
-            <h1>Explore therapeutic movement classes in Jacksonville, FL along with yoga retreats and private yoga therapy and Pilates sessions. Study self-care online. Attend a teacher training.</h1>
+            <h1><?php the_field('billboard_offering_h_one'); ?></h1>
         </div>
     </section> <!-- close h1 area -->
 
@@ -32,20 +32,20 @@ get_header(); ?>
     <section class="offering_tile_wrapper">
 
         <div class="offering_tile_one">
-            <h3 class="offering_tile_title">classes</h3>
-            <p class="offering_para">get the benefits of committed practice with a skillfull teacher</p>
+            <h3 class="offering_tile_title"><?php the_field('offering_one_title'); ?></h3>
+            <p class="offering_para"><?php the_field('offering_one_para'); ?></p>
 
             <div class="center_text button-box">
-                <a href="/index.php/classes"><p class="ghost_button ghost_btn_white">see classes</p></a>
+                <a href="<?php the_field('offering_one_button_link'); ?>"><p class="ghost_button ghost_btn_white"><?php the_field('offering_one_button_label'); ?></p></a>
             </div>
         </div>
 
         <div class="offering_tile_two">
-            <h3 class="offering_tile_title">workshops</h3>
-            <p class="offering_para">dive into greater understanding + increased function = feeling better</p>
+            <h3 class="offering_tile_title"><?php the_field('offering_two_title'); ?></h3>
+            <p class="offering_para"><?php the_field('offering_two_para'); ?></p>
 
             <div class="center_text button-box">
-                <a href="/index.php/workshops"><p class="ghost_button ghost_btn_white">see workshops</p></a>
+                <a href="<?php the_field('offering_two_button_link'); ?>"><p class="ghost_button ghost_btn_white"><?php the_field('offering_two_button_label'); ?></p></a>
             </div>
         </div>
 
@@ -55,20 +55,20 @@ get_header(); ?>
         </div>
 
         <div class="offering_tile_four">
-            <h3 class="offering_tile_title">one-on-one</h3>
-            <p class="offering_para">all you + complete focus </p>
+            <h3 class="offering_tile_title"><?php the_field('offering_three_title'); ?></h3>
+            <p class="offering_para"><?php the_field('offering_three_para'); ?></p>
 
             <div class="center_text button-box">
-                <a href="/index.php/privates"><p class="ghost_button ghost_btn_white">learn more</p></a>
+                <a href="<?php the_field('offering_three_button_link'); ?>"><p class="ghost_button ghost_btn_white"><?php the_field('offering_three_button_label'); ?></p></a>
             </div>
         </div>
 
         <div class="offering_tile_five">
-            <h3 class="offering_tile_title">trainings</h3>
-            <p class="offering_para">deepen your knowledge + truly understand the who, what, why, where, and when of progressive teaching </p>
+            <h3 class="offering_tile_title"><?php the_field('offering_four_title'); ?></h3>
+            <p class="offering_para"><?php the_field('offering_four_para'); ?></p>
 
             <div class="center_text button-box">
-                <a href="/index.php/trainings"><p class="ghost_button ghost_btn_white">learn more</p></a>
+                <a href="<?php the_field('offering_four_button_link'); ?>"><p class="ghost_button ghost_btn_white"><?php the_field('offering_four_button_label'); ?></p></a>
             </div>
         </div>
 
@@ -77,34 +77,31 @@ get_header(); ?>
         </div>
 
         <div class="offering_tile_seven">
-            <h3 class="offering_tile_title">retreats</h3>
-            <p class="offering_para">step out to step back in refreshed and restored</p>
+            <h3 class="offering_tile_title"><?php the_field('offering_five_title'); ?></h3>
+            <p class="offering_para"><?php the_field('offering_five_para'); ?></p>
 
             <div class="center_text button-box">
-                <a href="/index.php/retreats"><p class="ghost_button ghost_btn_white">learn more</p></a>
+                <a href="<?php the_field('offering_five_button_link'); ?>"><p class="ghost_button ghost_btn_white"><?php the_field('offering_five_button_label'); ?></p></a>
             </div>
         </div>
 
         <div class="offering_tile_eight">
-            <h3 class="offering_tile_title">online</h3>
-            <p class="offering_para">learn from home + practice anywhere, any time with clear instruction + enjoy learning at your pace</p>
+            <h3 class="offering_tile_title"><?php the_field('offering_six_title'); ?></h3>
+            <p class="offering_para"><?php the_field('offering_six_para'); ?></p>
 
             <div class="center_text button-box">
-                <a href="/index.php/online"><p class="ghost_button ghost_btn_white ">start now</p></a>
+                <a href="<?php the_field('offering_six_button_link'); ?>"><p class="ghost_button ghost_btn_white "><?php the_field('offering_six_button_label'); ?></p></a>
             </div>
         </div>
-
-
     </section>
     <!-- end offering tiles -->
 
     <!-- start large quote -->
-    <h3 class="large_quote">We become what we repeatedly do. Choose well. </h3>
+    <h3 class="large_quote"><?php the_field('cursive_saying_offering'); ?></h3>
     <!--end large quote -->
 
     <!-- start four square grid layout -->
     <div class="four_square_wrapper two_square_wrapper">
-
         <!--start square two -->
         <div class="grid_square_one square_two fill">
             <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_teach_four.jpg">
@@ -113,13 +110,13 @@ get_header(); ?>
         <!--start square three -->
         <div class="grid_square_two square_three testimonial_link">
             <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote.svg">
-            <a href="testimonials.html">
+            <a href="<?php the_field('testimonial_link_offering'); ?>">
                 <div class="square_testimonial_wrapper">
-                    <p class="square_testimonial">You will learn so much! Lisa Long has a gift for teaching you how your body works. </p>
-                    <p class="square_testimonial_name">~Darla P.</p>
+                    <p class="square_testimonial"><?php the_field('testimonial_para_offering'); ?> </p>
+                    <p class="square_testimonial_name"><?php the_field('testimonial_name_offering'); ?></p>
 
                     <div class="btn_round hvr-wobble-to-top-right square_testimonial_button_align">
-                        <a href="testimonials.html"><p >read</p><p>more</p></a>
+                        <a href="<?php the_field('testimonial_link_offering'); ?>"><p >read</p><p>more</p></a>
                     </div>
                 </div> <!-- close .square_testimonial-->
             </a>
