@@ -4,6 +4,9 @@ Template Name: Offerings
 */
 get_header(); ?>
 
+
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
 <!-- BILL BOARD -->
     <section class="billboard_blue_wrapper offering_wrapper">
         <div class="billboard center_text offering_billboard">
@@ -124,46 +127,47 @@ get_header(); ?>
     </div> <!-- close .foursquarewrapper -->
     <!--end four square grid layout -->
 
-    <!-- start BLOG CATEGORIES 3 ICON/class cards -->
+    <!-- start - BLOG CATEGORIES 3 ICON/class cards -->
     <section class="class_preview_wrapper icon_card_wrapper offering_category_wrapper">
-        <h3 class="icon_text_color">Inspiration</h3>
+        <h3 class="icon_text_color"><?php the_field('category_block_title'); ?></h3>
         <div class="sub_title_para">
-            <p class="icon_text_color">Check out these categories and learn more ways to feel better!</p>
+            <p class="icon_text_color"><?php the_field('category_block_para'); ?></p>
         </div>
 
-    <!-- start ICON/class card wrapper -->
+    <!-- start REPEATING THIS CONTENT - ICON/class card wrapper -->
+    <?php if(have_rows('category_preview_offering')): ?>
+
     <div class="class-card-wrapper">
+
+      <?php while(have_rows('category_preview_offering')): the_row();
+        //Vars
+        $name = get_sub_field('category_name');
+        $image = get_sub_field('image');
+        $link = get_sub_field('category_link');
+        ?>
+
+        <div>
         <!-- start card one -->
         <a href="/index.php?cat=4">
             <div class="icon_individual_card grow">
-                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/brain.png">
+
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+
                 <p class="icon_text_color blog_category_title">mind</p>
             </div>
         </a>
+      </div>
         <!-- end card one -->
+      <?php endwhile; ?>
 
-        <!-- start card two -->
-        <a href="/index.php?cat=5">
-            <div class="icon_individual_card grow">
-                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/knee.png">
-                <p class="icon_text_color blog_category_title">Body</p>
-            </div>
-        </a>
-        <!-- end card two -->
-
-        <!-- start card three -->
-        <a href="/index.php?cat=6">
-            <div class="icon_individual_card grow">
-                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
-                <p class="icon_text_color blog_category_title">spiRit</p>
-            </div>
-        </a>
-        <!-- end card three -->
+      <?php wp_reset_postdata(); ?>
 </div>
+<?php endif; ?>
 <!-- end ICON/class card wrapper -->
 </section>
 
 <!-- end BLOG CATEGORIES 3 ICON/class cards -->
 
+<?php endwhile; endif; ?>
 
 <?php get_footer(); ?>
