@@ -42,11 +42,7 @@ get_header(); ?>
         </div>
     </section>
 
-    <!-- start blog preview -->
-    <?php $query = new WP_Query( array (
-    'posts_per_page' => '3',
-      ));
-        if ($query->have_posts()) : ?>
+
 
     <section class="blog_preview blog_preview_space">
             <h3><?php the_field('blog_preview_title'); ?></h3>
@@ -54,30 +50,34 @@ get_header(); ?>
 
             <!-- start blog card wrapper -->
             <div class="blog-card-wrapper">
-                    <?php while ($query->have_posts()) : $query->the_post(); ?>
-                <!-- start card one -->
-                    <div class="blog_card bottom_edge_shadow">
-                        <a href="<?php the_permalink(); ?>">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/sidebend.jpg">
-                            <h5><?php the_category(); ?></h5>
-                            <h4><?php the_title(); ?></h4>
+              <!-- start blog preview -->
+              <?php /*
+                 $categories are the IDs for each of the cards that get pulled
+                 To add / change a category, add the ID to the array
+              */
+              $categories = [4, 5, 6];
 
-                            <div class="readtime">
-                                <p><?php echo do_shortcode('[rt_reading_time label="" postfix="min"]'); ?> read</p>
-                            </div>
-
-                            <div class="btn_round hvr-wobble-to-top-right">
-                                <a href="<?php the_permalink(); ?>"><p >read</p></a>
-                            </div>
-                        </a>
-                    </div> <!-- close blog card -->
+              foreach ($categories as $one_category):
+                $query = new WP_Query( array (
+                'posts_per_page' => '1',
+                'cat' => $one_category // CATEGORY
+                  ));
+                    if ($query->have_posts()) : ?>
+                      <?php while ($query->have_posts()) : $query->the_post(); ?>
+                  <!-- start card one -->
+                        <?php get_template_part('partials/blog_preview'); ?>
                       <?php endwhile; ?>
                       <!-- after running the blog preview loop - this next php call resets the main loop over the page -->
                       <?php wp_reset_postdata(); ?>
-                <!-- end card one -->
+                  <!-- end card one -->
+                  <?php endif;
+                endforeach; ?>
+
                 </div> <!-- end blog card wrapper -->
+
+
             </section> <!--end blog preview -->
-                      <?php endif; ?>
+
 
     <!-- start featured event -->
      <section class="feature">

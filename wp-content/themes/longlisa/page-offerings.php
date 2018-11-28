@@ -164,7 +164,6 @@ get_header(); ?>
         <!-- end card one -->
       <?php endwhile; ?>
 
-      <?php wp_reset_postdata(); ?>
 </div>
 <?php endif; ?>
 <!-- end ICON/class card wrapper -->
