@@ -144,19 +144,19 @@ get_header(); ?>
         $image = get_sub_field('image');
         $term = get_sub_field('category_name');
         $taxonomy = 'category';
-        $term_link = get_term_link($term, $taxonomy);
+        $term_link = get_category_link($term[0]->term_id);
 
         if($term): ?>
 
         <div>
         <!-- start card one -->
         <!--  <a href="/index.php?cat=4"> -->
-        <a href="">
+        <a href="<?php echo $term_link; ?>">
             <div class="icon_individual_card grow">
 
                 <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
 
-                <p class="icon_text_color blog_category_title"><?php echo $term->name; ?></p>
+                <p class="icon_text_color blog_category_title"><?php echo $term[0]->name; ?></p>
             </div>
         </a>
       <?php endif; ?>
