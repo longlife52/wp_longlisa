@@ -42,8 +42,6 @@ get_header(); ?>
         </div>
     </section>
 
-
-
     <section class="blog_preview blog_preview_space">
             <h3><?php the_field('blog_preview_title'); ?></h3>
                 <p><?php the_field('blog_preview_copy'); ?></p>
@@ -54,8 +52,9 @@ get_header(); ?>
               <?php /*
                  $categories are the IDs for each of the cards that get pulled
                  To add / change a category, add the ID to the array
+                 for example: below 5 = body 4 = mind 6 = spirit
               */
-              $categories = [4, 5, 6];
+              $categories = [5, 4, 6];
 
               foreach ($categories as $one_category):
                 $query = new WP_Query( array (
