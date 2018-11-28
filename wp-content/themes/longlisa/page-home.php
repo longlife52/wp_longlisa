@@ -202,14 +202,14 @@ get_header(); ?>
 
         <!--start square two -->
         <div class="square_two grid_square_two fill">
-
+          <a href="<?php the_field('offering_image_link'); ?>" class="hvr-wobble-to-top-right">
           <?php
             $image = get_field('offering_image');
             if ( !empty($image)): ?>
               <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"/>
 
           <?php endif; ?>
-
+          </a>
         </div> <!-- close square two -->
 
         <!--start square three -->

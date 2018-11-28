@@ -143,12 +143,10 @@ get_header(); ?>
         //Vars
         $image = get_sub_field('image');
         $term = get_sub_field('category_name');
-        $taxonomy = 'category_name';
+        $taxonomy = 'category';
         $term_link = get_term_link($term, $taxonomy);
 
         if($term): ?>
-
-        <!-- I think I need a foreach call here.  I just don't know enough php to ouput it -->
 
         <div>
         <!-- start card one -->
@@ -158,7 +156,7 @@ get_header(); ?>
 
                 <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
 
-                <p class="icon_text_color blog_category_title"><?php echo $term->slug; ?></p>
+                <p class="icon_text_color blog_category_title"><?php echo $term->name; ?></p>
             </div>
         </a>
       <?php endif; ?>
