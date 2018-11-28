@@ -87,3 +87,15 @@ a {
 .bypostauthor {
 
 }
+
+.post-categories {
+  padding-left: 0;
+
+  li {
+      list-style-type: none;
+
+      a {
+        color: #6b91a1;
+      }
+  }
+}

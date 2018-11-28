@@ -71,6 +71,13 @@ a img.aligncenter {
   margin: 0;
   padding: 0 4px 5px; }
 
+.post-categories {
+  padding-left: 0; }
+  .post-categories li {
+    list-style-type: none; }
+    .post-categories li a {
+      color: #6b91a1; }
+
 /*------------------------------------*\
     #GRID-SETTINGS
 \*------------------------------------*/
