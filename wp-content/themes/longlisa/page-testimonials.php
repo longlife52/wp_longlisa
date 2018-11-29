@@ -138,48 +138,9 @@ get_header(); ?>
   <?php get_template_part('partials/dots'); ?>
 </div>
 
-<!-- start 3 ICON/class cards -->
-<section class="class_preview_wrapper icon_card_wrapper">
-    <h3 class="icon_text_color">Fully Present</h3>
-    <div class="sub_title_para">
-        <p class="icon_text_color">Read more about the reasons why you'll love working with Lisa Long.</p>
-    </div>
-        <!-- start ICON/class card wrapper -->
-        <div class="class-card-wrapper">
-            <!-- start card one -->
-            <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
-                <div class="icon_individual_card grow">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/brain.png">
-                    <p class="icon_text_color">Deepen your connection to body brain bridge.</p>
-                    <img>
-                </div>
-            </a>
-            <!-- end card one -->
-
-            <!-- start card two -->
-            <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
-                <div class="icon_individual_card grow">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/knee.png">
-                    <p class="icon_text_color">Understand your boney rhythms and fascial connections.</p>
-                    <img>
-                </div>
-            </a>
-            <!-- end card two -->
-
-            <!-- start card three -->
-            <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
-                <div class="icon_individual_card grow">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
-                    <p class="icon_text_color">Increase your energy through more efficient movement.</p>
-                    <img>
-                </div>
-            </a>
-            <!-- end card three -->
-    </div>
-    <!-- end ICON/class card wrapper -->
-</section>
-
-<!-- end 3 ICON/class cards -->
+<!-- start 3 ARTICLE ICON/class cards -->
+<?php get_template_part('partials/article_icon'); ?>
+<!-- end 3 ARTICLE ICON/class cards -->
 
 <!-- start the actual blog post; below is the sub header as an h3 -->
 <section>
