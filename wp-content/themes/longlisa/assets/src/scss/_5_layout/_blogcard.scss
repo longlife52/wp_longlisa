@@ -13,6 +13,18 @@
 
     p {
         font-size: 1.75em;
+
+        a {
+          color: $dark-blue;
+        }
+
+        .view-article {
+          color: $light-blue;
+
+          &:hover {
+            color: $red;
+          }
+        }
     }
 }
 

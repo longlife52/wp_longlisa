@@ -1020,6 +1020,12 @@ header {
     margin: 0; }
   .blog_preview p {
     font-size: 1.75em; }
+    .blog_preview p a {
+      color: #214a5b; }
+    .blog_preview p .view-article {
+      color: #92c5da; }
+      .blog_preview p .view-article:hover {
+        color: #9b4856; }
 
 /* 3 column  blog cards */
 .blog-card-wrapper,
