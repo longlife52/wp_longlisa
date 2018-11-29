@@ -5,35 +5,27 @@
         <p class="icon_text_color"><?php the_field('para'); ?></p>
     </div>
         <!-- start ICON/class card wrapper -->
+        <?php if(have_rows('article_card')): ?>
+
         <div class="class-card-wrapper">
+          <?php while(have_rows('article_card')): the_row();
+            //Vars
+            $image = get_sub_field('image');
+            $tagline = get_sub_field('tagline');
+            $link = get_sub_field('link');
+            ?>
             <!-- start card one -->
-            <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
+            <a href="<?php echo $link; ?>">
                 <div class="icon_individual_card grow">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/brain.png">
-                    <p class="icon_text_color">Get moving to help your brain.</p>
+                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                    <p class="icon_text_color"><?php echo $tagline; ?></p>
                 </div>
             </a>
             <!-- end card one -->
-
-            <!-- start card two -->
-            <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
-                <div class="icon_individual_card grow">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/knee.png">
-                    <p class="icon_text_color">Move to keep your joints healthy.</p>
-                </div>
-            </a>
-            <!-- end card two -->
-
-            <!-- start card three -->
-            <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
-                <div class="icon_individual_card grow">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
-                    <p class="icon_text_color">Keep moving for vibrancy.</p>
-                </div>
-            </a>
-            <!-- end card three -->
+          <?php endwhile; ?>
     </div>
     <!-- end ICON/class card wrapper -->
+  <?php endif; ?>
 </section>
 
 <!-- end 3 ICON/class cards -->

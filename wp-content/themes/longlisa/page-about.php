@@ -7,98 +7,60 @@ get_header(); ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 <!--start about Lisa -->
-        <section class="about_lisa bottom_edge_shadow">
-            <div class="about_wrapper about_background">
-                <div class="about_img_wrapper lisa_img_wrapper">
-                    <img class="about_page_img" src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_assist.png">
-                </div>
-                <!--
-                <div class="about_img_wrapper about_lisa">
-                -->
-                <div class="about_content_wrapper about_wrapper_space">
-                <div class="about_content  about_content_space">
-                    <h1><?php the_field('about_page_title'); ?></h1>
+  <section class="about_lisa bottom_edge_shadow">
+      <div class="about_wrapper about_background">
+          <div class="about_img_wrapper lisa_img_wrapper">
+              <img class="about_page_img" src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_assist.png">
+          </div>
+          <!--
+          <div class="about_img_wrapper about_lisa">
+          -->
+          <div class="about_content_wrapper about_wrapper_space">
+          <div class="about_content  about_content_space">
+              <h1><?php the_field('about_page_title'); ?></h1>
 
 <!-- START REPEATER LIST -->
-                    <?php if(have_rows('credentials_list')): ?>
-                    <ul>
-                      <?php while(have_rows('credentials_list')): the_row();
-                        //Vars
-                        $credential = get_sub_field('credential');
-                        ?>
-                        <li><?php echo $credential; ?></li>
-                      <?php endwhile; ?>
-                    </ul>
-                    <?php endif; ?>
+            <?php if(have_rows('credentials_list')): ?>
+            <ul>
+              <?php while(have_rows('credentials_list')): the_row();
+                //Vars
+                $credential = get_sub_field('credential');
+                ?>
+                <li><?php echo $credential; ?></li>
+              <?php endwhile; ?>
+            </ul>
+            <?php endif; ?>
 <!-- END REPEATER LIST -->
-                    <div class="button-box about_button_wrapper">
-                        <div class="btn_blue">
-                        <a href="#lisa_story"><p><?php the_field('credential_button_label'); ?></p></a>
-                        </div>
-                    </div>
+            <div class="button-box about_button_wrapper">
+                <div class="btn_blue">
+                <a href="#lisa_story"><p><?php the_field('credential_button_label'); ?></p></a>
                 </div>
-            </div> <!--close .about_content_wrapper -->
             </div>
-        </section>
-        <!-- end about Lisa -->
+        </div>
+    </div> <!--close .about_content_wrapper -->
+    </div>
+</section>
+<!-- end about Lisa -->
 
-        <!-- start community giving  -->
-                <section class="community_give">
+<!-- start community giving  -->
+  <section class="community_give">
 
-                  <?php get_template_part('partials/dots'); ?>
+    <?php get_template_part('partials/dots'); ?>
 
-                <h3><?php the_field('giving_title'); ?></h3>
-                <div class="community_give_description">
-                    <p><?php the_field('giving_para'); ?></p>
-                </div>
+  <h3><?php the_field('giving_title'); ?></h3>
+  <div class="community_give_description">
+      <p><?php the_field('giving_para'); ?></p>
+  </div>
 
-                  <?php get_template_part('partials/flip_card'); ?>
+    <?php get_template_part('partials/flip_card'); ?>
 
-                  <?php get_template_part('partials/dots'); ?>
+    <?php get_template_part('partials/dots'); ?>
 
-                </section> <!-- close community giving section -->
+  </section> <!-- close community giving section -->
 
+  <!-- start 3 ARTICLE ICON/class cards -->
   <?php get_template_part('partials/article_icon'); ?>
-
-        <!-- start 3 ARTICLE ICON/class cards -->
-        <section class="class_preview_wrapper icon_card_wrapper">
-            <h3 class="icon_text_color">Movement Helps</h3>
-            <div class="sub_title_para">
-                <p class="icon_text_color">Get the benefits and get moving, today! Enjoy the quality of a long life doing the things you love! All it takes is a personal resolve to feel better.</p>
-            </div>
-                <!-- start ICON/class card wrapper -->
-                <div class="class-card-wrapper">
-                    <!-- start card one -->
-                    <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
-                        <div class="icon_individual_card grow">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/brain.png">
-                            <p class="icon_text_color">Get moving to help your brain.</p>
-                        </div>
-                    </a>
-                    <!-- end card one -->
-
-                    <!-- start card two -->
-                    <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
-                        <div class="icon_individual_card grow">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/knee.png">
-                            <p class="icon_text_color">Move to keep your joints healthy.</p>
-                        </div>
-                    </a>
-                    <!-- end card two -->
-
-                    <!-- start card three -->
-                    <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
-                        <div class="icon_individual_card grow">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
-                            <p class="icon_text_color">Keep moving for vibrancy.</p>
-                        </div>
-                    </a>
-                    <!-- end card three -->
-            </div>
-            <!-- end ICON/class card wrapper -->
-        </section>
-
-        <!-- end 3 ICON/class cards -->
+  <!-- end 3 ARTICLE ICON/class cards -->
 
         <!-- start Lisa's story -->
         <section class="lisa_story" id="lisa_story">
@@ -172,36 +134,36 @@ get_header(); ?>
         </section>
         <!-- end Lisa's story -->
 
-        <!-- start large quote -->
-        <h3 class="large_quote"><?php the_field('cursive_quote'); ?></h3>
+<!-- start large quote -->
+<h3 class="large_quote"><?php the_field('cursive_quote'); ?></h3>
 
-        <!--end large quote -->
+<!--end large quote -->
 
-        <!-- start four square grid layout -->
-        <div class="four_square_wrapper two_square_wrapper">
-            <!-- open square two -->
-            <div class="grid_square_one square_two fill">
-                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_teach_four.jpg">
-            </div> <!-- close square two -->
+<!-- start four square grid layout -->
+<div class="four_square_wrapper two_square_wrapper">
+    <!-- open square two -->
+    <div class="grid_square_one square_two fill">
+        <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_teach_four.jpg">
+    </div> <!-- close square two -->
 
-            <!-- open square three -->
-            <div class="grid_square_two square_three testimonial_link">
-                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote.svg">
-                <a href="<?php the_field('testimonial_link'); ?>">
-                    <div class="square_testimonial_wrapper">
-                        <p class="square_testimonial"><?php the_field('testimonial_para'); ?></p>
-                        <p class="square_testimonial_name"><?php the_field('testimonial_name'); ?></p>
+    <!-- open square three -->
+    <div class="grid_square_two square_three testimonial_link">
+        <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote.svg">
+        <a href="<?php the_field('testimonial_link'); ?>">
+            <div class="square_testimonial_wrapper">
+                <p class="square_testimonial"><?php the_field('testimonial_para'); ?></p>
+                <p class="square_testimonial_name"><?php the_field('testimonial_name'); ?></p>
 
-                        <div class="btn_round hvr-wobble-to-top-right square_testimonial_button_align">
-                        <a href="<?php the_field('testimonial_link'); ?>"><p >read</p><p>more</p></a>
-                    </div>
+                <div class="btn_round hvr-wobble-to-top-right square_testimonial_button_align">
+                <a href="<?php the_field('testimonial_link'); ?>"><p >read</p><p>more</p></a>
+            </div>
 
-                </div> <!-- close .square_testimonial-->
-                </a>
-            </div> <!-- close square three -->
+        </div> <!-- close .square_testimonial-->
+        </a>
+    </div> <!-- close square three -->
 
-        </div> <!-- close .foursquarewrapper -->
-        <!--end four square grid layout -->
+</div> <!-- close .foursquarewrapper -->
+<!--end four square grid layout -->
 
 <?php endwhile; endif; ?>
 
