@@ -10,13 +10,13 @@ get_header(); ?>
         <section class="about_lisa bottom_edge_shadow">
             <div class="about_wrapper about_background">
                 <div class="about_img_wrapper lisa_img_wrapper">
-                    <img class="img_circle" src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_headshot.jpg">
+                    <img class="about_page_img" src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_assist.png">
                 </div>
                 <!--
                 <div class="about_img_wrapper about_lisa">
                 -->
                 <div class="about_content_wrapper about_wrapper_space">
-                <div class="about_content bottom_edge_shadow about_content_space">
+                <div class="about_content  about_content_space">
                     <h1>Lisa Long's Credentials</h1>
 
                     <ul>

@@ -7,8 +7,11 @@
 }
 
 .about_background {
+  /*
     background: url("../img/about_lisabkg.jpg");
+    */
     margin-bottom: 0;
+    background: $white;
 }
 
 .about_content {
@@ -177,7 +180,7 @@
     }
 
     .about_content_space {
-        margin-top: 8em;
+        margin-top: 2em;
         padding-right: 3em;
     }
 
@@ -202,6 +205,6 @@
     }
 
     .lisa_img_wrapper {
-        margin-left: 15em;
+        margin-left: 2em;
     }
 }

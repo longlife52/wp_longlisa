@@ -1244,6 +1244,10 @@ header {
   margin-bottom: 2em;
   margin-top: 2em; }
 
+.about_page_img {
+  width: 100%;
+  height: auto; }
+
 .img_circle {
   border-radius: 50%;
   border: 3px solid #f8fcff;
@@ -1912,8 +1916,11 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
   border-top: none; }
 
 .about_background {
-  background: url("../img/about_lisabkg.jpg");
-  margin-bottom: 0; }
+  /*
+    background: url("../img/about_lisabkg.jpg");
+    */
+  margin-bottom: 0;
+  background: #f8fcff; }
 
 .about_content h1 {
   font-size: 2em;
@@ -2024,7 +2031,7 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
     margin-top: 0;
     padding-top: 5em; }
   .about_content_space {
-    margin-top: 8em;
+    margin-top: 2em;
     padding-right: 3em; }
   .about_content h3 {
     font-size: 2.5em; }
@@ -2037,7 +2044,7 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
     margin-top: 5em;
     padding-right: 13em; }
   .lisa_img_wrapper {
-    margin-left: 15em; } }
+    margin-left: 2em; } }
 
 /* OFFERINGS PAGE STYLES */
 .offering_wrapper {
