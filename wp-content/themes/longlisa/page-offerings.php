@@ -30,6 +30,10 @@ get_header(); ?>
             <h1><?php the_field('billboard_offering_h_one'); ?></h1>
         </div>
     </section> <!-- close h1 area -->
+    
+    <div class="dots_hug_up dots_space_bottom">
+    <?php get_template_part('partials/dots'); ?>
+  </div>
 
     <!-- start offering tiles -->
     <section class="offering_tile_wrapper">

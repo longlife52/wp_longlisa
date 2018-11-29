@@ -1860,10 +1860,10 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
 .home_page_header {
   background: #34738e; }
   .home_page_header h1 {
-    max-width: 600px;
     color: #f8fcff;
     margin: 0 1em 0 1em;
-    padding-bottom: 2em; }
+    padding-bottom: 0;
+    font-size: 1.75em; }
 
 .home_title {
   display: -webkit-box;
@@ -1876,14 +1876,34 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
   -ms-flex-align: center;
   align-items: center; }
 
+.home_title_para {
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .home_title_para p {
+    color: #f8fcff;
+    max-width: 800px;
+    padding: 0 1.25em 2em 1.25em; }
+
 .offering_page_header h1 {
-  max-width: 600px;
   color: #214a5b;
   margin: 0 1em 0 1em;
   padding-bottom: 2em; }
 
 .blog_preview_space {
   margin-top: 5em; }
+
+@media (min-width: 800px) {
+  .home_page_header h1,
+  .home_title h1 {
+    font-size: 3em; } }
 
 /* ABOUT PAGE STYLES */
 .about_lisa {

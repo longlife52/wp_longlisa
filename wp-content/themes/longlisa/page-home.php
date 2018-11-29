@@ -17,7 +17,7 @@ get_header(); ?>
             <div class="center_text button-box">
                 <a href="<?php the_field('billboard_button_link'); ?>"><p class="ghost_button ghost_btn_white"><?php the_field('billboard_button_label'); ?></p></a>
             </div>
-            </div>
+        </div>
     </section> <!-- closes .billboard_blue_wrapper -->
 
     <section class="home_page_header">
@@ -39,6 +39,10 @@ get_header(); ?>
 
         <div class="home_title">
             <h1><?php the_field('billboard_h_one'); ?></h1>
+        </div>
+
+        <div class="home_title_para"> 
+          <p>Lisa Long teaches in Jacksonville, FL and offers retreats, trainings, and workshops nationally and internationally. </p>
         </div>
     </section>
 

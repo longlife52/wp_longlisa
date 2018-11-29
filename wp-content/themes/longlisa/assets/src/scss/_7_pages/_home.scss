@@ -2,10 +2,10 @@
     background: $main-blue;
 
     h1 {
-        max-width: 600px;
         color: $white;
         margin: 0 1em 0 1em;
-        padding-bottom: 2em;
+        padding-bottom: 0;
+        font-size: 1.75em;
     }
 }
 
@@ -15,10 +15,23 @@
     align-items: center;
 }
 
+.home_title_para {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  p {
+    color: $white;
+    max-width: 800px;
+    padding: 0 em(20px) 2em em(20px);
+  }
+}
+
 .offering_page_header {
 
     h1 {
-        max-width: 600px;
         color: $dark-blue;
         margin: 0 1em 0 1em;
         padding-bottom: 2em;
@@ -27,4 +40,15 @@
 
 .blog_preview_space {
     margin-top: 5em;
+}
+
+@include breakpoint (portrait-large) {
+
+    .home_page_header,
+    .home_title {
+
+      h1 {
+        font-size: 3em;
+      }
+    }
 }

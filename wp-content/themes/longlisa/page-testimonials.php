@@ -32,17 +32,23 @@ get_header(); ?>
 </section>
 <!-- end two grid splash -->
 
+
 <!-- start large quote -->
 <h3 class="large_quote large_quote_margin">life is really good </h3>
 <!--end large quote -->
 
+
 <section class="offering_page_header">
     <div class="home_title">
-        <h1>Enjoy reading more reviews and testimonials about Lisa Long.</h1>
+        <h1>Read more testimonials about Lisa Long.</h1>
     </div>
 </section>
 
-<!-- start staggered 4 square of testimonial quotes -->
+<div class="dots_hug_up dots_space_bottom">
+<?php get_template_part('partials/dots'); ?>
+</div>
+
+<!-- start staggered 5 square of testimonial quotes -->
 <section class="staggered_center">
 
     <!-- open staggered container -->
@@ -126,7 +132,7 @@ get_header(); ?>
     </div> <!-- close staggered containter -->
 
 </section>
-<!-- end staggered 4 square of testimonial quotes -->
+<!-- end staggered 5 square of testimonial quotes -->
 
 <div class="dots_hug_up dots_space_bottom">
   <?php get_template_part('partials/dots'); ?>
