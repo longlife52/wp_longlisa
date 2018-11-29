@@ -13,6 +13,8 @@
               </div>
           </section> <!-- closes .billboard_blue_wrapper -->
 
+          <?php get_template_part('partials/dots'); ?>
+
           <!-- start blog preview -->
           <section class="blog_preview">
                   <!-- start blog card wrapper -->
