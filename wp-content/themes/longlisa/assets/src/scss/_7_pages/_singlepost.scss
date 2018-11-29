@@ -46,6 +46,15 @@
         &:after {
             margin-left: em(5px);
         }
+
+        a {
+          color: $pale-grey-blue;
+          text-decoration: none;
+
+          &:hover {
+            color: $yellow;
+          }
+        }
     }
 
     h1 {

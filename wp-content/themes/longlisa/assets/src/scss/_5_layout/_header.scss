@@ -101,7 +101,8 @@ header {
         @include no-bullets;
 
     // style for highlight current page nav item
-        .highlight a {
+    //note: this is a wp defined class
+        .current-menu-item a {
             color: $yellow;
         }
 
