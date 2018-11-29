@@ -17,21 +17,23 @@ get_header(); ?>
                 -->
                 <div class="about_content_wrapper about_wrapper_space">
                 <div class="about_content  about_content_space">
-                    <h1>Lisa Long's Credentials</h1>
+                    <h1><?php the_field('about_page_title'); ?></h1>
 
+<!-- START REPEATER LIST -->
+                    <?php if(have_rows('credentials_list')): ?>
                     <ul>
-                        <li>C-IAYT Yoga Therapist </li>
-                        <li>Pilates Comprehensive Certified </li>
-                        <li>Ansuara Certified </li>
-                        <li>Franklin Method Educator</li>
-                        <li>YACEP, E-RYT 500 </li>
-                        <li>Body Balance Yoga Therapy Certified </li>
-                        <li>M.A., Mass Communications </li>
+                      <?php while(have_rows('credentials_list')): the_row();
+                        //Vars
+                        $credential = get_sub_field('credential');
+                        ?>
+                        <li><?php echo $credential; ?></li>
+                      <?php endwhile; ?>
                     </ul>
-
+                    <?php endif; ?>
+<!-- END REPEATER LIST -->
                     <div class="button-box about_button_wrapper">
                         <div class="btn_blue">
-                        <a href="#lisa_story"><p>Read My Story</p></a>
+                        <a href="#lisa_story"><p><?php the_field('credential_button_label'); ?></p></a>
                         </div>
                     </div>
                 </div>
@@ -45,9 +47,9 @@ get_header(); ?>
 
                   <?php get_template_part('partials/dots'); ?>
 
-                <h3>Giving Back to Our Community </h3>
+                <h3><?php the_field('giving_title'); ?></h3>
                 <div class="community_give_description">
-                    <p>Lisa regularly offers fundraisers and community support for non-profits in Jacksonville, FL. She remains grateful for everyone who shows up and generously gives to make each event successful. </p>
+                    <p><?php the_field('giving_para'); ?></p>
                 </div>
 
                   <?php get_template_part('partials/flip_card'); ?>
@@ -56,7 +58,9 @@ get_header(); ?>
 
                 </section> <!-- close community giving section -->
 
-        <!-- start 3 ICON/class cards -->
+  <?php get_template_part('partials/article_icon'); ?>
+
+        <!-- start 3 ARTICLE ICON/class cards -->
         <section class="class_preview_wrapper icon_card_wrapper">
             <h3 class="icon_text_color">Movement Helps</h3>
             <div class="sub_title_para">
@@ -69,7 +73,6 @@ get_header(); ?>
                         <div class="icon_individual_card grow">
                             <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/brain.png">
                             <p class="icon_text_color">Get moving to help your brain.</p>
-                            <img>
                         </div>
                     </a>
                     <!-- end card one -->
@@ -79,7 +82,6 @@ get_header(); ?>
                         <div class="icon_individual_card grow">
                             <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/knee.png">
                             <p class="icon_text_color">Move to keep your joints healthy.</p>
-                            <img>
                         </div>
                     </a>
                     <!-- end card two -->
@@ -89,7 +91,6 @@ get_header(); ?>
                         <div class="icon_individual_card grow">
                             <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
                             <p class="icon_text_color">Keep moving for vibrancy.</p>
-                            <img>
                         </div>
                     </a>
                     <!-- end card three -->
@@ -172,7 +173,7 @@ get_header(); ?>
         <!-- end Lisa's story -->
 
         <!-- start large quote -->
-        <h3 class="large_quote">experience the benefits of therapeutic movement </h3>
+        <h3 class="large_quote"><?php the_field('cursive_quote'); ?></h3>
 
         <!--end large quote -->
 
@@ -186,13 +187,13 @@ get_header(); ?>
             <!-- open square three -->
             <div class="grid_square_two square_three testimonial_link">
                 <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote.svg">
-                <a href="testimonials.html">
+                <a href="<?php the_field('testimonial_link'); ?>">
                     <div class="square_testimonial_wrapper">
-                        <p class="square_testimonial">Lisa Long is one of the most conscientious teachers. She helped me relieve pain and discover new ways to move. </p>
-                        <p class="square_testimonial_name">~Jack W.</p>
+                        <p class="square_testimonial"><?php the_field('testimonial_para'); ?></p>
+                        <p class="square_testimonial_name"><?php the_field('testimonial_name'); ?></p>
 
                         <div class="btn_round hvr-wobble-to-top-right square_testimonial_button_align">
-                        <a href="testimonials.html"><p >read</p><p>more</p></a>
+                        <a href="<?php the_field('testimonial_link'); ?>"><p >read</p><p>more</p></a>
                     </div>
 
                 </div> <!-- close .square_testimonial-->
