@@ -43,14 +43,7 @@ get_header(); ?>
         <!-- start community giving  -->
                 <section class="community_give">
 
-                <div class="dots">
-                    <div class="circle">
-                    </div>
-                    <div class="circle">
-                    </div>
-                    <div class="circle">
-                    </div>
-                </div>
+                  <?php get_template_part('partials/dots'); ?>
 
                 <h3>Giving Back to Our Community </h3>
                 <div class="community_give_description">
@@ -59,14 +52,7 @@ get_header(); ?>
 
                   <?php get_template_part('partials/flip_card'); ?>
 
-                    <div class="dots">
-                        <div class="circle">
-                        </div>
-                        <div class="circle">
-                        </div>
-                        <div class="circle">
-                        </div>
-                    </div>
+                  <?php get_template_part('partials/dots'); ?>
 
                 </section> <!-- close community giving section -->
 
