@@ -4,6 +4,8 @@ Template Name: About
 */
 get_header(); ?>
 
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
 <!--start about Lisa -->
         <section class="about_lisa bottom_edge_shadow">
             <div class="about_wrapper about_background">
@@ -54,96 +56,8 @@ get_header(); ?>
                 <div class="community_give_description">
                     <p>Lisa regularly offers fundraisers and community support for non-profits in Jacksonville, FL. She remains grateful for everyone who shows up and generously gives to make each event successful. </p>
                 </div>
-                <!-- start FLIP CARDS  -->
-                <div class="flex_flip_container">
-                  <!-- open flex_item ONE -->
-                    <div class="flex_item flip_one">
-                    	<div class="flex_item_inner">
-                        	<!-- card -->
-                        	<a href="singlepost.html">
-                                <div class="card-front bg-bright">
-                                  <div class="flip_img">
-                                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/brain.png">
-                                  </div>
-                                    <h4>BCK</h4>
-                                    <p class="detail">$60,000.00</p>
-                                </div>
-                                <div class="card-back bg-bright">
-                                    <h4 class="title">Beaches Community Kitchen</h4>
-                                    <p class="desc">donation based movement practices, a SUP raffle + a dinner/dance </p>
-                                    <p class="link">Details</p>
-                                </div>
-                            </a>
-                            <!-- /card -->
-                        </div> <!-- close flex_item_inner ONE -->
-                    </div> <!-- close flex_item ONE -->
 
-                    <!-- open flex_item TWO -->
-                      <div class="flex_item flip_two">
-                      	<div class="flex_item_inner">
-                          	<!-- card -->
-                          	<a href="singlepost.html">
-                                  <div class="card-front bg-dark">
-                                    <div class="flip_img">
-                                      <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
-                                    </div>
-                                      <h4>Mission House</h4>
-                                      <p class="detail">$3,000 + goods</p>
-                                  </div>
-                                  <div class="card-back bg-dark">
-                                      <h4 class="title">Mission House Jacksonville Beach</h4>
-                                      <p class="desc">donation based yoga practice + toiletries donations</p>
-                                      <p class="link">Details</p>
-                                  </div>
-                              </a>
-                              <!-- /card -->
-                          </div> <!-- close flex_item_inner TWO -->
-                      </div> <!-- close flex_item TWO -->
-
-                      <!-- open flex_item THREE -->
-                        <div class="flex_item flip_three">
-                        	<div class="flex_item_inner">
-                            	<!-- card -->
-                            	<a href="singlepost.html">
-                                    <div class="card-front bg-blue">
-                                      <div class="flip_img">
-                                        <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/knee.png">
-                                      </div>
-                                        <h4>VLSC</h4>
-                                        <p class="detail">$1,000.00</p>
-                                    </div>
-                                    <div class="card-back bg-blue">
-                                        <h4 class="title">Volunteer Life Saving Corps - Jacksonville Beach</h4>
-                                        <p class="desc">donation based yoga retreat</p>
-                                        <p class="link">Details</p>
-                                    </div>
-                                </a>
-                                <!-- /card -->
-                            </div> <!-- close flex_item_inner THREE -->
-                        </div> <!-- close flex_item THREE -->
-
-                        <!-- open flex_item FOUR -->
-                          <div class="flex_item flip_four">
-                          	<div class="flex_item_inner">
-                              	<!-- card -->
-                              	<a href="singlepost.html">
-                                      <div class="card-front bg-bright">
-                                        <div class="flip_img">
-                                          <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
-                                        </div>
-                                          <h4>BEAM</h4>
-                                          <p class="detail">$1,000.00 + goods</p>
-                                      </div>
-                                      <div class="card-back bg-bright">
-                                          <h4 class="title">Beaches Emergency Assistance Ministry</h4>
-                                          <p class="desc">Donation based breath workshop + canned goods donation drive</p>
-                                          <p class="link"> Details</p>
-                                      </div>
-                                  </a>
-                                  <!-- /card -->
-                              </div> <!-- close flex_item_inner FOUR -->
-                          </div> <!-- close flex_item FOUR -->
-                    </div> <!-- end FLIP CARDS -->
+                  <?php get_template_part('partials/flip_card'); ?>
 
                     <div class="dots">
                         <div class="circle">
@@ -302,5 +216,6 @@ get_header(); ?>
         </div> <!-- close .foursquarewrapper -->
         <!--end four square grid layout -->
 
+<?php endwhile; endif; ?>
 
 <?php get_footer(); ?>

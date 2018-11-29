@@ -163,7 +163,6 @@ get_header(); ?>
       </div>
         <!-- end card one -->
       <?php endwhile; ?>
-
 </div>
 <?php endif; ?>
 <!-- end ICON/class card wrapper -->
