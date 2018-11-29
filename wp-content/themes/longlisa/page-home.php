@@ -246,13 +246,8 @@ get_header(); ?>
     <h3 class="large_quote"><?php the_field('cursive_saying'); ?></h3>
     <!--end large quote -->
 
-    <div class="dots dots_hug_up">
-        <div class="circle">
-        </div>
-        <div class="circle">
-        </div>
-        <div class="circle">
-        </div>
+    <div class="dots_hug_up">
+      <?php get_template_part('partials/dots'); ?>
     </div>
 
     <!-- start FLIP CARDS -->
@@ -384,13 +379,8 @@ get_header(); ?>
             </section>
     <!-- end FLIP CARDS -->
 
-    <div class="dots dots_hug_up dots_space_bottom">
-        <div class="circle">
-        </div>
-        <div class="circle">
-        </div>
-        <div class="circle">
-        </div>
+    <div class="dots_hug_up dots_space_bottom">
+      <?php get_template_part('partials/dots'); ?>
     </div>
 
 

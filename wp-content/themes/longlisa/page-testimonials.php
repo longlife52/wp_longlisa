@@ -128,13 +128,8 @@ get_header(); ?>
 </section>
 <!-- end staggered 4 square of testimonial quotes -->
 
-<div class="dots dots_hug_up dots_space_bottom">
-    <div class="circle">
-    </div>
-    <div class="circle">
-    </div>
-    <div class="circle">
-    </div>
+<div class="dots_hug_up dots_space_bottom">
+  <?php get_template_part('partials/dots'); ?>
 </div>
 
 <!-- start 3 ICON/class cards -->
@@ -255,7 +250,7 @@ get_header(); ?>
 </div>
 <!-- end CTA button -->
 
-<!-- start staggered 4 square of testimonial quotes -->
+<!-- start staggered 5 square of testimonial quotes -->
         <section class="staggered_center">
 
             <!-- open staggered container -->
@@ -339,15 +334,10 @@ get_header(); ?>
             </div> <!-- close staggered containter -->
 
         </section>
-<!-- end staggered 4 square of testimonial quotes -->
+<!-- end staggered 5 square of testimonial quotes -->
 
-<div class="dots dots_hug_up dots_space_bottom">
-    <div class="circle">
-    </div>
-    <div class="circle">
-    </div>
-    <div class="circle">
-    </div>
+<div class="dots_hug_up dots_space_bottom">
+    <?php get_template_part('partials/dots'); ?>
 </div>
 
 <!-- picture bar -->
@@ -360,13 +350,8 @@ get_header(); ?>
 <h3 class="large_quote">experience the benefits of therapeutic movement </h3>
 <!--end large quote -->
 
-<div class="dots dots_hug_up">
-    <div class="circle">
-    </div>
-    <div class="circle">
-    </div>
-    <div class="circle">
-    </div>
+<div class="dots_hug_up">
+    <?php get_template_part('partials/dots'); ?>
 </div>
 
 <!-- start FLIP CARDS -->
@@ -461,13 +446,8 @@ get_header(); ?>
         </section>
 <!-- end FLIP CARDS -->
 
-<div class="dots dots_hug_up dots_space_bottom">
-    <div class="circle">
-    </div>
-    <div class="circle">
-    </div>
-    <div class="circle">
-    </div>
+<div class="dots_hug_up dots_space_bottom">
+    <?php get_template_part('partials/dots'); ?>
 </div>
 
 
