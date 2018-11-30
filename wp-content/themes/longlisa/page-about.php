@@ -58,12 +58,13 @@ get_header(); ?>
 
   </section> <!-- close community giving section -->
 
-  <!-- start 3 ARTICLE ICON/class cards -->
-  <?php get_template_part('partials/article_icon'); ?>
-  <!-- end 3 ARTICLE ICON/class cards -->
+<div id="lisa_story">
+<!-- put the flexible content in here so button at the top of this page works -->
+
+</div>
 
         <!-- start Lisa's story -->
-        <section class="lisa_story" id="lisa_story">
+        <section class="lisa_story">
             <div class="lisa_story_title">
                 <h3>We all have a story.</h3>
                 <h3 class="title_justify_right">Here's mine.</h3>
@@ -133,6 +134,10 @@ get_header(); ?>
             <!-- end CTA button -->
         </section>
         <!-- end Lisa's story -->
+
+<!-- start 3 ARTICLE ICON/class cards -->
+<?php get_template_part('partials/article_icon'); ?>
+<!-- end 3 ARTICLE ICON/class cards -->
 
 <!-- start large quote -->
 <h3 class="large_quote"><?php the_field('cursive_quote'); ?></h3>
