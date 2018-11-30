@@ -920,7 +920,6 @@ header {
 
 /* BILLBOARD */
 .billboard {
-  max-width: 775px;
   margin: auto;
   overflow: hidden; }
   .billboard h2 {
@@ -935,6 +934,7 @@ header {
     .billboard h2:first-of-type {
       padding-top: 0.5em; }
   .billboard p {
+    max-width: 780px;
     font-size: 1.375em;
     margin-top: 0; }
 
@@ -2322,8 +2322,6 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
 
 /* BREAKPOINTS for grid for individual listed classes and for the five grid pix/quote block */
 @media (min-width: 640px) {
-  .title_size_increase {
-    font-size: 8em; }
   .schedule_class_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -2385,9 +2383,11 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
     grid-column-end: 14;
     jusify-self: stretch; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 800px) {
   .title_size_increase {
-    font-size: 10em; }
+    font-size: 8em; } }
+
+@media (min-width: 1024px) {
   .schedule_class_wrapper {
     grid-template-rows: 364px;
     padding-bottom: 5em; }
@@ -2426,6 +2426,8 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
     padding-right: 0; } }
 
 @media (min-width: 1024px) {
+  .title_size_increase {
+    font-size: 10em; }
   .five {
     grid-gap: 1em 1em; }
   .five_item_two p {

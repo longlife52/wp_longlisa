@@ -150,37 +150,37 @@ get_header(); ?>
             <p class="class_card_text_align"><?php the_field('class_preview_copy'); ?></p>
         </div>
 
-            <!-- start REPEATER -class card wrapper -->
-            <?php if(have_rows('class_card')): ?>
+        <!-- start REPEATER -class card wrapper -->
+        <?php if(have_rows('class_card')): ?>
 
-            <div class="class-card-wrapper">
-              <?php while(have_rows('class_card')): the_row();
-                //Vars
-                $title = get_sub_field('class_card_title');
-                $image = get_sub_field('class_card_image');
-                $content = get_sub_field('class_card_copy');
-                $cta = get_sub_field('class_card_button_label');
-                $link = get_sub_field('class_card_button_link');
-                ?>
+        <div class="class-card-wrapper">
+          <?php while(have_rows('class_card')): the_row();
+            //Vars
+            $title = get_sub_field('class_card_title');
+            $image = get_sub_field('class_card_image');
+            $content = get_sub_field('class_card_copy');
+            $cta = get_sub_field('class_card_button_label');
+            $link = get_sub_field('class_card_button_link');
+            ?>
 
-                <!-- start card one -->
-                    <div class="class_type_wrapper align_bottom bottom_edge_shadow responsive_image">
-                        <a href="<?php echo $link; ?>">
-                            <h4><?php echo $title; ?></h4>
-                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"class="bottom_edge_shadow">
-                            <p class="class_card_text_align"><?php echo $content; ?></p>
+            <!-- start card one -->
+                <div class="class_type_wrapper align_bottom bottom_edge_shadow responsive_image">
+                    <a href="<?php echo $link; ?>">
+                        <h4><?php echo $title; ?></h4>
+                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"class="bottom_edge_shadow">
+                        <p class="class_card_text_align"><?php echo $content; ?></p>
 
-                            <div class="btn_yellow align_button_bottom">
-                                <a href="<?php echo $link; ?>"><p><?php echo $cta; ?></p></a>
-                            </div>
-                        </a>
-                    </div>
-                <!-- end card one -->
-              <?php endwhile; ?>
-        </div>
-        <?php endif; ?>
-        <!-- end class card wrapper -->
-    </section>
+                        <div class="btn_yellow align_button_bottom">
+                            <a href="<?php echo $link; ?>"><p><?php echo $cta; ?></p></a>
+                        </div>
+                    </a>
+                </div>
+            <!-- end card one -->
+          <?php endwhile; ?>
+    </div>
+    <?php endif; ?>
+    <!-- end class card wrapper -->
+</section>
     <!-- end 3 class cards -->
 
     <!-- start four square grid layout -->

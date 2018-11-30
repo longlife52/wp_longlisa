@@ -143,9 +143,6 @@
 /* BREAKPOINTS for grid for individual listed classes and for the five grid pix/quote block */
 
 @include breakpoint (small){
-    .title_size_increase {
-        font-size: 8em;
-    }
 
     .schedule_class_wrapper {
         display: grid;
@@ -229,11 +226,14 @@
     }
 }
 
-@include breakpoint (medium) {
+@include breakpoint (portrait-large) {
 
-    .title_size_increase {
-        font-size: 10em;;
-    }
+  .title_size_increase {
+      font-size: 8em;
+  }
+}
+
+@include breakpoint (medium) {
 
     .schedule_class_wrapper {
         grid-template-rows: 364px;
@@ -269,6 +269,11 @@
 }
 
 @include breakpoint (landscape) {
+
+    .title_size_increase {
+      font-size: 10em;;
+    }
+
     .five {
         grid-gap: em(16px) em(16px);
     }
