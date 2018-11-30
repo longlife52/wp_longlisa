@@ -101,7 +101,7 @@
         <!-- start card three -->
         <a href="/index.php?cat=6">
             <div class="icon_individual_card grow">
-                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
+                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/prayer.png">
                 <p class="icon_text_color blog_category_title">spiRit</p>
             </div>
         </a>
