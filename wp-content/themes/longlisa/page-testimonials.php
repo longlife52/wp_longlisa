@@ -48,6 +48,8 @@ get_header(); ?>
 <?php get_template_part('partials/dots'); ?>
 </div>
 
+<?php get_template_part('testimonials_five_block'); ?>
+
 <!-- start staggered 5 square of testimonial quotes -->
 <section class="staggered_center">
 
