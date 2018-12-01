@@ -148,7 +148,17 @@ get_header(); ?>
 <div class="four_square_wrapper two_square_wrapper">
     <!-- open square two -->
     <div class="grid_square_one square_two fill">
-        <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_teach_four.jpg">
+      <div class="grid_square_one square_two fill">
+        <?php
+
+        $image = get_field('testimonial_image');
+
+        if ( !empty($image) ): ?>
+
+          <img src="<?php echo $image['url']; ?> " alt="?php echo $image['alt']; ?>" />
+
+        <?php endif; ?>
+      </div>
     </div> <!-- close square two -->
 
     <!-- open square three -->
