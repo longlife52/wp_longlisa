@@ -21,11 +21,22 @@ get_header(); ?>
     </section> <!-- closes .billboard_blue_wrapper -->
 
     <section class="offering_page_header"> <!-- open h1 area -->
-        <!-- picture bar -->
-        <div class="picture_bar">
-            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/reverse_table.png">
-        </div>
-        <!--close picture bar -->
+      <!-- picture bar -->
+      <div class="picture_bar">
+
+        <?php
+
+        $image = get_field('billboard_img');
+
+        if ( !empty($image) ): ?>
+
+          <img src="<?php echo $image['url']; ?> " alt="?php echo $image['alt']; ?>" />
+
+        <?php endif; ?>
+
+      </div>
+      <!-- close picture bar -->
+
         <div class="home_title">
             <h1><?php the_field('billboard_offering_h_one'); ?></h1>
         </div>
@@ -57,8 +68,15 @@ get_header(); ?>
         </div>
 
         <div class="offering_tile_three fill">
+          <?php
 
-            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/garandasanaweb.png">
+          $image = get_field('tall_image');
+
+          if ( !empty($image) ): ?>
+
+            <img src="<?php echo $image['url']; ?> " alt="?php echo $image['alt']; ?>" />
+
+          <?php endif; ?>
         </div>
 
         <div class="offering_tile_four">
@@ -111,7 +129,15 @@ get_header(); ?>
     <div class="four_square_wrapper two_square_wrapper">
         <!--start square two -->
         <div class="grid_square_one square_two fill">
-            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_teach_four.jpg">
+          <?php
+
+          $image = get_field('testimonial_image_offering');
+
+          if ( !empty($image) ): ?>
+
+            <img src="<?php echo $image['url']; ?> " alt="?php echo $image['alt']; ?>" />
+
+          <?php endif; ?>
         </div> <!-- close square two -->
 
         <!--start square three -->
