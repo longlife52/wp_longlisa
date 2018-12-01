@@ -1,8 +1,8 @@
-<!-- start TESTIMONIAL FIVE BLOCK staggered 5 square of testimonial quotes THIS REPEATER BLOCK APPEARS AT THE TOP OF THE TESTIMONIAL PAGE -->
+<!-- this code drives the testimonial REPEATER at the BOTTOM of the testimonial page -->
 
-<?php if(have_rows('testimonial_five_block')): ?>
+<?php if(have_rows('testimonial_five_block_bottom')): ?>
 <div>
-<?php while(have_rows('testimonial_five_block')): the_row();
+<?php while(have_rows('testimonial_five_block_bottom')): the_row();
     //Vars
     $one_para = get_sub_field('testimonial_para_one');
     $one_name = get_sub_field('testimonial_name_one');
@@ -100,9 +100,8 @@
 
 </section>
   <?php endwhile; ?>
-
 </div>
-<?php endif; ?>
 
+<?php endif; ?>
 
 <!-- end staggered 5 square of testimonial quotes -->
