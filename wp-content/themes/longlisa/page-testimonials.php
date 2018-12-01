@@ -32,7 +32,6 @@ get_header(); ?>
 </section>
 <!-- end two grid splash -->
 
-
 <!-- start large quote -->
 <h3 class="large_quote large_quote_margin">life is really good </h3>
 <!--end large quote -->
@@ -48,92 +47,8 @@ get_header(); ?>
 <?php get_template_part('partials/dots'); ?>
 </div>
 
-<?php get_template_part('testimonials_five_block'); ?>
-
-<!-- start staggered 5 square of testimonial quotes -->
-<section class="staggered_center">
-
-    <!-- open staggered container -->
-    <div class="staggered staggered_max_width">
-
-        <!-- start staggered one -->
-        <div class="staggered_one staggered_all staggered_flex staggered_quote_pad">
-
-            <div class="staggered_content_box">
-                <div class="staggered_saying_quote">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote_circle.png">
-                </div>
-                <p class="staggered_quote_content">It's all been really good. I feel even better. You should try it too. Yout gotta roll with life and Lisa teaches you how to roll.</p>
-
-                <p class="staggered_testimonial_name">~Jon Smith</p>
-            </div>
-        </div>
-    <!-- end staggered one -->
-
-    <!-- start staggered two -->
-        <div class="staggered_two staggered_all staggered_flex staggered_quote_pad">
-
-            <div class="staggered_content_box">
-                <div class="staggered_saying_quote">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote_circle.png">
-                </div>
-
-                <p class="staggered_quote_content">I was so excited to let go of my pain.  I learned so much. Lisa does a great job of teaching. It's all been really good. I feel even better. You should try it too.</p>
-
-                <p class="staggered_testimonial_name">~Jon Smith</p>
-            </div>
-        </div>
-        <!-- end staggered two -->
-
-        <!-- start staggered three -->
-            <div class="staggered_three staggered_all staggered_flex staggered_quote_pad">
-
-                <div class="staggered_content_box">
-                    <div class="staggered_saying_quote">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote_circle.png">
-                    </div>
-
-                    <p class="staggered_quote_content">Life changed from the training that I took.  I help more people in more ways now. I can jump for joy. Every day, I leap out of bed to begin anew.  It's so fun. I was so excited to let go of my pain.  I learned so much. Lisa does a great job of teaching. It's all been really good. I feel even better. You should try it too.</p>
-
-                    <p class="staggered_testimonial_name">~Jon Smith</p>
-                </div>
-            </div>
-            <!-- end staggered three -->
-
-            <!-- start staggered four -->
-                <div class="staggered_four staggered_all staggered_flex staggered_quote_pad">
-
-                    <div class="staggered_content_box">
-                        <div class="staggered_saying_quote">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote_circle.png">
-                        </div>
-
-                        <p class="staggered_quote_content">Life changed from the training that I took.  I help more people in more ways now. I can jump for joy. Every day, I leap out of bed to begin anew.  It's so fun. I was so excited to let go of my pain.  I learned so much. Lisa does a great job of teaching. It's all been really good. I feel even better. You should try it too.</p>
-
-                        <p class="staggered_testimonial_name">~Jon Smith</p>
-                    </div>
-                </div>
-                <!-- end staggered four -->
-
-                <!-- start staggered five -->
-                    <div class="staggered_five staggered_all staggered_flex staggered_quote_pad">
-
-
-                        <div class="staggered_content_box">
-                            <div class="staggered_saying_quote">
-                                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote_circle.png">
-                            </div>
-
-                            <p class="staggered_quote_content">Life changed from the training that I took.  I help more people in more ways now. I can jump for joy. Every day, I leap out of bed to begin anew.  It's so fun. I was so excited to let go of my pain.  I learned so much. Lisa does a great job of teaching. It's all been really good. I feel even better. You should try it too.</p>
-
-                            <p class="staggered_testimonial_name">~Jon Smith</p>
-                        </div>
-                    </div>
-                    <!-- end staggered five -->
-
-    </div> <!-- close staggered containter -->
-
-</section>
+<!-- start TESTIMONIAL FIVE BLOCK staggered 5 square of testimonial quotes -->
+<?php get_template_part('partials/testimonial_five_block'); ?>
 <!-- end staggered 5 square of testimonial quotes -->
 
 <div class="dots_hug_up dots_space_bottom">
