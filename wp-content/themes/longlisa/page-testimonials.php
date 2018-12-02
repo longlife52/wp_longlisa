@@ -11,21 +11,30 @@ get_header(); ?>
             <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote_circle.png">
         </div>
 
-        <h3>What people are saying... </h3>
+        <h3><?php the_field('splash_testimonial_title'); ?></h3>
 
         <div class="testimonial_feature_content">
-            <p>loreum ipsum. life is really good. enjoy the moment. be sure to feel this experience. </p>
+            <p><?php the_field('splash_testimonial_para'); ?></p>
 
             <p>realize how life is so sweet.  even our difficulties teach us to just be.  learn to witness. </p>
         </div>
 
-        <p class="testimonial_name">~Jon Smith</p>
+        <p class="testimonial_name"><?php the_field('splash_testimonial_name'); ?></p>
     </div>
 
     <div class="two_grid_two">
         <div class="fitvids">
             <a href="#" class="js-video">
-                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/footer_video_thumbnail.jpg" data-video="http://www.youtube.com/embed/co6WMzDOh1o">
+              <?php
+
+              $image = get_field('splash_testimonial_image');
+
+              if ( !empty($image) ): ?>
+
+                <img src="<?php echo $image['url']; ?> " alt="?php echo $image['alt']; ?>" data-video="<?php the_field('splash_testimonial_link'); ?>"/>
+
+              <?php endif; ?>
+
             </a>
         </div>
     </div>
@@ -33,13 +42,13 @@ get_header(); ?>
 <!-- end two grid splash -->
 
 <!-- start large quote -->
-<h3 class="large_quote large_quote_margin">life is really good </h3>
+<h3 class="large_quote large_quote_margin"><?php the_field('splash_cursive_quote'); ?></h3>
 <!--end large quote -->
 
 
 <section class="offering_page_header">
     <div class="home_title">
-        <h1>Read more testimonials about Lisa Long.</h1>
+        <h1><?php the_field('splash_h_one'); ?></h1>
     </div>
 </section>
 
