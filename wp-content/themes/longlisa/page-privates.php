@@ -95,6 +95,8 @@ get_header(); ?>
     </section>
 <!-- end PRIVATE DETAILS -->
 
+<?php get_template_part('partials/article_icon'); ?>
+
     <!-- start large quote -->
     <h3 class="large_quote">experience the benefits of therapeutic movement </h3>
     <!--end large quote -->
@@ -111,53 +113,6 @@ get_header(); ?>
 <?php get_template_part('partials/dots'); ?>
 </div>
 
-<!-- start 3 ICON/class cards -->
-<section class="class_preview_wrapper icon_card_wrapper">
-    <h3 class="icon_text_color">Movement Helps</h3>
-    <div class="sub_title_para">
-        <p class="icon_text_color">Get the benefits and get moving, today! Enjoy the quality of a long life doing the things you love! All it takes is a personal resolve to feel better.</p>
-    </div>
-        <!-- start ICON/class card wrapper -->
-        <div class="class-card-wrapper">
-            <!-- start card one -->
-            <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
-                <div class="icon_individual_card grow">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/brain.png">
-                    <p class="icon_text_color">Get moving to help your brain.</p>
-                    <img>
-                </div>
-            </a>
-            <!-- end card one -->
-
-            <!-- start card two -->
-            <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
-                <div class="icon_individual_card grow">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/knee.png">
-                    <p class="icon_text_color">Move to keep your joints healthy.</p>
-                    <img>
-                </div>
-            </a>
-            <!-- end card two -->
-
-            <!-- start card three -->
-            <a href="https://youtu.be/zSt7k_q_qRU" target="blank">
-                <div class="icon_individual_card grow">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
-                    <p class="icon_text_color">Keep moving for vibrancy.</p>
-                    <img>
-                </div>
-            </a>
-            <!-- end card three -->
-    </div>
-    <!-- end ICON/class card wrapper -->
-</section>
-<!-- end 3 ICON/class cards -->
-
-<!-- picture bar -->
-    <div class="picture_bar">
-        <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/reverse_table.png">
-    </div>
-<!--close picture bar -->
 
 
 <?php get_footer(); ?>
