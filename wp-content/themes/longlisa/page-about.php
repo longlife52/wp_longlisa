@@ -141,44 +141,11 @@ get_header(); ?>
 
 <!-- start large quote -->
 <h3 class="large_quote"><?php the_field('cursive_quote'); ?></h3>
-
 <!--end large quote -->
 
-<!-- start four square grid layout -->
-<div class="four_square_wrapper two_square_wrapper">
-    <!-- open square two -->
-    <div class="grid_square_one square_two fill">
-      <div class="grid_square_one square_two fill">
-        <?php
-
-        $image = get_field('testimonial_image');
-
-        if ( !empty($image) ): ?>
-
-          <img src="<?php echo $image['url']; ?> " alt="?php echo $image['alt']; ?>" />
-
-        <?php endif; ?>
-      </div>
-    </div> <!-- close square two -->
-
-    <!-- open square three -->
-    <div class="grid_square_two square_three testimonial_link">
-        <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote.svg">
-        <a href="<?php the_field('testimonial_link'); ?>">
-            <div class="square_testimonial_wrapper">
-                <p class="square_testimonial"><?php the_field('testimonial_para'); ?></p>
-                <p class="square_testimonial_name"><?php the_field('testimonial_name'); ?></p>
-
-                <div class="btn_round hvr-wobble-to-top-right square_testimonial_button_align">
-                <a href="<?php the_field('testimonial_link'); ?>"><p >read</p><p>more</p></a>
-            </div>
-
-        </div> <!-- close .square_testimonial-->
-        </a>
-    </div> <!-- close square three -->
-
-</div> <!-- close .foursquarewrapper -->
-<!--end four square grid layout -->
+<!-- start TESTIMONIAL TWO BLOCK  -->
+<?php get_template_part('partials/testimonial_two_block'); ?>
+<!-- end TESTIMONIAL TWO BLOCK  -->
 
 <?php endwhile; endif; ?>
 

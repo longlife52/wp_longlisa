@@ -336,31 +336,9 @@ get_header(); ?>
     <h3 class="large_quote">We become what we repeatedly do. Choose well. </h3>
     <!--end large quote -->
 
-    <!-- start four square grid layout -->
-    <div class="four_square_wrapper two_square_wrapper">
-
-        <!--start square two -->
-        <div class="grid_square_one square_two fill">
-            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_teach_four.jpg">
-        </div> <!-- close square two -->
-
-        <!--start square three -->
-        <div class="grid_square_two square_three testimonial_link">
-            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote.svg">
-            <a href="testimonials.html">
-                <div class="square_testimonial_wrapper">
-                    <p class="square_testimonial">You will learn so much! Lisa Long has a gift for teaching you how your body works. </p>
-                    <p class="square_testimonial_name">~Darla P.</p>
-
-                    <div class="btn_round hvr-wobble-to-top-right square_testimonial_button_align">
-                        <a href="testimonials.html"><p >read</p><p>more</p></a>
-                    </div>
-                </div> <!-- close .square_testimonial-->
-            </a>
-        </div> <!-- close square three -->
-    </div> <!-- close .foursquarewrapper -->
-    <!--end four square grid layout -->
-
+<!-- start TESTIMONIAL TWO BLOCK  -->
+<?php get_template_part('partials/testimonial_two_block'); ?>
+<!-- end TESTIMONIAL TWO BLOCK  -->
 
 <!-- start BLOG CATEGORIES 3 ICON/class cards -->
 <?php get_template_part('partials/category_preview'); ?>

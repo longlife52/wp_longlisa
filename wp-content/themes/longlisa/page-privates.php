@@ -21,30 +21,9 @@ get_header(); ?>
         </div>
     </section> <!-- closes .billboard_blue_wrapper -->
 
-    <!-- start  TESTIMONIAL four square grid layout -->
-    <div class="four_square_wrapper two_square_wrapper">
-        <!-- open square two -->
-        <div class="grid_square_one square_two fill">
-            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_teach_four.jpg">
-        </div> <!-- close square two -->
-
-        <!-- open square three -->
-        <div class="grid_square_two square_three testimonial_link">
-            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/quote.svg">
-            <a href="testimonials.html">
-                <div class="square_testimonial_wrapper">
-                    <p class="square_testimonial">Lisa Long is one of the most conscientious teachers. She helped me relieve pain and discover new ways to move. </p>
-                    <p class="square_testimonial_name">~Jack W.</p>
-
-                    <div class="btn_round hvr-wobble-to-top-right square_testimonial_button_align">
-                        <a href="testimonials.html"><p >read</p><p>more</p></a>
-                    </div>
-                </div> <!-- close .square_testimonial-->
-            </a>
-        </div> <!-- close square three -->
-
-    </div> <!-- close .foursquarewrapper -->
-    <!--end TESTIMONIAL four square grid layout -->
+<!-- start TESTIMONIAL TWO BLOCK  -->
+<?php get_template_part('partials/testimonial_two_block'); ?>
+<!-- end TESTIMONIAL TWO BLOCK  -->
 
     <!-- start PRIVATE DETAILS  -->
     <section class="lisa_story" id="lisa_story">
@@ -120,117 +99,17 @@ get_header(); ?>
     <h3 class="large_quote">experience the benefits of therapeutic movement </h3>
     <!--end large quote -->
 
-    <div class="dots dots_hug_up">
-        <div class="circle">
-        </div>
-        <div class="circle">
-        </div>
-        <div class="circle">
-        </div>
-    </div>
+<div class="dots dots_hug_up">
+<?php get_template_part('partials/dots'); ?>
+</div>
 
+<!-- start FLIP CARDS -->
+<?php get_template_part('partials/flip_card'); ?>
+<!-- end FLIP CARDS -->
 
-    <!-- start FLIP CARDS -->
-            <section class="flex_flip_container">
-              <!-- open flex_item ONE -->
-                <div class="flex_item flip_one">
-                  <div class="flex_item_inner">
-                      <!-- card -->
-                      <a href="singlepost.html">
-                            <div class="card-front bg-bright">
-                              <div class="flip_img">
-                                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/brain.png">
-                              </div>
-                                <h4>Improve Posture</h4>
-                                <p class="detail">today</p>
-                            </div>
-                            <div class="card-back bg-bright">
-                                <p class="title">Lorem ipsum dolor sit amet</p>
-                                <p class="desc">Pellentesque magna nunc, fermentum nec ipsum non, </p>
-                                <p class="link">Details</p>
-                            </div>
-                        </a>
-                        <!-- /card -->
-                    </div> <!-- close flex_item_inner ONE -->
-                </div> <!-- close flex_item ONE -->
-
-                <!-- open flex_item TWO -->
-                  <div class="flex_item flip_two">
-                    <div class="flex_item_inner">
-                        <!-- card -->
-                        <a href="singlepost.html">
-                              <div class="card-front bg-dark">
-                                <div class="flip_img">
-                                  <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
-                                </div>
-                                  <h4>Sleep Better</h4>
-                                  <p class="detail">tonight</p>
-                              </div>
-                              <div class="card-back bg-dark">
-                                  <p class="title">Lorem ipsum dolor sit amet</p>
-                                  <p class="desc">Pellentesque magna nunc</p>
-                                  <p class="link">Details</p>
-                              </div>
-                          </a>
-                          <!-- /card -->
-                      </div> <!-- close flex_item_inner TWO -->
-                  </div> <!-- close flex_item TWO -->
-
-                  <!-- open flex_item THREE -->
-                    <div class="flex_item flip_three">
-                      <div class="flex_item_inner">
-                          <!-- card -->
-                          <a href="singlepost.html">
-                                <div class="card-front bg-blue">
-                                  <div class="flip_img">
-                                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/knee.png">
-                                  </div>
-                                    <h4>Increase Vitality</h4>
-                                    <p class="detail">now</p>
-                                </div>
-                                <div class="card-back bg-blue">
-                                    <p class="title">Lorem ipsum dolor sit amet</p>
-                                    <p class="desc">Pellentesque magna nunc, fermentum nec ipsum non, consequat scelerisque dui.</p>
-                                    <p class="link">Details</p>
-                                </div>
-                            </a>
-                            <!-- /card -->
-                        </div> <!-- close flex_item_inner THREE -->
-                    </div> <!-- close flex_item THREE -->
-
-                    <!-- open flex_item FOUR -->
-                      <div class="flex_item flip_four">
-                        <div class="flex_item_inner">
-                            <!-- card -->
-                            <a href="singlepost.html">
-                                  <div class="card-front bg-bright">
-                                    <div class="flip_img">
-                                      <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/power.png">
-                                    </div>
-                                      <h4>Relieve Stress</h4>
-                                      <p class="detail">fast</p>
-                                  </div>
-                                  <div class="card-back bg-bright">
-                                      <p class="title">Lorem ipsum dolor sit amet</p>
-                                      <p class="desc">Pellentesque magna nunc, fermentum nec ipsum non, consequat scelerisque dui.</p>
-                                      <p class="link"> Details</p>
-                                  </div>
-                              </a>
-                              <!-- /card -->
-                          </div> <!-- close flex_item_inner FOUR -->
-                      </div> <!-- close flex_item FOUR -->
-
-            </section>
-    <!-- end FLIP CARDS -->
-
-    <div class="dots dots_hug_up dots_space_bottom">
-        <div class="circle">
-        </div>
-        <div class="circle">
-        </div>
-        <div class="circle">
-        </div>
-    </div>
+<div class="dots dots_hug_up dots_space_bottom">
+<?php get_template_part('partials/dots'); ?>
+</div>
 
 <!-- start 3 ICON/class cards -->
 <section class="class_preview_wrapper icon_card_wrapper">
