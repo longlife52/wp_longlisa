@@ -7,7 +7,7 @@ get_header(); ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 <!--start about Lisa -->
-  <section class="about_lisa bottom_edge_shadow">
+  <section class="about_lisa">
       <div class="about_wrapper about_background">
           <div class="about_img_wrapper lisa_img_wrapper">
               <img class="about_page_img" src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_assist.png">
@@ -41,6 +41,14 @@ get_header(); ?>
     </div>
 </section>
 <!-- end about Lisa -->
+
+<!-- start large quote -->
+<h3 class="large_quote"><?php the_field('cursive_quote'); ?></h3>
+<!--end large quote -->
+
+<!-- start TESTIMONIAL TWO BLOCK  -->
+<?php get_template_part('partials/testimonial_two_block'); ?>
+<!-- end TESTIMONIAL TWO BLOCK  -->
 
 <!-- start community giving  -->
   <section class="community_give">
@@ -138,14 +146,6 @@ get_header(); ?>
 <!-- start 3 ARTICLE ICON/class cards -->
 <?php get_template_part('partials/article_icon'); ?>
 <!-- end 3 ARTICLE ICON/class cards -->
-
-<!-- start large quote -->
-<h3 class="large_quote"><?php the_field('cursive_quote'); ?></h3>
-<!--end large quote -->
-
-<!-- start TESTIMONIAL TWO BLOCK  -->
-<?php get_template_part('partials/testimonial_two_block'); ?>
-<!-- end TESTIMONIAL TWO BLOCK  -->
 
 <?php endwhile; endif; ?>
 
