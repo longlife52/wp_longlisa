@@ -984,7 +984,8 @@ header {
   line-height: 0.40em; }
 
 .billboard_para {
-  margin-top: 3em; }
+  margin-top: 3em;
+  text-align: left; }
 
 @media (min-width: 640px) {
   .billboard p {

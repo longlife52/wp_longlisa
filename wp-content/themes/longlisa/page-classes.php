@@ -4,18 +4,7 @@ Template Name: Classes
 */
 get_header(); ?>
 
-<!-- BILL BOARD -->
-<section class="billboard_blue_wrapper offering_wrapper">
-    <div class="billboard center_text offering_billboard title_space title_nospace">
-        <div class="title_line">
-            <h2 class="offering_title_small">dive deep in a</h2>
-        </div>
-        <h2 class="offering_title_big title_uppercase title_size_increase">TRAINING</h2>
-        <div class="billboard_para">
-            <p>Start feeling better. The regularity and synergy of a group class will keep you motivated!</p>
-        </div>
-    </div>
-</section> <!-- closes .billboard_blue_wrapper -->
+<?php get_template_part('partials/billboard'); ?>
 
 <!-- start 3 class cards -->
 <section class="class_preview_wrapper">
