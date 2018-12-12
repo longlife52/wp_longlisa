@@ -6,54 +6,7 @@ get_header(); ?>
 
 <?php get_template_part('partials/billboard'); ?>
 
-<!-- start 3 class cards -->
-<section class="class_preview_wrapper">
-        <!-- start class card wrapper -->
-        <div class="class-card-wrapper">
-            <!-- start card one -->
-
-                <div class="class_type_wrapper align_bottom bottom_edge_shadow responsive_image">
-                    <a href="#yoga_classes">
-                        <h4>Therapeutic Yoga</h4>
-                        <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/four_twist.jpg" class="bottom_edge_shadow">
-
-                        <div class="btn_yellow align_button_bottom">
-                            <a href="#yoga_classes"><p>see schedule</p></a>
-                        </div>
-                    </a>
-                </div>
-            <!-- end card one -->
-
-            <!-- start card two -->
-            <div class="class_type_wrapper align_bottom bottom_edge_shadow responsive_image">
-                <a href="#pilates_classes">
-                    <h4>Pilates for Resiliency</h4>
-                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/teaser.jpg" class="bottom_edge_shadow">
-
-                    <div class="btn_yellow align_button_bottom">
-                        <a href="#pilates_classes"><p>see schedule</p></a>
-                    </div>
-                </a>
-            </div>
-            <!-- end card two -->
-
-            <!-- start card three -->
-            <div class="class_type_wrapper align_bottom bottom_edge_shadow responsive_image">
-                <a href="#fm_classes">
-                    <h4>Franklin Method</h4>
-                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/bbi_pilates.jpg" class="bottom_edge_shadow">
-
-                    <div class="btn_yellow align_button_bottom">
-                        <a href="#fm_classes"><p>see schedule</p></a>
-                    </div>
-                </a>
-            </div>
-            <!-- end card three -->
-    </div>
-    <!-- end class card wrapper -->
-</section>
-
-<!-- end 3 class cards -->
+<?php get_template_part('partials/link_card'); ?>
 
 <section class="home_page_header">
     <!-- picture bar -->

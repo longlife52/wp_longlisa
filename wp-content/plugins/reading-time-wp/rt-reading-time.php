@@ -7,7 +7,7 @@
  * Plugin Name: Reading Time WP
  * Plugin URI: https://jasonyingling.me/reading-time-wp/
  * Description: Add an estimated reading time to your posts.
- * Version: 2.0.1
+ * Version: 2.0.2
  * Author: Jason Yingling
  * Author URI: https://jasonyingling.me
  * License: GPL2
@@ -60,6 +60,8 @@ class Reading_Time_WP {
 	 * @since 1.0.0
 	 */
 	public function __construct() {
+		load_plugin_textdomain( 'reading-time-wp', false, basename( dirname( __FILE__ ) ) . '/languages/' );
+
 		$default_settings = array(
 			'label'              => __( 'Reading Time: ', 'reading-time-wp' ),
 			'postfix'            => __( 'minutes', 'reading-time-wp' ),
@@ -125,7 +127,7 @@ class Reading_Time_WP {
 		}
 
 		$rt_content = wp_strip_all_tags( $rt_content );
-		$word_count = str_word_count( $rt_content );
+		$word_count = count( preg_split( '/\s+/', $rt_content ) );
 
 		if ( isset( $rt_options['exclude_images'] ) && ! $rt_options['exclude_images'] ) {
 			// Calculate additional time added to post by images.
