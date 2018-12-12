@@ -8,16 +8,7 @@ get_header(); ?>
 
 <?php get_template_part('partials/link_card'); ?>
 
-<section class="home_page_header">
-    <!-- picture bar -->
-    <div class="picture_bar">
-        <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/reverse_table.png">
-    </div>
-    <!--close picture bar -->
-    <div class="home_title">
-        <h1>Join us in a Yoga, Pilates, or Franklin Method class in Jacksonville, FL.</h1>
-    </div>
-</section>
+<?php get_template_part('partials/pix_header'); ?>
 
 <!-- start individual class lists -->
 <!-- start yoga classes -->
