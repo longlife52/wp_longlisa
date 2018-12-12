@@ -1880,6 +1880,8 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .home_title h1 {
+    margin-bottom: 1.25em; }
 
 .home_title_para {
   font-size: 1.5em;
