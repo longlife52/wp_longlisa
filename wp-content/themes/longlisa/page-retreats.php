@@ -8,7 +8,9 @@ get_header(); ?>
 
 <?php get_template_part('partials/pix_header'); ?>
 
-
+<!-- start large quote -->
+<?php get_template_part('partials/cursive_quote'); ?>
+<!--end large quote -->
 
 <!-- start TESTIMONIAL TWO BLOCK  -->
 <?php get_template_part('partials/testimonial_two_block'); ?>
