@@ -10,6 +10,8 @@ get_header(); ?>
 
 <?php get_template_part('partials/pix_header'); ?>
 
+<?php get_template_part('partials/event_section'); ?>
+
 <!-- start individual class lists -->
 <!-- start yoga classes -->
 <section class="class_preview_wrapper title_nospace title_line adjust_yellow_line" id="yoga_classes">

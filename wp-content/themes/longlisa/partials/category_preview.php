@@ -27,7 +27,7 @@
     <a href="<?php echo $term_link; ?>">
         <div class="icon_individual_card grow">
 
-            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>">
 
             <p class="icon_text_color blog_category_title"><?php echo $term[0]->name; ?></p>
         </div>

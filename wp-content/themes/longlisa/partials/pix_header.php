@@ -9,7 +9,7 @@
 
       if ( !empty($image) ): ?>
 
-        <img src="<?php echo $image['url']; ?> " alt="?php echo $image['alt']; ?>" />
+        <img src="<?php echo $image['url']; ?> " alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"/>
 
       <?php endif; ?>
 
