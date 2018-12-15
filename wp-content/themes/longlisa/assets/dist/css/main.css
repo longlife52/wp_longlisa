@@ -2459,6 +2459,16 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
 
 /* SINGLE BLOG POST PAGE STYLES */
 /* note the contextual callouts using css grid are based on this article https://jonathan-harrell.com/contextual-asides-with-css-grid/*/
+.breadcrumb {
+  margin-top: 20px;
+  margin-left: 20px; }
+  .breadcrumb p {
+    color: #34738e; }
+    .breadcrumb p a {
+      color: #34738e; }
+      .breadcrumb p a:hover {
+        color: #dad445; }
+
 .blog_header_img img {
   height: auto;
   width: 100%;

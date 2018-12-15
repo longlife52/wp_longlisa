@@ -2,6 +2,25 @@
 
 /* note the contextual callouts using css grid are based on this article https://jonathan-harrell.com/contextual-asides-with-css-grid/*/
 
+// BREADCRUMB style -
+
+.breadcrumb {
+  margin-top: 20px;
+  margin-left: 20px;
+
+  p {
+    color: $main-blue;
+
+    a {
+      color: $main-blue;
+
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+}
+
 .blog_header_img {
 
     img {

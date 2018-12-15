@@ -25,6 +25,14 @@
       </div>
       <!-- /post category + title -->
 
+      <div class="breadcrumb">
+              <?php
+              if ( function_exists('yoast_breadcrumb') ) {
+                yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+              }
+              ?>
+      </div>
+
 <p class="blog_post_meta"><?php echo do_shortcode('[rt_reading_time label="" postfix="min"]'); ?> read | <?php the_date(); ?></p>
 
 <!-- start the actual blog post; below is the sub header as an h3 -->
