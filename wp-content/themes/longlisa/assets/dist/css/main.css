@@ -2372,7 +2372,12 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
     grid-row: 1;
     grid-column-start: 6;
     grid-column-end: 13;
-    jusify-self: stretch; }
+    jusify-self: stretch;
+    position: relative; }
+    .five_item_three img {
+      position: absolute;
+      bottom: 0;
+      right: 0; }
   .five_item_four {
     grid-row: 2;
     grid-column-start: 1;

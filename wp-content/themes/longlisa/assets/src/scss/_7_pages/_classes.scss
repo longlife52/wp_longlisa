@@ -205,6 +205,14 @@
         grid-column-start: 6;
         grid-column-end: 13;
         jusify-self: stretch;
+
+        position: relative;
+
+          img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+          }
     }
 
     .five_item_four {
