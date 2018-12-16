@@ -5,7 +5,6 @@ Template Name: Classes
 get_header(); ?>
 
 <!-- BREADCRUMBS -->
-<section class="breacrumb_position">
   <div class="breadcrumb_offering">
         <?php
         if ( function_exists('yoast_breadcrumb') ) {
@@ -13,7 +12,6 @@ get_header(); ?>
         }
         ?>
   </div>
-</section>
 <!-- CLOSE BREADCRUMBS -->
 
 <?php get_template_part('partials/billboard'); ?>

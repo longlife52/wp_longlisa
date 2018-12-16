@@ -1,5 +1,38 @@
 /* OFFERINGS PAGE STYLES */
 
+// sub NAV just for the offering page
+.nav_offering {
+  margin-top: em(110px);
+
+  ul {
+    display: grid;
+    grid-gap: em(5px);
+    padding-left: 0;
+    text-decoration: none;
+
+      a {
+        text-decoration: none;
+
+        li {
+          list-style: none;
+          font-family: $roboto;
+          font-size: em(20px);
+          text-align: center;
+          border-bottom: em(3px) solid $grey-blue;
+          color: $grey-blue;
+          padding-top: em(10px);
+          padding-bottom: em(10px);
+
+        &:hover {
+          background: $grey-blue;
+          color: $white;
+
+        }
+      }
+    }
+  }
+}
+
 //styles for billboard at top of page
 .offering_wrapper {
     background-color: $white;
@@ -13,6 +46,10 @@
         width: 100%;
         height: auto;
     }
+}
+
+.offering_page_billboard {
+
 }
 
 .offering_billboard {

@@ -6,9 +6,49 @@ get_header(); ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
+  <nav class="nav_offering">
+    <ul>
+      <a href="#">
+        <li>
+        Classes
+        </li>
+      </a>
+
+      <a href="#">
+        <li>
+        Workshops
+        </li>
+      </a>
+
+      <a href="#">
+        <li>
+        One-on-One
+        </li>
+      </a>
+
+      <a href="#">
+        <li>
+        Trainings
+        </li>
+      </a>
+
+      <a href="#">
+        <li>
+        Retreats
+        </li>
+      </a>
+
+      <a href="#">
+        <li>
+        Online
+        </li>
+      </a>
+    </ul>
+  </nav>
+
 <!-- BILL BOARD -->
     <section class="billboard_blue_wrapper offering_wrapper">
-        <div class="billboard center_text offering_billboard">
+        <div class="billboard center_text   ">
             <h2 class="offering_title_big"><?php the_field('billboard_title_first_line'); ?></h2>
             <div class="title_line">
                 <h2 class="offering_title_small no_pad"><?php the_field('billboard_title_second_line'); ?></h2>
