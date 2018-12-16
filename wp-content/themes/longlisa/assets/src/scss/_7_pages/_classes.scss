@@ -6,6 +6,7 @@
   margin-top: em(105px);
   background: $grey-blue;
   width: 100%;
+  z-index: map-get($zindex, header);
 
   p {
     color: $white;

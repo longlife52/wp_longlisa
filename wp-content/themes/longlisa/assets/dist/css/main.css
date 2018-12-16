@@ -2203,7 +2203,8 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
   position: fixed;
   margin-top: 6.5625em;
   background: #6b91a1;
-  width: 100%; }
+  width: 100%;
+  z-index: 9050; }
   .breadcrumb_offering p {
     color: #f8fcff;
     margin-left: 0.625em; }
