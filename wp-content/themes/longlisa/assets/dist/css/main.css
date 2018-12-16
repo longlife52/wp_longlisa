@@ -2231,8 +2231,14 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
     justify-self: stretch; } }
 
 @media (min-width: 900px) {
+  .billboard {
+    padding-top: 8em;
+    padding-bottom: 5em; }
   .nav_offering {
-    margin-top: 3.125em; }
+    margin-top: 3.75em;
+    position: fixed;
+    top: 0;
+    z-index: 9025; }
     .nav_offering .menu-item a:hover {
       color: #214a5b; }
     .nav_offering ul {
@@ -2478,8 +2484,7 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
     background: #e1e9ec; }
     .breadcrumb_offering p {
       margin-left: 1.25em;
-      color: #214a5b;
-      text-align: center; }
+      color: #214a5b; }
       .breadcrumb_offering p a {
         color: #214a5b; } }
 

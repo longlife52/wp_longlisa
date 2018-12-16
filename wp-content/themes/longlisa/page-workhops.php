@@ -5,7 +5,7 @@ Template Name: Workshops
 get_header(); ?>
 
 <!-- BREADCRUMBS -->
-  <div class="breadcrumb_offering">
+  <div class="breadcrumb_offering container">
         <?php
         if ( function_exists('yoast_breadcrumb') ) {
           yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );

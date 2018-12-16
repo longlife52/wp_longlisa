@@ -134,7 +134,7 @@ function html5blank_nav_offering()
 		'after'           => '',
 		'link_before'     => '',
 		'link_after'      => '',
-		'items_wrap'      => '<ul>%3$s</ul>',
+		'items_wrap'      => '%3$s',
 		'depth'           => 0,
 		'walker'          => ''
 		)

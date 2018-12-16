@@ -252,9 +252,18 @@
 
 @include breakpoint(smaller-screen) {
 
+  .billboard {
+      padding-top: 8em;
+      padding-bottom: 5em;
+
+  }
+
   // sub NAV just for the offering page
   .nav_offering {
-    margin-top: em(50px);
+    margin-top: em(60px);
+    position: fixed;
+    top: 0;
+    z-index: map-get($zindex, subheader);
 
     .menu-item {
       a {
