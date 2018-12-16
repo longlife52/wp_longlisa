@@ -4,31 +4,37 @@
 .nav_offering {
   margin-top: em(110px);
 
+.menu-item {
+  a {
+    color: $grey-blue;
+    text-decoration: none;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
   ul {
     display: flex;
     flex-direction: column;
     padding-left: 0;
 
-      a {
-        text-decoration: none;
+    li {
+      list-style: none;
+      font-family: $roboto;
+      font-size: em(20px);
+      text-align: center;
+      border-bottom: em(3px) solid $grey-blue;
+      color: $grey-blue;
+      padding-top: em(10px);
+      padding-bottom: em(10px);
 
-        li {
-          list-style: none;
-          font-family: $roboto;
-          font-size: em(20px);
-          text-align: center;
-          border-bottom: em(3px) solid $grey-blue;
-          color: $grey-blue;
-          padding-top: em(10px);
-          padding-bottom: em(10px);
-
-        &:hover {
-          background: $grey-blue;
-          color: $white;
-          transition: all 0.5s linear;
-
+      &:hover {
+        background: $grey-blue;
+        color: $white;
+        transition: all 0.5s linear;
         }
-      }
     }
   }
 }
@@ -250,13 +256,19 @@
   .nav_offering {
     margin-top: em(50px);
 
+    .menu-item {
+      a {
+        &:hover {
+          color: $dark-blue;
+        }
+      }
+    }
+
     ul {
         background: $light-grey-blue;
         padding-top: em(30px);
         display: flex;
         flex-direction: row;
-
-        a {
 
           li {
             text-align: left;
@@ -269,13 +281,11 @@
             margin-left: em(10px);
 
           &:hover {
-            color: $dark-blue;
             transition: all 0.5s linear;
             background: none;
 
           }
         }
-      }
     }
   }
 

@@ -2052,6 +2052,11 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
 /* OFFERINGS PAGE STYLES */
 .nav_offering {
   margin-top: 6.875em; }
+  .nav_offering .menu-item a {
+    color: #6b91a1;
+    text-decoration: none; }
+    .nav_offering .menu-item a:hover {
+      color: #f8fcff; }
   .nav_offering ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2061,23 +2066,21 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
     -ms-flex-direction: column;
     flex-direction: column;
     padding-left: 0; }
-    .nav_offering ul a {
-      text-decoration: none; }
-      .nav_offering ul a li {
-        list-style: none;
-        font-family: "Roboto Condensed", sans-serif;
-        font-size: 1.25em;
-        text-align: center;
-        border-bottom: 0.1875em solid #6b91a1;
-        color: #6b91a1;
-        padding-top: 0.625em;
-        padding-bottom: 0.625em; }
-        .nav_offering ul a li:hover {
-          background: #6b91a1;
-          color: #f8fcff;
-          -webkit-transition: all 0.5s linear;
-          -o-transition: all 0.5s linear;
-          transition: all 0.5s linear; }
+    .nav_offering ul li {
+      list-style: none;
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 1.25em;
+      text-align: center;
+      border-bottom: 0.1875em solid #6b91a1;
+      color: #6b91a1;
+      padding-top: 0.625em;
+      padding-bottom: 0.625em; }
+      .nav_offering ul li:hover {
+        background: #6b91a1;
+        color: #f8fcff;
+        -webkit-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        transition: all 0.5s linear; }
 
 .offering_wrapper {
   background-color: #f8fcff; }
@@ -2230,6 +2233,8 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
 @media (min-width: 900px) {
   .nav_offering {
     margin-top: 3.125em; }
+    .nav_offering .menu-item a:hover {
+      color: #214a5b; }
     .nav_offering ul {
       background: #e1e9ec;
       padding-top: 1.875em;
@@ -2240,7 +2245,7 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
       -webkit-box-direction: normal;
       -ms-flex-direction: row;
       flex-direction: row; }
-      .nav_offering ul a li {
+      .nav_offering ul li {
         text-align: left;
         border-bottom: none;
         padding-top: 0.3125em;
@@ -2249,8 +2254,7 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
         padding-right: 0.3125em;
         margin-right: 0.625em;
         margin-left: 0.625em; }
-        .nav_offering ul a li:hover {
-          color: #214a5b;
+        .nav_offering ul li:hover {
           -webkit-transition: all 0.5s linear;
           -o-transition: all 0.5s linear;
           transition: all 0.5s linear;
