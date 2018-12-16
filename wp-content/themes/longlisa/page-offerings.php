@@ -5,8 +5,10 @@ Template Name: Offerings
 get_header(); ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-
+  <nav class="nav_offering">
+    <?php html5blank_nav_offering(); ?>
+  </nav>
+<!--
   <nav class="nav_offering">
     <ul>
       <a href="#">
@@ -46,6 +48,7 @@ get_header(); ?>
       </a>
     </ul>
   </nav>
+-->
 
 <!-- BILL BOARD -->
   <section class="billboard_blue_wrapper offering_wrapper">

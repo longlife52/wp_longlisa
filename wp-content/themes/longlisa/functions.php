@@ -116,6 +116,31 @@ function html5blank_nav_footer()
 	);
 }
 
+// HTML5 Blank OFFERING SUB NAV navigation
+function html5blank_nav_offering()
+{
+	wp_nav_menu(
+	array(
+		'theme_location'  => 'offering-sub-nav',
+		'menu'            => '',
+		'container'       => 'div',
+		'container_class' => 'menu-{menu slug}-container',
+		'container_id'    => '',
+		'menu_class'      => 'menu',
+		'menu_id'         => '',
+		'echo'            => true,
+		'fallback_cb'     => 'wp_page_menu',
+		'before'          => '',
+		'after'           => '',
+		'link_before'     => '',
+		'link_after'      => '',
+		'items_wrap'      => '<ul>%3$s</ul>',
+		'depth'           => 0,
+		'walker'          => ''
+		)
+	);
+}
+
 // Load HTML5 Blank scripts (header.php)
 function html5blank_header_scripts()
 {
@@ -147,6 +172,7 @@ function register_html5_menu()
     register_nav_menus(array( // Using array to specify more menus if needed
         'header-menu' => __('Header Menu', 'html5blank'), // Main Navigation
         'footer-menu' => __('Footer Menu', 'html5blank'), // Footer Navigation
+        'offering-sub-nav' => __('Offering Sub Nav', 'html5blank'), // Offering Sub Navigation
     ));
 }
 
