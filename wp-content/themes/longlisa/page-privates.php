@@ -4,6 +4,16 @@ Template Name: Privates
 */
 get_header(); ?>
 
+<!-- BREADCRUMBS -->
+  <div class="breadcrumb_offering">
+        <?php
+        if ( function_exists('yoast_breadcrumb') ) {
+          yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+        }
+        ?>
+  </div>
+<!-- CLOSE BREADCRUMBS -->
+
 <!-- BILL BOARD -->
     <section class="billboard_blue_wrapper offering_wrapper">
         <div class="billboard center_text offering_billboard title_space title_nospace">

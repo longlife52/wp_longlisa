@@ -2199,8 +2199,21 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
     justify-self: stretch; } }
 
 /* CLASSES PAGE STYLES + INDIVDUAL OFFERINGS such as Retreats, Workshops, Trainings */
+.breadcrumb_offering {
+  position: fixed;
+  margin-top: 6.5625em;
+  background: #6b91a1;
+  width: 100%; }
+  .breadcrumb_offering p {
+    color: #f8fcff;
+    margin-left: 0.625em; }
+    .breadcrumb_offering p a {
+      color: #f8fcff; }
+      .breadcrumb_offering p a:hover {
+        color: #dad445; }
+
 .title_space {
-  padding-top: 5em; }
+  padding-top: 8em; }
 
 /* these styles create the line on either side of the first h2 of the title - taken from http://jessica-eldredge.com/2014/01/26/headings-with-lines/ */
 .title_line h2,
@@ -2394,6 +2407,13 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
 @media (min-width: 800px) {
   .title_size_increase {
     font-size: 8em; } }
+
+@media (min-width: 900px) {
+  .breadcrumb_offering {
+    position: fixed;
+    margin-top: 5em; }
+    .breadcrumb_offering p {
+      margin-left: 1.25em; } }
 
 @media (min-width: 1024px) {
   .schedule_class_wrapper {

@@ -4,6 +4,18 @@ Template Name: Classes
 */
 get_header(); ?>
 
+<!-- BREADCRUMBS -->
+<section class="breacrumb_position">
+  <div class="breadcrumb_offering">
+        <?php
+        if ( function_exists('yoast_breadcrumb') ) {
+          yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+        }
+        ?>
+  </div>
+</section>
+<!-- CLOSE BREADCRUMBS -->
+
 <?php get_template_part('partials/billboard'); ?>
 
 <?php get_template_part('partials/link_card'); ?>

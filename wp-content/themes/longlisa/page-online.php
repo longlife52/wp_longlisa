@@ -4,10 +4,19 @@ Template Name: Online
 */
 get_header(); ?>
 
+<!-- BREADCRUMBS -->
+  <div class="breadcrumb_offering">
+        <?php
+        if ( function_exists('yoast_breadcrumb') ) {
+          yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+        }
+        ?>
+  </div>
+<!-- CLOSE BREADCRUMBS -->
+
 <?php get_template_part('partials/billboard'); ?>
 
 <?php get_template_part('partials/pix_header'); ?>
-
 
 <!-- start large quote -->
 <?php get_template_part('partials/cursive_quote'); ?>

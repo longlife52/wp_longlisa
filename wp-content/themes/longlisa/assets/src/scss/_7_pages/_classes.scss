@@ -1,7 +1,28 @@
 /* CLASSES PAGE STYLES + INDIVDUAL OFFERINGS such as Retreats, Workshops, Trainings */
 
+// BREADCRUMB style
+.breadcrumb_offering {
+  position: fixed;
+  margin-top: em(105px);
+  background: $grey-blue;
+  width: 100%;
+
+  p {
+    color: $white;
+    margin-left: em(10px);
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+}
+
 .title_space {
-    padding-top: 5em;
+    padding-top: 8em;
 }
 
 /* these styles create the line on either side of the first h2 of the title - taken from http://jessica-eldredge.com/2014/01/26/headings-with-lines/ */
@@ -238,6 +259,19 @@
 
   .title_size_increase {
       font-size: 8em;
+  }
+}
+
+@include breakpoint (smaller-screen) {
+
+  // BREADCRUMB style
+  .breadcrumb_offering {
+    position: fixed;
+    margin-top: em(80px);
+
+    p {
+      margin-left: em(20px);
+    }
   }
 }
 
