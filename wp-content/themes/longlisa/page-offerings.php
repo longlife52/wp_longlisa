@@ -6,6 +6,7 @@ get_header(); ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
+
   <nav class="nav_offering">
     <ul>
       <a href="#">
@@ -47,17 +48,17 @@ get_header(); ?>
   </nav>
 
 <!-- BILL BOARD -->
-    <section class="billboard_blue_wrapper offering_wrapper">
-        <div class="billboard center_text   ">
-            <h2 class="offering_title_big"><?php the_field('billboard_title_first_line'); ?></h2>
-            <div class="title_line">
-                <h2 class="offering_title_small no_pad"><?php the_field('billboard_title_second_line'); ?></h2>
-            </div>
-            <div class="billboard_para">
-                <p><?php the_field('billboard_para'); ?></p>
-            </div>
-        </div>
-    </section> <!-- closes .billboard_blue_wrapper -->
+  <section class="billboard_blue_wrapper offering_wrapper">
+      <div class="billboard center_text   ">
+          <h2 class="offering_title_big"><?php the_field('billboard_title_first_line'); ?></h2>
+          <div class="title_line">
+              <h2 class="offering_title_small no_pad"><?php the_field('billboard_title_second_line'); ?></h2>
+          </div>
+          <div class="billboard_para">
+              <p><?php the_field('billboard_para'); ?></p>
+          </div>
+      </div>
+  </section> <!-- closes .billboard_blue_wrapper -->
 
     <section class="offering_page_header"> <!-- open h1 area -->
       <!-- picture bar -->

@@ -269,14 +269,25 @@
   .breadcrumb_offering {
     position: fixed;
     margin-top: em(80px);
+    background: $light-grey-blue;
 
     p {
       margin-left: em(20px);
+      color: $dark-blue;
+      text-align: center;
+
+      a {
+        color: $dark-blue;
+      }
     }
   }
 }
 
 @include breakpoint (medium) {
+
+  .breadcrumb_offering {
+    margin-top: em(70px);
+  }
 
     .schedule_class_wrapper {
         grid-template-rows: 364px;

@@ -2053,10 +2053,14 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
 .nav_offering {
   margin-top: 6.875em; }
   .nav_offering ul {
-    display: grid;
-    grid-gap: 0.3125em;
-    padding-left: 0;
-    text-decoration: none; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0; }
     .nav_offering ul a {
       text-decoration: none; }
       .nav_offering ul a li {
@@ -2070,7 +2074,10 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
         padding-bottom: 0.625em; }
         .nav_offering ul a li:hover {
           background: #6b91a1;
-          color: #f8fcff; }
+          color: #f8fcff;
+          -webkit-transition: all 0.5s linear;
+          -o-transition: all 0.5s linear;
+          transition: all 0.5s linear; }
 
 .offering_wrapper {
   background-color: #f8fcff; }
@@ -2219,6 +2226,35 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
     grid-column-end: 13;
     grid-row: 4;
     justify-self: stretch; } }
+
+@media (min-width: 900px) {
+  .nav_offering {
+    margin-top: 3.125em; }
+    .nav_offering ul {
+      background: #e1e9ec;
+      padding-top: 1.875em;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; }
+      .nav_offering ul a li {
+        text-align: left;
+        border-bottom: none;
+        padding-top: 0.3125em;
+        padding-bottom: 0.3125em;
+        padding-left: 0.3125em;
+        padding-right: 0.3125em;
+        margin-right: 0.625em;
+        margin-left: 0.625em; }
+        .nav_offering ul a li:hover {
+          color: #214a5b;
+          -webkit-transition: all 0.5s linear;
+          -o-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+          background: none; } }
 
 /* CLASSES PAGE STYLES + INDIVDUAL OFFERINGS such as Retreats, Workshops, Trainings */
 .breadcrumb_offering {
@@ -2434,11 +2470,18 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
 @media (min-width: 900px) {
   .breadcrumb_offering {
     position: fixed;
-    margin-top: 5em; }
+    margin-top: 5em;
+    background: #e1e9ec; }
     .breadcrumb_offering p {
-      margin-left: 1.25em; } }
+      margin-left: 1.25em;
+      color: #214a5b;
+      text-align: center; }
+      .breadcrumb_offering p a {
+        color: #214a5b; } }
 
 @media (min-width: 1024px) {
+  .breadcrumb_offering {
+    margin-top: 4.375em; }
   .schedule_class_wrapper {
     grid-template-rows: 364px;
     padding-bottom: 5em; }
