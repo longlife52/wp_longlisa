@@ -25,6 +25,7 @@
       </div>
       <!-- /post category + title -->
 
+<!-- BREADCRUMBS -->
       <div class="breadcrumb">
               <?php
               if ( function_exists('yoast_breadcrumb') ) {
@@ -32,6 +33,7 @@
               }
               ?>
       </div>
+<!-- CLOSE BREADCRUMBS -->
 
 <p class="blog_post_meta"><?php echo do_shortcode('[rt_reading_time label="" postfix="min"]'); ?> read | <?php the_date(); ?></p>
 
