@@ -14,10 +14,12 @@
 
     h1 {
         font-size:3em;
+        padding-bottom: 1em;
     }
 
     p {
         font-size: 1.5em;
+        padding-bottom: 3em;
 
     }
 }
@@ -26,4 +28,42 @@
   margin-bottom: -4em;
   padding-bottom: 4em;
   background: $main-blue;
+}
+
+.nf-form-wrap {
+  background: $pale-grey-blue;
+  padding: em(50px);
+}
+
+.nf-form-fields-required {
+  font-family: $roboto;
+  font-size: 1.5em;
+  color: $grey-blue;
+  padding-bottom: 1em;
+}
+
+.nf-form-content {
+  font-family: $roboto;
+  color: $dark-blue;
+  font-size: 2em;
+}
+
+.nf-element {
+  padding: em(20px);
+  font-size: 0.5em;
+  height: 5em;
+}
+
+#nf-field-4 {
+  display: block;
+  margin: auto;
+  font-size: em(18px);
+  background-color: $red;
+  color: $white;
+  padding: em(10px) 20% em(10px) 20%;
+}
+
+.nf-error-msg {
+  font-family: $roboto;
+  font-size: 1.5em;
 }
