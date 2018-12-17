@@ -2,7 +2,7 @@
 
 /* note the contextual callouts using css grid are based on this article https://jonathan-harrell.com/contextual-asides-with-css-grid/*/
 
-// BREADCRUMB style 
+// BREADCRUMB style
 .breadcrumb {
   margin-top: 20px;
   margin-left: 20px;
@@ -35,7 +35,7 @@
 .blog_post_header {
     background-color: $background-blue;
     border-bottom: 10px solid $yellow;
-    margin-top: -0.5em;
+    margin-top: 6em;
 
     p {
         display: flex;
@@ -281,6 +281,12 @@
     .blog_author_details {
         padding-top: 2em;
     }
+}
+
+@include breakpoint (smaller-screen) {
+  .blog_post_header {
+    margin-top: 4em;
+  }
 }
 
 @include breakpoint (landscape) {
