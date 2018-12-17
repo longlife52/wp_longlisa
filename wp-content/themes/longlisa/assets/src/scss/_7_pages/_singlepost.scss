@@ -282,9 +282,8 @@
 }
 
 @include breakpoint (landscape) {
-    .blog_post_header {
-    }
 
+/*
     .blog_post_subtitle {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -295,7 +294,7 @@
             grid-column-end: span 6;
         }
     }
-
+*/
     .blog_post_content {
             display: grid;
             grid-template-columns:  repeat(12, 1fr);
@@ -308,9 +307,6 @@
                 padding-left: 0;
             }
 
-            h2 {
-
-            }
 
             ol,
             ul {

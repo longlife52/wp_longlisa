@@ -37,62 +37,11 @@
 
 <p class="blog_post_meta"><?php echo do_shortcode('[rt_reading_time label="" postfix="min"]'); ?> read | <?php the_date(); ?></p>
 
+
 <!-- start the actual blog post; below is the sub header as an h3 -->
-        <article>
-            <div class="lisa_story_title blog_post_subtitle">
-                <h3>Still Trying Hard</h3>
-                <h3>and not getting it</h3>
-            </div>
-
-            <div class="lisa_story_para blog_post_content">
-                <p>lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life. it has been challenging. it has been invigorating.
-                </p>
-
-                <p>lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life. <a href="index.html">it's been a great life. </a>  it's been a great life.  it has been challenging. it has been invigorating.
-                </p>
-
-                <figure>
-                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/reverse_table.png" />
-
-                    <figcaption>Let's see how this caption works for an image. Testing a really long caption, too. Let's see how it handles a second line <a href="www.garrisonridge.com" target="blank">with a hyperlink.</a> </figcaption>
-                </figure>
-
-                <h2>Sub Headers Break Things Up</h2>
-                <p>how does this paragraph work with the aside? the aside above works with this paragraph. lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating.
-                </p>
-
-                <ul class="lisa_story_ul">
-                    <li>Great thing one.
-                    </li>
-                    <li>Great thing two. Checking to see what happens when my list is longer than line.  Just how does it go?
-                    </li>
-                    <li>Really awesome thing three.
-                    </li>
-                </ul>
-
-                <aside>
-                    <h6>Let's see what this aside call out does, too, <a href="index.html" >with a hyperlink.</a> </h6>
-                </aside>
-
-                <p>lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating.
-                </p>
-
-                <ol class="lisa_story_ol">
-                    <li>Life is good.
-                    </li>
-                    <li>Travel is fun. Checking to see what happens when my list is longer than line.  Just how does it go?
-                    </li>
-                    <li>Relax and feel joy.
-                    </li>
-                </ol>
-
-                <aside>
-                    <h6>Let's see what this aside call out does, too. </h6>
-                </aside>
-
-                <p>lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating.
-                </p>
-            </div><!-- end blog_post_content -->
+        <article class="content_grid content_editor">
+              	<?php the_content(); // Dynamic Content ?>
+<!-- end blog_post_content -->
         </article>
 
 <!-- start blog author area -->
@@ -125,7 +74,7 @@
 			<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
 			<!-- /post details -->
 
-			<?php the_content(); // Dynamic Content ?>
+
 
       <!-- related blog posts links TO OTHER BLOG ARTICLES by category -->
 <section class="blog_preview blog_preview_space"> <!-- open related blog posts -->

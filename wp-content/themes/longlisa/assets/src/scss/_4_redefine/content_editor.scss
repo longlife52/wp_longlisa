@@ -1,0 +1,135 @@
+/* STYLES FOR WORDPRESS CONTENT EDITOR 2019 VERSION */
+/* grid for the wp content editor */
+
+
+.first_para {
+  border-left: em(3px) solid $yellow;
+  font-weight: bold;
+  font-size: 1.75em;
+  margin-left: em(20px);
+  padding-left: 1em;
+  padding-right: em(20px);
+}
+
+.content_highlight {
+  background: $yellow;
+}
+
+.content_editor {
+
+  p {
+    color: $dark-blue;
+    a {
+      color: $main-blue;
+      &:hover {
+        background: $yellow;
+      }
+    }
+  }
+
+}
+
+.content_grid {
+
+  figure {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr em(100px);
+    padding-top: 3em;
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: -1;
+
+    img {
+      grid-column-start: 1;
+      grid-column-end: -1;
+      grid-row: 1;
+      height: auto;
+      width: 100%;
+    }
+
+    figcaption {
+        font-family: $roboto;
+    }
+  }
+}
+
+.schema-how-to-step-name,
+.schema-faq-question {
+  font-family: $roboto;
+}
+
+.schema-how-to {
+  background: $pale-grey-blue;
+}
+
+.schema-how-to-total-time,
+.schema-how-to-description,
+.schema-how-to-steps {
+  margin-left: 1em;
+}
+
+.wp-block-quote {
+  p,
+  cite {
+    color: $grey-blue;
+    font-family: $roboto;
+  }
+
+  p {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+
+  cite {
+    margin-left: 1em;
+  }
+}
+
+
+
+/* GRID BREAKPOINTS */
+
+@include breakpoint (landscape) {
+
+  .content_grid {
+
+    display: grid;
+    grid-template-columns:  repeat(12, 1fr);
+    grid-column-gap: em(32px);
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ol,
+    ul,
+    .schema-how-to,
+    .schema-faq {
+        grid-column-start: 5;
+        grid-column-end: span 6;
+        padding-left: 0;
+    }
+
+    li {
+      margin-left: 2em;
+    }
+
+    figure {
+
+        figcaption {
+            grid-column-start: 5;
+            grid-column-end: span 6;
+        }
+    }
+
+  }
+
+  .wp-block-quote {
+    grid-column-start: 2;
+    grid-column-end: span 10;
+  }
+
+}

@@ -66,9 +66,18 @@
     padding-left: 1em;
 }
 
+.first_para {
+  border-left: em(3px) solid $yellow;
+  font-weight: bold;
+  font-size: 1.75em;
+  margin-left: em(20px);
+  padding-left: 1em;
+  padding-right: em(20px);
+}
+
 .lisa_story_para {
 
-    p:first-of-type {
+    p:first-child {
         border-left: em(3px) solid $yellow;
         font-weight: bold;
         font-size: 1.75em;
