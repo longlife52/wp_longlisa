@@ -16,9 +16,18 @@
 }
 
 .content_editor {
+  h3 {
+    margin: 0;
+    font-size: 3em;
+    color: $main-blue;
+    padding-left: em(10px);
+    padding-right: em(10px);
+  }
 
   p {
     color: $dark-blue;
+
+
     a {
       color: $main-blue;
       &:hover {
@@ -27,7 +36,89 @@
     }
   }
 
-}
+  h2,
+  p {
+      padding-right: em(20px);
+  }
+
+  h2 {
+      padding-top: 1em;
+      color: $red;
+      font-size: 2em;
+      padding-left: em(15px);
+  }
+
+  p {
+      color: $dark-blue;
+      font-size: 1.5em;
+      padding-left: em(10px);
+  }
+
+  .schema-faq-question,
+  ol,
+  ul {
+    font-family: $roboto;
+    color: $dark-blue;
+
+    li {
+      color: $dark-blue;
+      font-size: 1.5em;
+
+    }
+  }
+
+  .schema-faq-question {
+    font-size: 2em;
+  }
+
+  .schema-how-to {
+    background: $pale-grey-blue;
+  }
+
+  .schema-how-to-total-time,
+  .schema-how-to-description,
+  .schema-how-to-steps {
+    margin-left: 1em;
+  }
+
+  .schema-how-to-step-text {
+    font-size: 1em;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .blocks-gallery-item {
+    figure {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .wp-block-quote {
+    p,
+    cite {
+      color: $grey-blue;
+      font-family: $roboto;
+    }
+
+    p {
+      font-size: 2em;
+      margin-bottom: 0;
+    }
+
+    cite {
+      margin-left: 1em;
+    }
+  }
+
+} /*this closes the .content_editor styles */
+
+
 
 .content_grid {
 
@@ -35,7 +126,6 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr em(100px);
-    padding-top: 3em;
     margin: 0;
     grid-column-start: 1;
     grid-column-end: -1;
@@ -53,39 +143,6 @@
     }
   }
 }
-
-.schema-how-to-step-name,
-.schema-faq-question {
-  font-family: $roboto;
-}
-
-.schema-how-to {
-  background: $pale-grey-blue;
-}
-
-.schema-how-to-total-time,
-.schema-how-to-description,
-.schema-how-to-steps {
-  margin-left: 1em;
-}
-
-.wp-block-quote {
-  p,
-  cite {
-    color: $grey-blue;
-    font-family: $roboto;
-  }
-
-  p {
-    font-size: 2em;
-    margin-bottom: 0;
-  }
-
-  cite {
-    margin-left: 1em;
-  }
-}
-
 
 
 /* GRID BREAKPOINTS */
@@ -132,4 +189,4 @@
     grid-column-end: span 10;
   }
 
-}
+} /* closes landscape breakpoint */

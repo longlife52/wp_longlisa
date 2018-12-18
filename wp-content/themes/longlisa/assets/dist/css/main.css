@@ -613,6 +613,13 @@ input[type=submit] {
 .content_highlight {
   background: #dad445; }
 
+.content_editor h3 {
+  margin: 0;
+  font-size: 3em;
+  color: #34738e;
+  padding-left: 0.625em;
+  padding-right: 0.625em; }
+
 .content_editor p {
   color: #214a5b; }
   .content_editor p a {
@@ -620,11 +627,70 @@ input[type=submit] {
     .content_editor p a:hover {
       background: #dad445; }
 
+.content_editor h2,
+.content_editor p {
+  padding-right: 1.25em; }
+
+.content_editor h2 {
+  padding-top: 1em;
+  color: #9b4856;
+  font-size: 2em;
+  padding-left: 0.9375em; }
+
+.content_editor p {
+  color: #214a5b;
+  font-size: 1.5em;
+  padding-left: 0.625em; }
+
+.content_editor .schema-faq-question,
+.content_editor ol,
+.content_editor ul {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #214a5b; }
+  .content_editor .schema-faq-question li,
+  .content_editor ol li,
+  .content_editor ul li {
+    color: #214a5b;
+    font-size: 1.5em; }
+
+.content_editor .schema-faq-question {
+  font-size: 2em; }
+
+.content_editor .schema-how-to {
+  background: #edf1f3; }
+
+.content_editor .schema-how-to-total-time,
+.content_editor .schema-how-to-description,
+.content_editor .schema-how-to-steps {
+  margin-left: 1em; }
+
+.content_editor .schema-how-to-step-text {
+  font-size: 1em; }
+  .content_editor .schema-how-to-step-text img {
+    width: 100%;
+    height: auto; }
+
+.content_editor .blocks-gallery-item figure img {
+  width: 100%;
+  height: auto; }
+
+.content_editor .wp-block-quote p,
+.content_editor .wp-block-quote cite {
+  color: #6b91a1;
+  font-family: "Roboto Condensed", sans-serif; }
+
+.content_editor .wp-block-quote p {
+  font-size: 2em;
+  margin-bottom: 0; }
+
+.content_editor .wp-block-quote cite {
+  margin-left: 1em; }
+
+/*this closes the .content_editor styles */
 .content_grid figure {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr 6.25em;
-  padding-top: 3em;
   margin: 0;
   grid-column-start: 1;
   grid-column-end: -1; }
@@ -636,30 +702,6 @@ input[type=submit] {
     width: 100%; }
   .content_grid figure figcaption {
     font-family: "Roboto Condensed", sans-serif; }
-
-.schema-how-to-step-name,
-.schema-faq-question {
-  font-family: "Roboto Condensed", sans-serif; }
-
-.schema-how-to {
-  background: #edf1f3; }
-
-.schema-how-to-total-time,
-.schema-how-to-description,
-.schema-how-to-steps {
-  margin-left: 1em; }
-
-.wp-block-quote p,
-.wp-block-quote cite {
-  color: #6b91a1;
-  font-family: "Roboto Condensed", sans-serif; }
-
-.wp-block-quote p {
-  font-size: 2em;
-  margin-bottom: 0; }
-
-.wp-block-quote cite {
-  margin-left: 1em; }
 
 /* GRID BREAKPOINTS */
 @media (min-width: 1024px) {
@@ -689,6 +731,7 @@ input[type=submit] {
     grid-column-start: 2;
     grid-column-end: span 10; } }
 
+/* closes landscape breakpoint */
 /*------------------------------------*\
     #LAYOUT
 \*------------------------------------*/
@@ -2654,7 +2697,8 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
 .breadcrumb {
   margin: 1.25em; }
   .breadcrumb p {
-    color: #34738e; }
+    color: #34738e;
+    font-size: 1em; }
     .breadcrumb p a {
       color: #34738e; }
       .breadcrumb p a:hover {
@@ -2708,14 +2752,17 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
   .blog_post_header h1 {
     color: #f8fcff;
     text-align: center;
-    padding: 0.5em 1em 1em 1em;
+    padding: 0.5em 0.5em 1em 0.5em;
     font-size: 2em;
     margin: 0;
     text-align: center; }
 
 .blog_post_meta {
   text-align: center;
-  padding-bottom: 3em; }
+  padding-bottom: 3em;
+  padding-right: 0.625em;
+  font-size: 1em;
+  color: #214a5b; }
 
 .blog_post_content h2,
 .blog_post_content p {
