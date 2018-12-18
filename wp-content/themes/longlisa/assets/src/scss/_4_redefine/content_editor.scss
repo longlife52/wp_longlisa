@@ -6,9 +6,10 @@
   border-left: em(3px) solid $yellow;
   font-weight: bold;
   font-size: 1.75em;
-  margin-left: em(20px);
+  margin-left: 20px;
   padding-left: 1em;
   padding-right: em(20px);
+  max-width: 750px;
 }
 
 .content_highlight {
@@ -54,7 +55,6 @@
       padding-left: em(20px);
   }
 
-  .schema-faq-question,
   ol,
   ul {
     font-family: $roboto;
@@ -70,6 +70,8 @@
   }
 
   .schema-faq-question {
+    font-family: $roboto;
+    color: $dark-blue;
     font-size: 2em;
   }
 
@@ -120,8 +122,6 @@
 
 } /*this closes the .content_editor styles */
 
-
-
 .content_grid {
 
   figure {
@@ -144,6 +144,9 @@
         font-family: $roboto;
     }
   }
+
+
+
 }
 
 

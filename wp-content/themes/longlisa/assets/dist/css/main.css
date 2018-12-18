@@ -606,9 +606,10 @@ input[type=submit] {
   border-left: 0.1875em solid #dad445;
   font-weight: bold;
   font-size: 1.75em;
-  margin-left: 1.25em;
+  margin-left: 20px;
   padding-left: 1em;
-  padding-right: 1.25em; }
+  padding-right: 1.25em;
+  max-width: 750px; }
 
 .content_highlight {
   background: #dad445; }
@@ -642,13 +643,11 @@ input[type=submit] {
   font-size: 1.5em;
   padding-left: 1.25em; }
 
-.content_editor .schema-faq-question,
 .content_editor ol,
 .content_editor ul {
   font-family: "Roboto Condensed", sans-serif;
   color: #214a5b;
   padding-left: 0.9375em; }
-  .content_editor .schema-faq-question li,
   .content_editor ol li,
   .content_editor ul li {
     color: #214a5b;
@@ -656,6 +655,8 @@ input[type=submit] {
     margin-left: 3em; }
 
 .content_editor .schema-faq-question {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #214a5b;
   font-size: 2em; }
 
 .content_editor .schema-how-to {
