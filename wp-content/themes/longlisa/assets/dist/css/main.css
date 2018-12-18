@@ -635,23 +635,25 @@ input[type=submit] {
   padding-top: 1em;
   color: #9b4856;
   font-size: 2em;
-  padding-left: 0.9375em; }
+  padding-left: 1.25em; }
 
 .content_editor p {
   color: #214a5b;
   font-size: 1.5em;
-  padding-left: 0.625em; }
+  padding-left: 1.25em; }
 
 .content_editor .schema-faq-question,
 .content_editor ol,
 .content_editor ul {
   font-family: "Roboto Condensed", sans-serif;
-  color: #214a5b; }
+  color: #214a5b;
+  padding-left: 0.9375em; }
   .content_editor .schema-faq-question li,
   .content_editor ol li,
   .content_editor ul li {
     color: #214a5b;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    margin-left: 3em; }
 
 .content_editor .schema-faq-question {
   font-size: 2em; }

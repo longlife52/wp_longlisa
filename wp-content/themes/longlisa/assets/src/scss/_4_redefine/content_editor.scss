@@ -45,13 +45,13 @@
       padding-top: 1em;
       color: $red;
       font-size: 2em;
-      padding-left: em(15px);
+      padding-left: em(20px);
   }
 
   p {
       color: $dark-blue;
       font-size: 1.5em;
-      padding-left: em(10px);
+      padding-left: em(20px);
   }
 
   .schema-faq-question,
@@ -59,11 +59,13 @@
   ul {
     font-family: $roboto;
     color: $dark-blue;
+    padding-left: em(15px);
+
 
     li {
       color: $dark-blue;
       font-size: 1.5em;
-
+      margin-left: 3em;
     }
   }
 
