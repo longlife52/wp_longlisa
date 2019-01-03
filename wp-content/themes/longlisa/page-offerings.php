@@ -10,47 +10,6 @@ get_header(); ?>
     <?php html5blank_nav_offering(); ?>
     </ul>
   </nav>
-<!--
-  <nav class="nav_offering">
-    <ul>
-      <a href="#">
-        <li>
-        Classes
-        </li>
-      </a>
-
-      <a href="#">
-        <li>
-        Workshops
-        </li>
-      </a>
-
-      <a href="#">
-        <li>
-        One-on-One
-        </li>
-      </a>
-
-      <a href="#">
-        <li>
-        Trainings
-        </li>
-      </a>
-
-      <a href="#">
-        <li>
-        Retreats
-        </li>
-      </a>
-
-      <a href="#">
-        <li>
-        Online
-        </li>
-      </a>
-    </ul>
-  </nav>
--->
 
 <!-- BILL BOARD -->
   <section class="billboard_blue_wrapper offering_wrapper">

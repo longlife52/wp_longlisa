@@ -1,0 +1,251 @@
+/*------------------------------------*\
+    #HELPERS
+\*------------------------------------*/
+/*------------------------------------*\
+    #ANIMATIONS
+\*------------------------------------*/
+/* Hover Effect from  http://ianlunn.github.io/Hover/
+Wobble To Top Right */
+@-webkit-keyframes hvr-wobble-to-top-right {
+  16.65% {
+    -webkit-transform: translate(8px, -8px);
+    transform: translate(8px, -8px); }
+  33.3% {
+    -webkit-transform: translate(-6px, 6px);
+    transform: translate(-6px, 6px); }
+  49.95% {
+    -webkit-transform: translate(4px, -4px);
+    transform: translate(4px, -4px); }
+  66.6% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px); }
+  83.25% {
+    -webkit-transform: translate(1px, -1px);
+    transform: translate(1px, -1px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+@keyframes hvr-wobble-to-top-right {
+  16.65% {
+    -webkit-transform: translate(8px, -8px);
+    transform: translate(8px, -8px); }
+  33.3% {
+    -webkit-transform: translate(-6px, 6px);
+    transform: translate(-6px, 6px); }
+  49.95% {
+    -webkit-transform: translate(4px, -4px);
+    transform: translate(4px, -4px); }
+  66.6% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px); }
+  83.25% {
+    -webkit-transform: translate(1px, -1px);
+    transform: translate(1px, -1px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+
+.hvr-wobble-to-top-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px transparent;
+  box-shadow: 0 0 1px transparent; }
+
+.hvr-wobble-to-top-right:hover,
+.hvr-wobble-to-top-right:focus,
+.hvr-wobble-to-top-right:active {
+  -webkit-animation-name: hvr-wobble-to-top-right;
+  animation-name: hvr-wobble-to-top-right;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1; }
+
+.grow {
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+
+.grow:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); }
+
+/* Bob for footer icons */
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px); }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px); }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale; }
+
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate; }
+
+/*------------------------------------*\
+    #EXTENDS
+\*------------------------------------*/
+/*------------------------------------*\
+    #MIXINS
+
+	- remove-text
+	- no-bullets
+	- no-margin-padding
+	- circle
+	- clearfix
+	- blend-mode
+	- arrow
+	- hamburger
+	- aspect-ratio
+
+\*------------------------------------*/
+/**
+ * LIST STYLING
+ */
+/**
+ * CIRCLE
+ */
+/**
+ * CLEARFIX
+ * Should be placed on the container, wrapping item
+ * https://rachelandrew.co.uk/archives/2017/01/24/the-end-of-the-clearfix-hack/
+ */
+/*------------------------------------*\
+	REFERENCE: https://css-tricks.com/basics-css-blend-modes/
+	Possible mode options: screen, overlay, darker, lighten,
+		color-dodge, color-burn, hard-light, soft-light, difference,
+		exclusion, hue, saturation, color, luminosity, and normal
+\*------------------------------------*/
+/**
+ * HAMBURGER
+ * Reference: https://css-tricks.com/three-line-menu-navicon/
+ */
+/*
+	ASPECT RATIOS: https://css-tricks.com/snippets/sass/maintain-aspect-ratio-mixin/
+	The mixin assumes you'll be nesting an element with the class of content inside your initial block.
+
+	HTML:
+	<div class="sixteen-nine">
+		<div class="content">
+	    	insert content here
+	    	this will maintain a 16:9 aspect ratio
+	  	</div>
+	</div>
+
+	Using the mixin:
+	.sixteen-nine {
+		@include aspect-ratio(16, 9);
+	}
+*/
+/*------------------------------------*\
+    #FUNCTIONS
+\*------------------------------------*/
+/*
+	px to em
+	https://css-tricks.com/snippets/sass/px-to-em-functions/
+ */
+/*------------------------------------*\
+    #COLOR
+\*------------------------------------*/
+.black-and-white {
+  -webkit-filter: grayscale(100%); }
+
+.color {
+  -webkit-filter: grayscale(0%); }
+
+/*------------------------------------*\
+    #BREAKPOINTS
+\*------------------------------------*/
+/*------------------------------------*\
+    #VARIABLES
+\*------------------------------------*/
+/* GLOBAL */
+/* COLORS */
+/* FONTS */
+/*------------------------------------*\
+    #THEME
+\*------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #113341; }
+
+p {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #113341; }
+
+/*------------------------------------*\
+    #ARROWS
+\*------------------------------------*/
+/* Angled Bracket 
+Reference: http://stackoverflow.com/questions/27492191/how-to-make-a-fancy-arrow-using-css */
+/*------------------------------------*\
+    #ZINDEX
+
+    Controls all vertical stacking in one place
+    Reference: http://css-tricks.com/handling-z-index/
+
+
+    Can now use elsewhere in code with:
+
+    	.header {
+			z-index: map-get($zindex, header);
+		}
+\*------------------------------------*/

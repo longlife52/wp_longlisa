@@ -46,7 +46,8 @@
       padding-top: 1em;
       color: $red;
       font-size: 2em;
-      padding-left: em(20px);
+      padding-left: 1em;
+      margin-bottom: 0em;
   }
 
   p {
@@ -71,8 +72,9 @@
 
   .schema-faq-question {
     font-family: $roboto;
-    color: $dark-blue;
+    color: $red;
     font-size: 2em;
+    margin-left: 1em;
   }
 
   .schema-how-to {
@@ -193,5 +195,18 @@
     grid-column-start: 2;
     grid-column-end: span 10;
   }
+
+.content_editor {
+
+  .schema-faq-question {
+    margin-left: 0;
+  }
+
+} /* closes content editor in the mq */
+
+.first_para {
+  border-left: em(3px) solid $red;
+}
+
 
 } /* closes landscape breakpoint */

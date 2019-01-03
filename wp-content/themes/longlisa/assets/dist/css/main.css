@@ -636,7 +636,8 @@ input[type=submit] {
   padding-top: 1em;
   color: #9b4856;
   font-size: 2em;
-  padding-left: 1.25em; }
+  padding-left: 1em;
+  margin-bottom: 0em; }
 
 .content_editor p {
   color: #214a5b;
@@ -656,8 +657,9 @@ input[type=submit] {
 
 .content_editor .schema-faq-question {
   font-family: "Roboto Condensed", sans-serif;
-  color: #214a5b;
-  font-size: 2em; }
+  color: #9b4856;
+  font-size: 2em;
+  margin-left: 1em; }
 
 .content_editor .schema-how-to {
   background: #edf1f3; }
@@ -732,7 +734,12 @@ input[type=submit] {
       grid-column-end: span 6; }
   .wp-block-quote {
     grid-column-start: 2;
-    grid-column-end: span 10; } }
+    grid-column-end: span 10; }
+  .content_editor .schema-faq-question {
+    margin-left: 0; }
+  /* closes content editor in the mq */
+  .first_para {
+    border-left: 0.1875em solid #9b4856; } }
 
 /* closes landscape breakpoint */
 /*------------------------------------*\

@@ -1,0 +1,8 @@
+/*------------------------------------*\
+    #COLOR
+\*------------------------------------*/
+.black-and-white {
+  -webkit-filter: grayscale(100%); }
+
+.color {
+  -webkit-filter: grayscale(0%); }

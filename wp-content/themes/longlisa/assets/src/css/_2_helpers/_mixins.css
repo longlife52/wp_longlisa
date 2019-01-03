@@ -1,0 +1,52 @@
+/*------------------------------------*\
+    #MIXINS
+
+	- remove-text
+	- no-bullets
+	- no-margin-padding
+	- circle
+	- clearfix
+	- blend-mode
+	- arrow
+	- hamburger
+	- aspect-ratio
+
+\*------------------------------------*/
+/**
+ * LIST STYLING
+ */
+/**
+ * CIRCLE
+ */
+/**
+ * CLEARFIX
+ * Should be placed on the container, wrapping item
+ * https://rachelandrew.co.uk/archives/2017/01/24/the-end-of-the-clearfix-hack/
+ */
+/*------------------------------------*\
+	REFERENCE: https://css-tricks.com/basics-css-blend-modes/
+	Possible mode options: screen, overlay, darker, lighten,
+		color-dodge, color-burn, hard-light, soft-light, difference,
+		exclusion, hue, saturation, color, luminosity, and normal
+\*------------------------------------*/
+/**
+ * HAMBURGER
+ * Reference: https://css-tricks.com/three-line-menu-navicon/
+ */
+/*
+	ASPECT RATIOS: https://css-tricks.com/snippets/sass/maintain-aspect-ratio-mixin/
+	The mixin assumes you'll be nesting an element with the class of content inside your initial block.
+
+	HTML:
+	<div class="sixteen-nine">
+		<div class="content">
+	    	insert content here
+	    	this will maintain a 16:9 aspect ratio
+	  	</div>
+	</div>
+
+	Using the mixin:
+	.sixteen-nine {
+		@include aspect-ratio(16, 9);
+	}
+*/
