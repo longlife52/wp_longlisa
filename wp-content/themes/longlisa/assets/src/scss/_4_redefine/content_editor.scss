@@ -1,21 +1,6 @@
 /* STYLES FOR WORDPRESS CONTENT EDITOR 2019 VERSION */
 /* grid for the wp content editor */
 
-
-.first_para {
-  border-left: em(3px) solid $red;
-  font-weight: bold;
-  font-size: 1.75em;
-  margin-left: 20px;
-  padding-left: 1em;
-  padding-right: em(20px);
-  max-width: 750px;
-}
-
-.content_highlight {
-  background: $yellow;
-}
-
 .content_editor {
   h3 {
     margin: 0;
@@ -68,6 +53,16 @@
       font-size: 1.5em;
       margin-left: 3em;
     }
+  }
+
+  .first_para {
+    border-left: em(3px) solid $yellow;
+    font-weight: bold;
+    font-size: 2em;
+    margin-left: 20px;
+    padding-left: 1em;
+    padding-right: em(20px);
+    max-width: 750px;
   }
 
   .schema-faq-question {
@@ -174,7 +169,6 @@
     .schema-faq {
         grid-column-start: 5;
         grid-column-end: span 6;
-        padding-left: 0;
     }
 
     li {

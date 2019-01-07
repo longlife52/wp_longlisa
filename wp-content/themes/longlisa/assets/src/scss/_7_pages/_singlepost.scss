@@ -208,6 +208,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    img {
+      margin-top: 1em;
+    }
 }
 
 .blog_author_img {
@@ -272,11 +276,7 @@
 @include breakpoint (small) {
 
     .blog_author_area {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         max-width: 750px;
-        justify-content: center;
-        align-items: center;
         background-color: $pale_grey_blue;
     }
 
@@ -286,19 +286,6 @@
 }
 
 @include breakpoint (landscape) {
-
-/*
-    .blog_post_subtitle {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-column-gap: em(32px);
-
-        h3 {
-            grid-column-start: 5;
-            grid-column-end: span 6;
-        }
-    }
-*/
     .blog_post_content {
             display: grid;
             grid-template-columns:  repeat(12, 1fr);

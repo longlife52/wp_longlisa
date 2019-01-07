@@ -602,18 +602,6 @@ input[type=submit] {
 */
 /* STYLES FOR WORDPRESS CONTENT EDITOR 2019 VERSION */
 /* grid for the wp content editor */
-.first_para {
-  border-left: 0.1875em solid #9b4856;
-  font-weight: bold;
-  font-size: 1.75em;
-  margin-left: 20px;
-  padding-left: 1em;
-  padding-right: 1.25em;
-  max-width: 750px; }
-
-.content_highlight {
-  background: #dad445; }
-
 .content_editor h3 {
   margin: 0;
   font-size: 3em;
@@ -654,6 +642,15 @@ input[type=submit] {
     color: #214a5b;
     font-size: 1.5em;
     margin-left: 3em; }
+
+.content_editor .first_para {
+  border-left: 0.1875em solid #dad445;
+  font-weight: bold;
+  font-size: 2em;
+  margin-left: 20px;
+  padding-left: 1em;
+  padding-right: 1.25em;
+  max-width: 750px; }
 
 .content_editor .schema-faq-question {
   font-family: "Roboto Condensed", sans-serif;
@@ -725,8 +722,7 @@ input[type=submit] {
     .content_grid .schema-how-to,
     .content_grid .schema-faq {
       grid-column-start: 5;
-      grid-column-end: span 6;
-      padding-left: 0; }
+      grid-column-end: span 6; }
     .content_grid li {
       margin-left: 2em; }
     .content_grid figure figcaption {
@@ -2875,6 +2871,8 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .blog_author_area img {
+    margin-top: 1em; }
 
 .blog_author_img img {
   border-radius: 50%;
@@ -2917,32 +2915,12 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
 
 @media (min-width: 640px) {
   .blog_author_area {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     max-width: 750px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     background-color: #edf1f3; }
   .blog_author_details {
     padding-top: 2em; } }
 
 @media (min-width: 1024px) {
-  /*
-    .blog_post_subtitle {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-column-gap: em(32px);
-
-        h3 {
-            grid-column-start: 5;
-            grid-column-end: span 6;
-        }
-    }
-*/
   .blog_post_content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
