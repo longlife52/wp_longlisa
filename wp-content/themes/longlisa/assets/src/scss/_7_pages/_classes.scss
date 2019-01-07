@@ -99,7 +99,11 @@
 .schedule_description {
     p {
         a {
-            color: $red;
+            color: $grey-blue;
+
+            &:hover {
+              background: $yellow;
+            }
         }
     }
 }

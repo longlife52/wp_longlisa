@@ -2491,7 +2491,9 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
   text-align: left; }
 
 .schedule_description p a {
-  color: #9b4856; }
+  color: #6b91a1; }
+  .schedule_description p a:hover {
+    background: #dad445; }
 
 /* removes styles on button box to pull it up */
 .no_pad {
