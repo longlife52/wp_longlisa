@@ -6,9 +6,10 @@
     //Vars
     $title = get_sub_field('general_title');
     $para = get_sub_field('general_para');
+    $id = get_sub_field('custom_id');
     ?>
 
-  <section class="class_preview_wrapper title_nospace title_line adjust_yellow_line" id="yoga_classes">
+  <section class="class_preview_wrapper title_nospace title_line adjust_yellow_line" id="<?php echo $id; ?>">
       <h3><?php echo $title; ?></h3>
       <div class="sub_title_para">
           <p class="class_card_text_align"><?php echo $para; ?></p>
@@ -16,8 +17,6 @@
 
   <!-- start REPEATER class one -->
   <?php if(have_rows('event_details')): ?>
-
-      <div class="schedule_class_wrapper">
 
         <?php while(have_rows('event_details')): the_row();
           //Vars
@@ -32,24 +31,29 @@
           $para = get_sub_field('para');
           ?>
 
-          <div class="schedule_img">
-              <img class="img_circle" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>">
+          <!-- START CLASS -->
+          <div class="schedule_class_wrapper">
+
+            <div class="schedule_img">
+                <img class="img_circle" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>">
+            </div>
+            <div class="schedule_details">
+                <h4><?php echo $title; ?></h4>
+                <p><?php echo $date; ?></p>
+                <p><?php echo $time; ?></p>
+                <p><?php echo $location; ?></p>
+                <p><?php echo $cost; ?></p>
+                <div class="center-text button-box center_text no_pad">
+                    <a href="<?php echo $link; ?>"><p class="ghost_button ghost_btn_blue"><?php echo $label; ?></p></a>
+                </div>
+            </div>
+            <div class="schedule_description">
+                <p><?php echo $para; ?></p>
+            </div>
+
           </div>
-          <div class="schedule_details">
-              <h4><?php echo $title; ?></h4>
-              <p><?php echo $date; ?></p>
-              <p><?php echo $time; ?></p>
-              <p><?php echo $location; ?></p>
-              <p><?php echo $cost; ?></p>
-              <div class="center-text button-box center_text no_pad">
-                  <a href="<?php echo $link; ?>"><p class="ghost_button ghost_btn_blue"><?php echo $label; ?></p></a>
-              </div>
-          </div>
-          <div class="schedule_description">
-              <p><?php echo $para; ?></p>
-          </div>
+          <!-- END CLASS -->
           <?php endwhile; ?>
-      </div>
       <?php endif; ?>
   <!-- end REPEATER class one -->
   </section>
