@@ -16,8 +16,11 @@ get_header(); ?>
 
 <?php get_template_part('partials/billboard'); ?>
 
+<?php get_template_part('partials/link_card'); ?>
+
 <?php get_template_part('partials/pix_header'); ?>
 
+<?php get_template_part('partials/event_section'); ?>
 
 <!-- start large quote -->
 <?php get_template_part('partials/cursive_quote'); ?>
