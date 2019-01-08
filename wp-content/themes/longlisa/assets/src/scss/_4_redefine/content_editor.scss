@@ -55,6 +55,18 @@
     }
   }
 
+  aside {
+
+      a {
+        color: $red;
+        text-decoration: underline;
+
+        &:hover {
+          background: $yellow;
+        }
+      }
+    }
+
   .first_para {
     border-left: em(3px) solid $yellow;
     font-weight: bold;
@@ -117,6 +129,19 @@
     }
   }
 
+  aside {
+      margin-left: 2em;
+      margin-right: 1em;
+
+      p {
+          border-left: em(3px) solid $light-blue;
+          color: $main-blue;
+          font-size: 1.5em;
+          padding-left: 0.5em;
+          margin: 0;
+      }
+  }
+
 } /*this closes the .content_editor styles */
 
 .content_grid {
@@ -139,11 +164,11 @@
 
     figcaption {
         font-family: $roboto;
+        grid-column-start: 2;
+        grid-column-end: 12;
+        text-align: center;
     }
   }
-
-
-
 }
 
 
@@ -182,6 +207,14 @@
             grid-column-end: span 6;
         }
     }
+
+    aside {
+        margin-left: 0;
+        margin-top: 0;
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+
 
   }
 

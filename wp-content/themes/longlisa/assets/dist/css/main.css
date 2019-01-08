@@ -643,6 +643,12 @@ input[type=submit] {
     font-size: 1.5em;
     margin-left: 3em; }
 
+.content_editor aside a {
+  color: #9b4856;
+  text-decoration: underline; }
+  .content_editor aside a:hover {
+    background: #dad445; }
+
 .content_editor .first_para {
   border-left: 0.1875em solid #dad445;
   font-weight: bold;
@@ -688,6 +694,16 @@ input[type=submit] {
 .content_editor .wp-block-quote cite {
   margin-left: 1em; }
 
+.content_editor aside {
+  margin-left: 2em;
+  margin-right: 1em; }
+  .content_editor aside p {
+    border-left: 0.1875em solid #92c5da;
+    color: #34738e;
+    font-size: 1.5em;
+    padding-left: 0.5em;
+    margin: 0; }
+
 /*this closes the .content_editor styles */
 .content_grid figure {
   display: grid;
@@ -703,7 +719,10 @@ input[type=submit] {
     height: auto;
     width: 100%; }
   .content_grid figure figcaption {
-    font-family: "Roboto Condensed", sans-serif; }
+    font-family: "Roboto Condensed", sans-serif;
+    grid-column-start: 2;
+    grid-column-end: 12;
+    text-align: center; }
 
 /* GRID BREAKPOINTS */
 @media (min-width: 1024px) {
@@ -728,6 +747,11 @@ input[type=submit] {
     .content_grid figure figcaption {
       grid-column-start: 5;
       grid-column-end: span 6; }
+    .content_grid aside {
+      margin-left: 0;
+      margin-top: 0;
+      grid-column-start: 2;
+      grid-column-end: 4; }
   .wp-block-quote {
     grid-column-start: 2;
     grid-column-end: span 10; }

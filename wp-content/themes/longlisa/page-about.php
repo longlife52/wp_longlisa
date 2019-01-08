@@ -10,7 +10,15 @@ get_header(); ?>
   <section class="about_lisa">
       <div class="about_wrapper about_background">
           <div class="about_img_wrapper lisa_img_wrapper">
-              <img class="about_page_img" src="<?php bloginfo('template_url'); ?>/assets/dist/img/lisa_assist.png">
+            <?php
+
+            $image = get_field('image');
+
+            if ( !empty($image) ): ?>
+
+              <img class="about_page_img" src="<?php echo $image['url']; ?> " alt="?php echo $image['alt']; ?>" />
+
+            <?php endif; ?>
           </div>
           <!--
           <div class="about_img_wrapper about_lisa">
@@ -66,82 +74,17 @@ get_header(); ?>
 
   </section> <!-- close community giving section -->
 
-<div id="lisa_story">
-<!-- put the flexible content in here so button at the top of this page works -->
+<!-- start WP block editor content -->
+<article id="lisa_story" class="content_grid content_editor">
+      	<?php the_content(); // Dynamic Content ?>
+</article>
+<!-- end WP block editor content -->
 
+<!-- start CTA button -->
+<div class="center-text button-box center_text">
+    <a href="offerings.html"><p class="ghost_button ghost_btn_blue">check out my offerings</p></a>
 </div>
-
-        <!-- start Lisa's story -->
-        <section class="lisa_story">
-            <div class="lisa_story_title">
-                <h3>We all have a story.</h3>
-                <h3 class="title_justify_right">Here's mine.</h3>
-            </div>
-
-            <div class="lisa_story_width lisa_story_para blog_post_content">
-                <p>lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating.
-                </p>
-
-                <p>lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating.
-                </p>
-
-                <aside>
-                    <h6>Let's see what this aside call out does, too, <a href="index.html" >with a hyperlink.</a> </h6>
-                </aside>
-
-                <p>lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating.
-                </p>
-
-                <h2>Sub Headers Break Things Up</h2>
-                <p>lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating.
-                </p>
-
-                <figure>
-                    <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/reverse_table.png" />
-
-                    <figcaption>Let's see how this caption works for an image. Testing a really long caption, too. Let's see how it handles a second line. </figcaption>
-
-                </figure>
-
-                <p>lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating.
-                </p>
-
-                <ul class="lisa_story_ul">
-                    <li>Great thing one.
-                    </li>
-                    <li>Great thing two.
-                    </li>
-                    <li>Really awesome thing three.
-                    </li>
-                </ul>
-
-                <aside>
-                    <h6>Let's see what this aside call out does, too, <a href="index.html" >with a hyperlink.</a> </h6>
-                </aside>
-
-                <p>lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating.
-                </p>
-
-                <ol class="lisa_story_ol">
-                    <li>Life is good.
-                    </li>
-                    <li>Travel is fun.
-                    </li>
-                    <li>Relax and feel joy.
-                    </li>
-                </ol>
-
-                <p>lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating.
-                </p>
-            </div> <!-- end lisa story content -->
-
-            <!-- start CTA button -->
-            <div class="center-text button-box center_text">
-                <a href="offerings.html"><p class="ghost_button ghost_btn_blue">check out my offerings</p></a>
-            </div>
-            <!-- end CTA button -->
-        </section>
-        <!-- end Lisa's story -->
+<!-- end CTA button -->
 
 <!-- start 3 ARTICLE ICON/class cards -->
 <?php get_template_part('partials/article_icon'); ?>
