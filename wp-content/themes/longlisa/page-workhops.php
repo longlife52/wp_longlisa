@@ -26,6 +26,12 @@ get_header(); ?>
 <?php get_template_part('partials/cursive_quote'); ?>
 <!--end large quote -->
 
+<!-- start WP block editor content -->
+<article id="lisa_story" class="content_grid content_editor">
+  <?php the_content(); // Dynamic Content ?>
+</article>
+<!-- end WP block editor content -->
+
 <!-- start TESTIMONIAL TWO BLOCK  -->
 <?php get_template_part('partials/testimonial_two_block'); ?>
 <!-- end TESTIMONIAL TWO BLOCK  -->

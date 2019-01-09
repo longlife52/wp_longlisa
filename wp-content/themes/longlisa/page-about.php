@@ -76,7 +76,7 @@ get_header(); ?>
 
 <!-- start WP block editor content -->
 <article id="lisa_story" class="content_grid content_editor">
-      	<?php the_content(); // Dynamic Content ?>
+  <?php the_content(); // Dynamic Content ?>
 </article>
 <!-- end WP block editor content -->
 

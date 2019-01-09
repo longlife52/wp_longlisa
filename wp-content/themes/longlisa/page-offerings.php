@@ -125,9 +125,15 @@ get_header(); ?>
     </section>
     <!-- end offering tiles -->
 
-    <!-- start large quote -->
-    <h3 class="large_quote"><?php the_field('cursive_saying_offering'); ?></h3>
-    <!--end large quote -->
+<!-- start large quote -->
+<h3 class="large_quote"><?php the_field('cursive_saying_offering'); ?></h3>
+<!--end large quote -->
+
+<!-- start WP block editor content -->
+<article id="lisa_story" class="content_grid content_editor">
+  <?php the_content(); // Dynamic Content ?>
+</article>
+<!-- end WP block editor content -->
 
 <!-- start TESTIMONIAL TWO BLOCK  -->
 <?php get_template_part('partials/testimonial_two_block'); ?>

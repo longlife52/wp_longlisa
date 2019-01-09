@@ -68,73 +68,14 @@ get_header(); ?>
 <?php get_template_part('partials/article_icon'); ?>
 <!-- end 3 ARTICLE ICON/class cards -->
 
-<!-- start the actual blog post; below is the sub header as an h3 -->
-<section>
-<div class="lisa_story_title blog_post_subtitle">
-
-    <h3>A long story.</h3>
-    <h3>a case study</h3>
-</div>
-
-<div class="lisa_story_content">
-    <div class="lisa_story_para blog_post_content">
-        <p>lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life. it has been challenging. it has been invigorating.
-        </p>
-
-        <p>lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life. <a href="index.html">it's been a great life. </a>  it's been a great life.  it has been challenging. it has been invigorating.
-        </p>
-
-        <figure>
-            <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/reverse_table.png" />
-
-            <figcaption>Let's see how this caption works for an image. Testing a really long caption, too. Let's see how it handles a second line. </figcaption>
-
-        </figure>
-
-        <h2>Stuff You Need to Know</h2>
-        <p>how does this paragraph work with the aside? the aside above works with this paragraph. lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating.
-        </p>
-
-        <ul class="lisa_story_ul">
-            <li>Great thing one.
-            </li>
-            <li>Great thing two. Checking to see what happens when my list is longer than line.  Just how does it go?
-            </li>
-            <li>Really awesome thing three.
-            </li>
-        </ul>
-
-        <aside>
-            <h6>Let's see what this aside call out does, too, <a href="index.html" >with a hyperlink.</a> </h6>
-        </aside>
-
-        <p>lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating.
-        </p>
-
-        <ol class="lisa_story_ol">
-            <li>Life is good.
-            </li>
-            <li>Travel is fun. Checking to see what happens when my list is longer than line.  Just how does it go?
-            </li>
-            <li>Relax and feel joy.
-            </li>
-        </ol>
-
-        <aside>
-            <h6>Let's see what this aside call out does, too. </h6>
-        </aside>
-
-        <p>lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating.
-        </p>
-    </div>
-    <!-- end blog_post_content -->
-
-</div> <!-- end  all blog content -->
-</section>
-<!-- end end blog_post_content section -->
+<!-- start WP block editor content -->
+<article id="lisa_story" class="content_grid content_editor">
+      	<?php the_content(); // Dynamic Content ?>
+</article>
+<!-- end WP block editor content -->
 
 <!-- start large quote -->
-<h3 class="large_quote testimonial_cta">start from where you are</h3>
+<?php get_template_part('partials/cursive_quote'); ?>
 <!--end large quote -->
 
 <!-- start CTA button -->
@@ -148,7 +89,7 @@ get_header(); ?>
 <!-- end staggered 5 square of testimonial quotes -->
 
 <div class="dots_hug_up dots_space_bottom">
-    <?php get_template_part('partials/dots'); ?>
+  <?php get_template_part('partials/dots'); ?>
 </div>
 
 <!-- picture bar -->
@@ -158,7 +99,7 @@ get_header(); ?>
 <!--close picture bar -->
 
 <!-- start large quote -->
-<h3 class="large_quote">experience the benefits of therapeutic movement </h3>
+<h3 class="large_quote">Start from where you are.</h3>
 <!--end large quote -->
 
 <div class="dots_hug_up">
