@@ -9,6 +9,8 @@ add_shortcode('sub_heading', 'sub_heading_shortcode'); // You can place [html5_s
 // Shortcodes above would be nested like this -
 // [html5_shortcode_demo] [html5_shortcode_demo_2] Here's the page title! [/html5_shortcode_demo_2] [/html5_shortcode_demo]
 
+add_shortcode('aside', 'aside_shortcode'); //shortcode for aside for content editor
+
 /*------------------------------------*\
 	ShortCode Functions
 \*------------------------------------*/
@@ -32,4 +34,9 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 function sub_heading_shortcode($atts, $content = null)
 {
     return '<h3>' . do_shortcode($content) . '</h3>'; // do_shortcode allows for nested Shortcodes
+}
+
+function aside_shortcode($atts, $content = null)
+{
+  return '<aside><p>' . do_shortcode($content) . '</p></aside>';
 }
