@@ -232,6 +232,16 @@
 
     li {
       margin-left: 2em;
+      line-height: 1.5;
+      padding-bottom: 1em;
+
+      a {
+        color: $main-blue;
+
+        &:hover {
+          background: $yellow;
+        }
+      }
     }
 
     figure {

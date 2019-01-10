@@ -67,6 +67,16 @@
 .billboard_para {
     margin-top: 3em;
     text-align: left;
+
+    p {
+      a {
+        color: $main-blue;
+
+        &:hover {
+          background: $yellow;
+        }
+      }
+    }
 }
 
 @include breakpoint(small) {

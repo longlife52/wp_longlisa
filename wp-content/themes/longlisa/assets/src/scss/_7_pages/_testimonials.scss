@@ -17,3 +17,33 @@
 .large_quote_margin {
     margin-bottom: 0;
 }
+
+.testimonial_title {
+  text-align: center;
+  color: $dark-blue;
+  font-size: 2em;
+
+  h1 {
+    margin-bottom: 0;
+  }
+}
+
+.testimonial_page_header {
+
+   p {
+     max-width: 750px;
+     margin: auto;
+     font-size: em(18px);
+     color: $main-blue;
+     padding: 0 em(20px) em(20px) em(20px);
+
+     a {
+       color: $dark-blue;
+
+       &:hover {
+         background: $yellow;
+       }
+     }
+   }
+
+}

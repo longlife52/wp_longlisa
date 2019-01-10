@@ -771,7 +771,13 @@ input[type=submit] {
       grid-column-start: 5;
       grid-column-end: span 6; }
     .content_grid li {
-      margin-left: 2em; }
+      margin-left: 2em;
+      line-height: 1.5;
+      padding-bottom: 1em; }
+      .content_grid li a {
+        color: #34738e; }
+        .content_grid li a:hover {
+          background: #dad445; }
     .content_grid figure figcaption {
       grid-column-start: 5;
       grid-column-end: span 6; }
@@ -1180,6 +1186,10 @@ header {
 .billboard_para {
   margin-top: 3em;
   text-align: left; }
+  .billboard_para p a {
+    color: #34738e; }
+    .billboard_para p a:hover {
+      background: #dad445; }
 
 @media (min-width: 640px) {
   .billboard p {
@@ -2763,6 +2773,24 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
 
 .large_quote_margin {
   margin-bottom: 0; }
+
+.testimonial_title {
+  text-align: center;
+  color: #214a5b;
+  font-size: 2em; }
+  .testimonial_title h1 {
+    margin-bottom: 0; }
+
+.testimonial_page_header p {
+  max-width: 750px;
+  margin: auto;
+  font-size: 1.125em;
+  color: #34738e;
+  padding: 0 1.25em 1.25em 1.25em; }
+  .testimonial_page_header p a {
+    color: #214a5b; }
+    .testimonial_page_header p a:hover {
+      background: #dad445; }
 
 /* SINGLE BLOG POST PAGE STYLES */
 /* note the contextual callouts using css grid are based on this article https://jonathan-harrell.com/contextual-asides-with-css-grid/*/

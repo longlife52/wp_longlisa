@@ -15,8 +15,6 @@ get_header(); ?>
 
         <div class="testimonial_feature_content">
             <p><?php the_field('splash_testimonial_para'); ?></p>
-
-            <p>realize how life is so sweet.  even our difficulties teach us to just be.  learn to witness. </p>
         </div>
 
         <p class="testimonial_name"><?php the_field('splash_testimonial_name'); ?></p>
@@ -46,13 +44,14 @@ get_header(); ?>
 <!--end large quote -->
 
 
-<section class="offering_page_header">
-    <div class="home_title">
+<section class="testimonial_page_header">
+    <div class="testimonial_title">
         <h1><?php the_field('splash_h_one'); ?></h1>
     </div>
+    <p><?php the_field('splash_para'); ?></p>
 </section>
 
-<div class="dots_hug_up dots_space_bottom">
+<div class="dots_space_bottom">
 <?php get_template_part('partials/dots'); ?>
 </div>
 
@@ -80,7 +79,7 @@ get_header(); ?>
 
 <!-- start CTA button -->
 <div class="center-text button-box center_text">
-    <a href="offerings.html"><p class="ghost_button ghost_btn_blue">check out Lisa's offerings</p></a>
+    <a href="<?php the_field('cta_link'); ?>"><p class="ghost_button ghost_btn_blue"><?php the_field('cta_label'); ?></p></a>
 </div>
 <!-- end CTA button -->
 
@@ -94,7 +93,13 @@ get_header(); ?>
 
 <!-- picture bar -->
     <div class="picture_bar">
-        <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/reverse_table.png">
+      <?php
+        $image = get_field('bottom_banner_image');
+        if ( !empty($image)): ?>
+
+          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?> title="<?php echo $image['title']; ?> class="feature_img bottom_edge_shadow"/>
+
+      <?php endif; ?>
     </div>
 <!--close picture bar -->
 
