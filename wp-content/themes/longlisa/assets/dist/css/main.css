@@ -543,6 +543,8 @@ input[type=submit] {
     background: #f8fcff; }
   .btn_round p {
     margin-top: 0.60em; }
+    .btn_round p:hover {
+      color: #34738e; }
 
 /* solid blue button */
 .btn_yellow {
@@ -1220,6 +1222,13 @@ header {
       .blog_preview p .view-article:hover {
         color: #9b4856; }
 
+.blog_preview {
+  border-top: #92c5da 2em solid;
+  background: #92c5da; }
+  .blog_preview h3,
+  .blog_preview p {
+    color: #f8fcff; }
+
 /* 3 column  blog cards */
 .blog-card-wrapper,
 .blog-index-wrapper {
@@ -1278,7 +1287,8 @@ header {
     text-transform: lowercase;
     font-size: 1em;
     text-align: left;
-    padding-left: 2em; }
+    padding-left: 2em;
+    color: #34738e; }
 
 /*  CLASS CARDS */
 .class_preview_wrapper {

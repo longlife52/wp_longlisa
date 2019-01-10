@@ -123,6 +123,10 @@
 
     p {
         margin-top: 0.60em;
+
+        &:hover {
+          color: $main-blue;
+        }
     }
 }
 

@@ -46,6 +46,38 @@ get_header(); ?>
         </div>
     </section>
 
+    <!-- start featured event -->
+     <section class="feature">
+          <div class="feature_hero">
+             <a href="<?php the_field('featured_event_button_link'); ?>">
+
+               <?php
+                 $image = get_field('featured_event_hero');
+                 if ( !empty($image)): ?>
+
+                   <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?> title="<?php echo $image['title']; ?> class="feature_img bottom_edge_shadow"/>
+
+               <?php endif; ?>
+            </a>
+        </div>
+          <div class="cta cta1">
+              <h4 class="feature_event_title"><?php the_field('featured_event_title'); ?></h4>
+              <h5 class="featured_event_subtitle"><?php the_field('featured_event_sub_title'); ?></h5>
+                  <p><?php the_field('featured_event_copy'); ?></p>
+                  <p><?php the_field('featured_event_tag_line'); ?></p>
+          </div>
+          <div class="cta cta2">
+              <p><?php the_field('featured_event_date'); ?></p>
+              <p><?php the_field('featured_event_time'); ?></p>
+              <p><?php the_field('featured_event_location'); ?></p>
+
+              <div class="center-text button-box center_text">
+                  <a href="<?php the_field('featured_event_button_link'); ?>" target="blank"><p class="ghost_button ghost_btn_blue"><?php the_field('featured_event_button_label'); ?></p></a>
+              </div>
+          </div>
+      </section>
+    <!-- end featured event -->
+
     <section class="blog_preview blog_preview_space">
             <h3><?php the_field('blog_preview_title'); ?></h3>
                 <p><?php the_field('blog_preview_copy'); ?></p>
@@ -78,39 +110,6 @@ get_header(); ?>
 
                 </div> <!-- end blog card wrapper -->
             </section> <!--end blog preview -->
-
-
-    <!-- start featured event -->
-     <section class="feature">
-          <div class="feature_hero">
-             <a href="<?php the_field('featured_event_button_link'); ?>">
-
-               <?php
-                 $image = get_field('featured_event_hero');
-                 if ( !empty($image)): ?>
-
-                   <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?> title="<?php echo $image['title']; ?> class="feature_img bottom_edge_shadow"/>
-
-               <?php endif; ?>
-            </a>
-        </div>
-          <div class="cta cta1">
-              <h4 class="feature_event_title"><?php the_field('featured_event_title'); ?></h4>
-              <h5 class="featured_event_subtitle"><?php the_field('featured_event_sub_title'); ?></h5>
-                  <p><?php the_field('featured_event_copy'); ?></p>
-                  <p><?php the_field('featured_event_tag_line'); ?></p>
-          </div>
-          <div class="cta cta2">
-              <p><?php the_field('featured_event_date'); ?></p>
-              <p><?php the_field('featured_event_time'); ?></p>
-              <p><?php the_field('featured_event_location'); ?></p>
-
-              <div class="center-text button-box center_text">
-                  <a href="<?php the_field('featured_event_button_link'); ?>" target="blank"><p class="ghost_button ghost_btn_blue"><?php the_field('featured_event_button_label'); ?></p></a>
-              </div>
-          </div>
-      </section>
-    <!-- end featured event -->
 
     <!--start about Lisa -->
     <section class="about bottom_edge_shadow">
