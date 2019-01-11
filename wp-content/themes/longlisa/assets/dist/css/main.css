@@ -643,7 +643,15 @@ input[type=submit] {
   .content_editor ul li {
     color: #214a5b;
     font-size: 1.5em;
-    margin-left: 3em; }
+    margin-left: 3em;
+    line-height: 1.5;
+    padding-bottom: 1em; }
+    .content_editor ol li a,
+    .content_editor ul li a {
+      color: #34738e; }
+      .content_editor ol li a:hover,
+      .content_editor ul li a:hover {
+        background: #dad445; }
 
 .content_editor aside a {
   color: #9b4856;
@@ -771,13 +779,7 @@ input[type=submit] {
       grid-column-start: 5;
       grid-column-end: span 6; }
     .content_grid li {
-      margin-left: 2em;
-      line-height: 1.5;
-      padding-bottom: 1em; }
-      .content_grid li a {
-        color: #34738e; }
-        .content_grid li a:hover {
-          background: #dad445; }
+      margin-left: 2em; }
     .content_grid figure figcaption {
       grid-column-start: 5;
       grid-column-end: span 6; }

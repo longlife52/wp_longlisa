@@ -52,6 +52,16 @@
       color: $dark-blue;
       font-size: 1.5em;
       margin-left: 3em;
+      line-height: 1.5;
+      padding-bottom: 1em;
+
+      a {
+        color: $main-blue;
+
+        &:hover {
+          background: $yellow;
+        }
+      }
     }
   }
 
@@ -232,16 +242,6 @@
 
     li {
       margin-left: 2em;
-      line-height: 1.5;
-      padding-bottom: 1em;
-
-      a {
-        color: $main-blue;
-
-        &:hover {
-          background: $yellow;
-        }
-      }
     }
 
     figure {
