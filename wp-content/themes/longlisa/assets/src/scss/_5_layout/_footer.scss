@@ -8,7 +8,7 @@
         place-items: center center;
         font-family: $roboto;
         @include no-bullets;
-        padding-top:6em;
+        padding-top:10em;
         padding-bottom: 1em;
         color: $main-blue;
 
@@ -125,17 +125,20 @@
 //BREAKPOINTS
 
 @include breakpoint(large-mobile) {
-    .footer {
-        ul {
-            grid-template-columns: repeat(6, 1fr);
-        }
-    }
 
     .credentials_box_width {
         max-width: 750px;
         display: block;
         margin:auto;
     }
+}
+
+@include breakpoint(portrait) {
+  .footer {
+      ul {
+          grid-template-columns: repeat(6, 1fr);
+      }
+  }
 }
 
 @include breakpoint(landscape) {
