@@ -66,7 +66,7 @@
 
         <!-- open yoga alliance disclaimer -->
         <div class="footer_para">
-      <p class="ya_disclaimer">The yoga therapy components of Lisa Long's teaching are based on her International Association of Yoga Therapists Certification (IAYT) and not derived from status as an E-RYT 500, RCYT, YACEP with the Yoga Alliance Registry.</p>
+      <p class="ya_disclaimer"><?php the_field('yoga_alliance_disclaimer', 'option'); ?></p>
         </div>
         <!-- close yoga alliance disclaimer -->
 
