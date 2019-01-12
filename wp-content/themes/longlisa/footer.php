@@ -2,49 +2,61 @@
 </main>
 
 <!-- begin footer -->
-    <footer class="footer">
-        <div  class="newsletter_signup">
-            <div class="newsletter_video">
-                <h3>Another [ FREE ] way to feel better. </h3>
+<footer class="footer">
 
-                <div class="newsletter_video_box grow fade">
-                    <a href="https://youtu.be/zSt7k_q_qRU" target="blank" class="strip"> <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/footer_video_thumbnail.jpg" class="bottom_edge_shadow">
-                    </a>
-                </div>
-            </div> <!--close newsletter_video -->
+  <div  class="newsletter_signup">
+      <div class="newsletter_video">
+          <h3><?php the_field('title', 'option'); ?></h3>
 
-            <!-- Begin Constant Contact Inline Form Code -->
-            <div class="ctct-inline-form" data-form-id="30d30548-5ac1-4ec7-b91b-0142652f495c"></div>
-            <!-- End Constant Contact Inline Form Code -->
-        </div> <!--closes .newsletter_signup -->
+          <div class="newsletter_video_box grow fade">
+            <div class="fitvids">
+                <a href="#" class="js-video">
+                  <?php
 
-        <!--open yoga logos -->
-        <div class="credentials_box_width">
-            <ul>
-                <li class="hvr-bob"><a href="http://www.IAYT.org/" target="blank"><img src="<?php bloginfo('template_url'); ?>/assets/dist/img/iayt.jpg"  width="150"></a></li>
+                  $image = get_field('image', 'option');
 
-                <li class="hvr-bob"><a href="http://www.yogaalliance.org/" target="blank"><img src="<?php bloginfo('template_url'); ?>/assets/dist/img/yacep.png" width="50"></a></li>
+                  if ( !empty($image) ): ?>
 
-                <li class="hvr-bob"><a href="http://www.yogaalliance.org/" target="blank"><img src="<?php bloginfo('template_url'); ?>/assets/dist/img/ryt.png" width="50"></a></li>
+                    <img src="<?php echo $image['url']; ?> " alt="?php echo $image['alt']; ?>" data-video="<?php the_field('image_link', 'option'); ?>"/>
 
-                <li class="hvr-bob"><a href="http://www.yogaalliance.org/" target="blank"><img src="<?php bloginfo('template_url'); ?>/assets/dist/img/rcyt.png" width="50"></a></li>
+                  <?php endif; ?>
 
-                <li class="hvr-bob"><a href="https://franklinmethod.com" target="blank"><img src="<?php bloginfo('template_url'); ?>/assets/dist/img/fm_logo.jpg" width="50"></a></li>
-            </ul>
-        </div>
-        <!-- close yoga lgoos -->
+                </a>
+            </div>
+          </div>
+      </div> <!--close newsletter_video -->
 
-        <!-- open copyright -->
-        <ul class="terms">
-          <?php html5blank_nav_footer(); ?>
-        </ul>
+      <!-- Begin Constant Contact Form  -->
+      <div class="ctct-form" ><?php the_field('form', 'option'); ?> </div>
+      <!-- End Constant Contact Form  -->
+  </div> <!--closes .newsletter_signup -->
 
-        <section class="copyright">
-        <p>&copy; <?= date('Y'); ?> Lisa Long - all rights reserved</p>
-        <p>custom coded with love and intention by <a href="http://www.garrisonridge.com" target="blank">Garrison Ridge</a></p>
-        </section>
+  <!--open credential logos -->
+  <div class="credentials_box_width">
+      <ul>
+          <li class="hvr-bob"><a href="http://www.IAYT.org/" target="blank"><img src="<?php bloginfo('template_url'); ?>/assets/dist/img/iayt.jpg"  width="150"></a></li>
 
-        <!-- close copyright -->
+          <li class="hvr-bob"><a href="http://www.yogaalliance.org/" target="blank"><img src="<?php bloginfo('template_url'); ?>/assets/dist/img/yacep.png" width="50"></a></li>
+
+          <li class="hvr-bob"><a href="http://www.yogaalliance.org/" target="blank"><img src="<?php bloginfo('template_url'); ?>/assets/dist/img/ryt.png" width="50"></a></li>
+
+          <li class="hvr-bob"><a href="http://www.yogaalliance.org/" target="blank"><img src="<?php bloginfo('template_url'); ?>/assets/dist/img/rcyt.png" width="50"></a></li>
+
+          <li class="hvr-bob"><a href="https://franklinmethod.com" target="blank"><img src="<?php bloginfo('template_url'); ?>/assets/dist/img/fm_logo.jpg" width="50"></a></li>
+      </ul>
+  </div>
+  <!-- close credential lgoos -->
+
+  <!-- open terms + copyright -->
+  <ul class="terms">
+    <?php html5blank_nav_footer(); ?>
+  </ul>
+
+  <section class="copyright">
+  <p>&copy; <?= date('Y'); ?> Lisa Long - all rights reserved</p>
+  <p>custom coded with love and intention by <a href="http://www.garrisonridge.com" target="blank">Garrison Ridge</a></p>
+  </section>
+  <!-- close terms + copyright -->
 
         <!-- open yoga alliance disclaimer -->
         <div class="footer_para">
