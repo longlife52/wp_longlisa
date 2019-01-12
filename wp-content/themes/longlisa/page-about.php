@@ -80,12 +80,6 @@ get_header(); ?>
 </article>
 <!-- end WP block editor content -->
 
-<!-- start CTA button -->
-<div class="center-text button-box center_text">
-    <a href="offerings.html"><p class="ghost_button ghost_btn_blue">check out my offerings</p></a>
-</div>
-<!-- end CTA button -->
-
 <!-- start 3 ARTICLE ICON/class cards -->
 <?php get_template_part('partials/article_icon'); ?>
 <!-- end 3 ARTICLE ICON/class cards -->
