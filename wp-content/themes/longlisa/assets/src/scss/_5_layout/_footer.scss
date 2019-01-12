@@ -18,7 +18,7 @@
         }
     }
 
-	.copyright {
+	.terms {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -26,6 +26,20 @@
             color: $grey-blue;
         }
 	}
+}
+
+.copyright {
+  p {
+    text-align: center;
+    color: $dark-blue;
+      a {
+        color: $main-blue;
+        &:hover {
+          background: $yellow;
+        }
+      }
+  }
+
 }
 
 .footer_para {
@@ -83,6 +97,13 @@
 .ctct-inline-form {
     margin: 2em;
     padding-bottom: 2em;
+}
+
+//styles for Terms/Conditions, Privacy Policy, Disclaimers pages
+.page-template-default {
+  section {
+    padding: 5em em(20px) 5em em(20px);
+  }
 }
 
 //BREAKPOINTS

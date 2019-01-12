@@ -35,13 +35,14 @@
         <!-- close yoga lgoos -->
 
         <!-- open copyright -->
-        <ul class="copyright">
+        <ul class="terms">
           <?php html5blank_nav_footer(); ?>
         </ul>
 
-
-        <p class="footer_para">&copy; <?= date('Y'); ?> Lisa Long - all rights reserved</p>
-        <p class="footer_para">custom coded by - <a href="http://www.garrisonridge.com" target="blank">Garrison Ridge</a></p>
+        <section class="copyright">
+        <p>&copy; <?= date('Y'); ?> Lisa Long - all rights reserved</p>
+        <p>custom coded with love and intention by <a href="http://www.garrisonridge.com" target="blank">Garrison Ridge</a></p>
+        </section>
 
         <!-- close copyright -->
 

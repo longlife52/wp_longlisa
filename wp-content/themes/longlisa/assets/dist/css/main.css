@@ -719,7 +719,9 @@ input[type=submit] {
   padding: 0; }
 
 .content_editor .wp-block-button {
-  text-align: center; }
+  text-align: center;
+  margin-top: 4em;
+  margin-bottom: 4em; }
 
 .content_editor .wp-block-button__link {
   font-family: "Roboto Condensed", sans-serif; }
@@ -1035,7 +1037,7 @@ header {
     padding-left: 1em;
     padding-bottom: 2em; }
 
-.footer .copyright {
+.footer .terms {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1045,8 +1047,16 @@ header {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
-  .footer .copyright a {
+  .footer .terms a {
     color: #6b91a1; }
+
+.copyright p {
+  text-align: center;
+  color: #214a5b; }
+  .copyright p a {
+    color: #34738e; }
+    .copyright p a:hover {
+      background: #dad445; }
 
 .footer_para {
   display: -webkit-box;
@@ -1103,6 +1113,9 @@ header {
 .ctct-inline-form {
   margin: 2em;
   padding-bottom: 2em; }
+
+.page-template-default section {
+  padding: 5em 1.25em 5em 1.25em; }
 
 @media (min-width: 480px) {
   .footer ul {
