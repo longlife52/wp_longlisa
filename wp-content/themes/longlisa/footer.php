@@ -31,21 +31,27 @@
       <!-- End Constant Contact Form  -->
   </div> <!--closes .newsletter_signup -->
 
-  <!--open credential logos -->
+
+  <!--open REPEATER credential logos -->
   <div class="credentials_box_width">
+    <?php if(have_rows('credential_logos', 'option')): ?>
       <ul>
-          <li class="hvr-bob"><a href="http://www.IAYT.org/" target="blank"><img src="<?php bloginfo('template_url'); ?>/assets/dist/img/iayt.jpg"  width="150"></a></li>
+        <?php while(have_rows('credential_logos', 'option')): the_row();
+          //Vars
+          $logo = get_sub_field('logo', 'option');
+          $link = get_sub_field('link', 'option');
+          ?>
 
-          <li class="hvr-bob"><a href="http://www.yogaalliance.org/" target="blank"><img src="<?php bloginfo('template_url'); ?>/assets/dist/img/yacep.png" width="50"></a></li>
-
-          <li class="hvr-bob"><a href="http://www.yogaalliance.org/" target="blank"><img src="<?php bloginfo('template_url'); ?>/assets/dist/img/ryt.png" width="50"></a></li>
-
-          <li class="hvr-bob"><a href="http://www.yogaalliance.org/" target="blank"><img src="<?php bloginfo('template_url'); ?>/assets/dist/img/rcyt.png" width="50"></a></li>
-
-          <li class="hvr-bob"><a href="https://franklinmethod.com" target="blank"><img src="<?php bloginfo('template_url'); ?>/assets/dist/img/fm_logo.jpg" width="50"></a></li>
+          <li class="hvr-bob">
+            <a href="<?php echo $link; ?>" target="blank">
+              <img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" title="<?php echo $logo['title']; ?>" width="100">
+            </a>
+          </li>
+        <?php endwhile; ?>
       </ul>
+    <?php endif; ?>
   </div>
-  <!-- close credential lgoos -->
+  <!-- close REPEATER credential logos -->
 
   <!-- open terms + copyright -->
   <ul class="terms">

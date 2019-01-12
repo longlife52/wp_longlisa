@@ -127,12 +127,12 @@
 @include breakpoint(large-mobile) {
     .footer {
         ul {
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(6, 1fr);
         }
     }
 
     .credentials_box_width {
-        max-width: 500px;
+        max-width: 750px;
         display: block;
         margin:auto;
     }
