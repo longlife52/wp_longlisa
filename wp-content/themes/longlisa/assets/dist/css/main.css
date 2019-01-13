@@ -2895,10 +2895,19 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
 
 .blog_post_meta {
   text-align: center;
-  padding-bottom: 3em;
+  padding-bottom: 0;
+  margin-bottom: 0;
   padding-right: 0.625em;
   font-size: 1em;
   color: #214a5b; }
+
+.author_credit {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif; }
+  .author_credit a {
+    color: #214a5b; }
+    .author_credit a:hover {
+      background: #dad445; }
 
 .blog_post_content h2,
 .blog_post_content p {

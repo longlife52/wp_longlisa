@@ -104,11 +104,27 @@
 
 .blog_post_meta {
     text-align: center;
-    padding-bottom: 3em;
+    padding-bottom: 0;
+    margin-bottom: 0;
     padding-right: em(10px);
     font-size: 1em;
     color: $dark-blue;
 }
+
+.author_credit {
+  text-align: center;
+  font-family: $roboto;
+
+  a {
+    color: $dark-blue;
+
+    &:hover {
+      background: $yellow;
+    }
+  }
+}
+
+
 
 .blog_post_content {
 
