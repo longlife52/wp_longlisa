@@ -35,14 +35,31 @@
       </div>
 <!-- CLOSE BREADCRUMBS -->
 
+<!-- OPEN SIDE BAR SEACRCH -->
+  <?php get_sidebar(); ?>
+<!-- CLOSE SIDE BAR SEARCH -->
+
 <p class="blog_post_meta"><?php echo do_shortcode('[rt_reading_time label="" postfix="min"]'); ?> read | <?php the_date(); ?></p>
 
-
+<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
 <!-- start the actual blog post -->
         <article class="content_grid content_editor">
               	<?php the_content(); // Dynamic Content ?>
 <!-- end blog_post_content -->
+
         </article>
+
+<section class="tags_section">
+    <?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
+
+    <!-- open search form -->
+    <div class="bottom_search">
+    <?php get_template_part('partials/searchform'); ?>
+    </div>
+    <!-- close search form -->
+</section>
+
+
 
 <!-- start blog author area -->
 <!-- this code from https://napitwptech.com/introduction/wordpress/display-author-bio-without-plugin/ -->
@@ -69,14 +86,14 @@
 <?php endif; ?>
 <!-- end blog author area -->
 
-			<!-- post details -->
-			<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-			<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
-			<!-- /post details -->
+<!-- post details -->
+<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
+<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
+<!-- /post details -->
 
 
 
-      <!-- related blog posts links TO OTHER BLOG ARTICLES by category -->
+  <!-- related blog posts links TO OTHER BLOG ARTICLES by category -->
 <section class="blog_preview blog_preview_space"> <!-- open related blog posts -->
     <h3>Check These Out</h3>
       <p>Based on your interest, we curated these articles just for you.</p>
@@ -111,38 +128,38 @@
           <!-- end card one -->
         <?php }
         wp_reset_postdata(); ?>
+
+
       </div> <!-- end blog index wrapper -->
 </section> <!-- end related blog posts -->
 
-			<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
+<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
 
-			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
+<?php comments_template(); ?>
 
-			<?php comments_template(); ?>
-
-		</article>
+</article>
 		<!-- /article -->
 
 	<?php endwhile; ?>
 
 	<?php else: ?>
 
-		<!-- article -->
-		<article>
+<!-- article -->
+<article>
 
-			<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
+	<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
 
-		</article>
-		<!-- /article -->
+</article>
+<!-- /article -->
 
-	<?php endif; ?>
+<?php endif; ?>
 
-	</section>     <!-- end end blog_post_content section -->
+</section>     <!-- end end blog_post_content section -->
 
   <div class="">
   <?php get_template_part('partials/searchform'); ?>
   </div>
 
-<?php get_sidebar(); ?>
+
 
 <?php get_footer(); ?>

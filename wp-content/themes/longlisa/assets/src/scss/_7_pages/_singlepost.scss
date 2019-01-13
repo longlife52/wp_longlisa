@@ -20,6 +20,22 @@
   }
 }
 
+//SIDE BAR which contains the search form for articles
+.sidebar {
+  padding-left: 2em;
+
+  input {
+    font-size: em(18px);
+  }
+
+  .search-submit {
+    background: $light-blue;
+    font-size: em(18px);
+    color: $white;
+  }
+
+}
+
 //BLOG STYLES
 
 .blog_header_img {
@@ -185,6 +201,20 @@
     }
 }
 
+.bottom_search {
+  padding-top: 3em;
+
+  input {
+    font-size: em(18px);
+  }
+
+  .search-submit {
+    font-size: em(18px);
+    background: $light-blue;
+    color: $white;
+  }
+}
+
 @media (min-width: 350px) {
     .blog_post_content {
         aside {
@@ -192,6 +222,22 @@
             margin-right: 0.5em;
         }
     }
+}
+
+/* tags */
+.tags_section {
+  padding: 2em em(20px) 2em em(20px);
+  font-family: $roboto;
+  color: $main-blue;
+  max-width: 500px;
+  margin: auto;
+
+  a {
+    color: $main-blue;
+    &:hover {
+      background: $yellow;
+    }
+  }
 }
 
 /* blog post author section; check wp for classes */
@@ -263,6 +309,39 @@
     font-family: $cursive;
     font-size: 5em;
 }
+
+/* styles for COMMENTS */
+.comments {
+  padding: 2em 2em 2em 2em;
+
+  p {
+    color: $main-blue;
+
+    a {
+      color: $main-blue;
+
+      &:hover {
+        background: $yellow;
+      }
+    }
+  }
+
+  input {
+    font-size: em(18px);
+  }
+
+  .form-submit {
+    input {
+      background: $red;
+      font-size: em(20px);
+      color: $white;
+      padding: 0.5em;
+    }
+
+  }
+} //close .comments styles
+
+
 
 @include breakpoint (large-mobile) {
 
