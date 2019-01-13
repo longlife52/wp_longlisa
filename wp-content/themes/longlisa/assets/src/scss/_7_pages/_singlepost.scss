@@ -326,6 +326,13 @@
     font-size: 5em;
 }
 
+/* style for edit link that only admin sees */
+.post-edit-link {
+  color: $red;
+  padding-left: 2em;
+  font-family: $roboto;
+}
+
 /* styles for COMMENTS */
 .comments {
   padding: 2em 2em 2em 2em;
@@ -342,6 +349,10 @@
     }
   }
 
+  h2 {
+    color: $red;
+  }
+
   input {
     font-size: em(18px);
   }
@@ -355,8 +366,34 @@
     }
 
   }
+
+  ul {
+
+    li {
+      list-style: none;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
 } //close .comments styles
 
+/* styles for a person who comments on a blog */
+.fn,
+.says,
+.comment-meta,
+.reply {
+  font-family: $roboto;
+  color: $main-blue;
+
+  a {
+    color: $main-blue;
+    &:hover {
+      background: $yellow;
+    }
+  }
+}
 
 
 @include breakpoint (large-mobile) {

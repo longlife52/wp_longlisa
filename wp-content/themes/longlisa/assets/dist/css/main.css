@@ -3069,6 +3069,12 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
   font-family: "Grand Hotel", sans-serif;
   font-size: 5em; }
 
+/* style for edit link that only admin sees */
+.post-edit-link {
+  color: #9b4856;
+  padding-left: 2em;
+  font-family: "Roboto Condensed", sans-serif; }
+
 /* styles for COMMENTS */
 .comments {
   padding: 2em 2em 2em 2em; }
@@ -3078,6 +3084,8 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
       color: #34738e; }
       .comments p a:hover {
         background: #dad445; }
+  .comments h2 {
+    color: #9b4856; }
   .comments input {
     font-size: 1.125em; }
   .comments .form-submit input {
@@ -3085,6 +3093,28 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
     font-size: 1.25em;
     color: #f8fcff;
     padding: 0.5em; }
+  .comments ul li {
+    list-style: none; }
+    .comments ul li img {
+      border-radius: 50%; }
+
+/* styles for a person who comments on a blog */
+.fn,
+.says,
+.comment-meta,
+.reply {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #34738e; }
+  .fn a,
+  .says a,
+  .comment-meta a,
+  .reply a {
+    color: #34738e; }
+    .fn a:hover,
+    .says a:hover,
+    .comment-meta a:hover,
+    .reply a:hover {
+      background: #dad445; }
 
 @media (min-width: 480px) {
   .blog_post_header h1 {

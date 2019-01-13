@@ -53,6 +53,8 @@
 
         </article>
 
+<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
+
 <section class="tags_section">
     <?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
 
@@ -91,8 +93,6 @@
 <!-- post details -->
 <span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
 <!-- /post details -->
-
-
 
   <!-- related blog posts links TO OTHER BLOG ARTICLES by category -->
 <section class="blog_preview blog_preview_space"> <!-- open related blog posts -->
@@ -134,8 +134,6 @@
       </div> <!-- end blog index wrapper -->
 </section> <!-- end related blog posts -->
 
-<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
-
 <?php comments_template(); ?>
 
 </article>
@@ -156,11 +154,6 @@
 <?php endif; ?>
 
 </section>     <!-- end end blog_post_content section -->
-
-  <div class="">
-  <?php get_template_part('partials/searchform'); ?>
-  </div>
-
 
 
 <?php get_footer(); ?>
