@@ -15,6 +15,9 @@
     <!-- this is for google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Grand+Hotel|Roboto" rel="stylesheet">
 
+    <!-- this code is for pinterest and "claiming my website" -->
+    <meta name="p:domain_verify" content="e1cb36544060b48da6ac61df810ed0c3"/>
+
 		<!-- STYLES ARE ENQUED THROUGH FUNCTIONS.PHP -->
 
 		<?php wp_head(); ?>

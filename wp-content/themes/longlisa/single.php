@@ -90,6 +90,9 @@
 <?php endif; ?>
 <!-- end blog author area -->
 
+
+<?php comments_template(); ?>
+
 <!-- post details -->
 <span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
 <!-- /post details -->
@@ -134,7 +137,6 @@
       </div> <!-- end blog index wrapper -->
 </section> <!-- end related blog posts -->
 
-<?php comments_template(); ?>
 
 </article>
 		<!-- /article -->
