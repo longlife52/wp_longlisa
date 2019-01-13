@@ -702,7 +702,7 @@ input[type=submit] {
   margin-bottom: 0; }
 
 .content_editor .wp-block-quote cite {
-  margin-left: 1em; }
+  padding-left: 3em; }
 
 .content_editor aside {
   margin-left: 2em;
