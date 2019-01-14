@@ -755,6 +755,14 @@ input[type=submit] {
   grid-column-start: 2;
   grid-column-end: 11; }
 
+.heateor_sss_sharing_container {
+  padding-bottom: 5em; }
+
+.heateor_sss_sharing_title {
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+  color: #34738e; }
+
 /* GRID BREAKPOINTS */
 @media (min-width: 640px) {
   .wp-block-media-text {
@@ -777,9 +785,13 @@ input[type=submit] {
     .content_grid .schema-how-to,
     .content_grid .schema-faq,
     .content_grid .wp-block-embed__wrapper,
-    .content_grid .wp-block-button {
+    .content_grid .wp-block-button,
+    .content_grid .heateor_sss_sharing_container {
       grid-column-start: 5;
       grid-column-end: span 6; }
+    .content_grid .heateor_sss_sharing_container {
+      margin: auto;
+      padding-top: 4em; }
     .content_grid li {
       margin-left: 2em; }
     .content_grid figure figcaption {

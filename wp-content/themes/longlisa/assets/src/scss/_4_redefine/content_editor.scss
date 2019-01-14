@@ -211,6 +211,17 @@
   grid-column-end: 11;
 }
 
+//styles for sassy social share plugin
+.heateor_sss_sharing_container {
+  padding-bottom: 5em;
+}
+
+.heateor_sss_sharing_title {
+  font-family: $roboto;
+  text-align: center;
+  color: $main-blue;
+}
+
 /* GRID BREAKPOINTS */
 @include breakpoint (small) {
 
@@ -237,9 +248,15 @@
     .schema-how-to,
     .schema-faq,
     .wp-block-embed__wrapper,
-    .wp-block-button {
+    .wp-block-button,
+    .heateor_sss_sharing_container {
         grid-column-start: 5;
         grid-column-end: span 6;
+    }
+
+    .heateor_sss_sharing_container {
+      margin: auto;
+      padding-top: 4em;
     }
 
     li {
