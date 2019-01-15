@@ -41,10 +41,6 @@
 
 <p class="blog_post_meta"><?php echo do_shortcode('[rt_reading_time label="" postfix="min"]'); ?> read | <?php the_date(); ?></p>
 
-<div class="author_credit">
-<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-</div>
-
 <?php edit_post_link(); // Always handy to have Edit Post Links available ?>
 <!-- start the actual blog post -->
         <article class="content_grid content_editor">
@@ -81,7 +77,7 @@
             <p class="blog_author_bio"><?php esc_textarea(the_author_meta('description')); // Displays the author description added in Biographical Info ?></a></p>
             <!-- open cta button -->
             <div class="center-text button-box center_text">
-                <a href="offerings.html"><p class="ghost_button ghost_btn_blue">check out Lisa's offerings</p></a>
+                <a href="<?php the_field('author_button_link', 'option'); ?>"><p class="ghost_button ghost_btn_blue"><?php the_field('author_button_label', 'option'); ?></p></a>
             </div>
             <!-- close cta button -->
         </div> <!-- close blog_author_details -->
@@ -99,8 +95,8 @@
 
   <!-- related blog posts links TO OTHER BLOG ARTICLES by category -->
 <section class="blog_preview blog_preview_space"> <!-- open related blog posts -->
-    <h3>Check These Out</h3>
-      <p>Based on your interest, we curated these articles just for you.</p>
+    <h3><?php the_field('blog_preview_title', 'option'); ?></h3>
+      <p><?php the_field('blog_preview_para', 'option'); ?></p>
 
       <div class="blog-index-wrapper">
 

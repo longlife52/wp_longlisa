@@ -2,7 +2,7 @@
 
 	<main role="main">
 		<!-- section -->
-		<section>
+		<section class="author_page">
 
 		<?php if (have_posts()): the_post(); ?>
 

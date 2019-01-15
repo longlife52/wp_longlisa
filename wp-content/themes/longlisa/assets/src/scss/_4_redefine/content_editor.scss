@@ -248,16 +248,20 @@
     .schema-how-to,
     .schema-faq,
     .wp-block-embed__wrapper,
-    .wp-block-button,
-    .heateor_sss_sharing_container {
+    .wp-block-button{
         grid-column-start: 5;
         grid-column-end: span 6;
     }
 
-    .heateor_sss_sharing_container {
-      margin: auto;
-      padding-top: 4em;
-    }
+  .heateor_sss_sharing_container {
+    grid-column-start: 7;
+    grid-column-end: span 3;
+  }
+
+  .heateor_sss_sharing_title {
+    text-align: left;
+    padding-left: 2em;
+  }
 
     li {
       margin-left: 2em;

@@ -99,3 +99,40 @@ a {
       }
   }
 }
+
+.search_page,
+.author_page {
+  margin-top: 6em;
+  padding: 3em;
+
+  h1 {
+    text-align: center;
+    color: #34738e;
+    font-size: 2em;
+    padding-bottom: 2em;
+  }
+
+  img {
+    border-radius: 50%;
+  }
+
+  article {
+    padding-bottom: 5em;
+    max-width: 500px;
+    margin: auto;
+    color: #214a5b;
+    font-family: Roboto;
+
+      a {
+        color: #214a5b;
+
+        &:hover {
+          background: #dad445;
+        }
+      }
+  }
+}
+
+.sidebar {
+  padding-bottom: 2em;
+}
