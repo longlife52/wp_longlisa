@@ -3264,3 +3264,78 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
 .nf-error-msg {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.5em; }
+
+/* WooCommerce Styles */
+.woocommerce .woocommerce-breadcrumb {
+  margin: 8em 2em; }
+
+.woocommerce-breadcrumb,
+.woocommerce-error,
+.product_meta,
+.tabs,
+.comment-reply-title,
+.woocommerce-review-link,
+.woocommerce-product-rating,
+.comment-form-rating {
+  font-family: "Roboto Condensed", sans-serif; }
+  .woocommerce-breadcrumb a,
+  .woocommerce-error a,
+  .product_meta a,
+  .tabs a,
+  .comment-reply-title a,
+  .woocommerce-review-link a,
+  .woocommerce-product-rating a,
+  .comment-form-rating a {
+    color: #92c5da; }
+
+.woocommerce-breadcrumb {
+  position: fixed;
+  top: 0;
+  z-index: 9025;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  background: #f8fcff; }
+
+.product {
+  margin-top: 10em;
+  padding-left: 2em;
+  padding-right: 2em; }
+
+.tabs {
+  padding-left: 0.625em; }
+
+.comment-form-rating {
+  padding-top: 2em; }
+
+.wc-tabs-wrapper {
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  padding-bottom: 6.25em;
+  max-width: 750px;
+  margin: auto; }
+
+.comment_container {
+  padding-right: 1.25em; }
+  .comment_container img {
+    border-radius: 50%; }
+
+.woocommerce div.product p.price,
+.woocommerce div.product .stock {
+  color: #34738e; }
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+  background-color: #9b4856; }
+
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+  background-color: #dad445; }
+
+.single_add_to_cart_button {
+  background: #9b4856; }
+
+.akismet_comment_form_privacy_notice a {
+  color: #92c5da; }
+
+.woocommerce-products-header {
+  margin-top: 10em;
+  position: relative;
+  background: none; }

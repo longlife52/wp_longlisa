@@ -1,0 +1,96 @@
+/* WooCommerce Styles */
+.woocommerce .woocommerce-breadcrumb {
+  margin: 8em 2em
+}
+
+.woocommerce-breadcrumb,
+.woocommerce-error,
+.product_meta,
+.tabs,
+.comment-reply-title,
+.woocommerce-review-link,
+.woocommerce-product-rating,
+.comment-form-rating {
+  font-family: $roboto;
+
+  a {
+    color: $light-blue;
+  }
+}
+
+.woocommerce-breadcrumb {
+  position: fixed;
+  top: 0;
+  z-index: map-get($zindex, subheader);
+  padding-left: em(20px);
+  padding-right: em(20px);
+  background: $white;
+}
+
+
+.product {
+  margin-top: 10em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+
+.tabs {
+  padding-left: em(10px);
+}
+
+.comment-form-rating {
+  padding-top: 2em;
+}
+
+.wc-tabs-wrapper {
+  padding-left: em(20px);
+  padding-right: em(20px);
+  padding-bottom: em(100px);
+  max-width: 750px;
+  margin: auto;
+}
+
+.comment_container {
+  padding-right: em(20px);
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+
+element.style {
+}
+.woocommerce div.product p.price,
+.woocommerce div.product .stock {
+  color: $main-blue;
+}
+
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+  background-color: $red;
+
+}
+
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+
+  background-color: $yellow;
+}
+
+.single_add_to_cart_button {
+  background: $red;
+}
+
+.akismet_comment_form_privacy_notice {
+
+  a {
+    color: $light-blue;
+  }
+}
+
+.woocommerce-products-header {
+  margin-top: 10em;
+  position: relative;
+  background: none;
+}
