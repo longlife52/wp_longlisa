@@ -2,7 +2,7 @@
 
 	<main role="main">
 		<!-- section -->
-		<section>
+		<section class="general_page">
 
 			<h1><?php the_title(); ?></h1>
 

@@ -454,5 +454,16 @@ remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altoget
 
  }
 
+ /* -------------------------------*\
+
+  WooCommerce theme support
+
+  \* ------------------------------*/
+
+function mytheme_add_woocommerce_support() {
+	add_theme_support( 'woocommerce' );
+}
+add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+
 
 // TODO: INCLUDE AH HA CREATIVE BRANDED LOGIN SCREEN

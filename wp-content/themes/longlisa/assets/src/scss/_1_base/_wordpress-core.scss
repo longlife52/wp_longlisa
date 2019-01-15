@@ -1,6 +1,22 @@
 /*------------------------------------*\
     #WORDPRESS-CORE
 \*------------------------------------*/
+/* styles for page.php which woocommerce uses from the wp core */
+
+.general_page {
+  h1 {
+    color: #50b1da;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    text-align: center;
+    color: #34738e;
+    margin-top: 0;
+  }
+}
 
 .alignnone {
 	margin:5px 20px 20px 0;
