@@ -3269,23 +3269,9 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
 .woocommerce .woocommerce-breadcrumb {
   margin: 8em 2em; }
 
-.woocommerce-breadcrumb,
-.woocommerce-error,
-.product_meta,
-.tabs,
-.comment-reply-title,
-.woocommerce-review-link,
-.woocommerce-product-rating,
-.comment-form-rating {
+.woocommerce {
   font-family: "Roboto Condensed", sans-serif; }
-  .woocommerce-breadcrumb a,
-  .woocommerce-error a,
-  .product_meta a,
-  .tabs a,
-  .comment-reply-title a,
-  .woocommerce-review-link a,
-  .woocommerce-product-rating a,
-  .comment-form-rating a {
+  .woocommerce a {
     color: #92c5da; }
 
 .woocommerce-breadcrumb {
