@@ -1,23 +1,82 @@
 /* WooCommerce Styles */
+.woocommerce-message {
+  padding-top: 9em;
+  background-color: $white;
+  max-width: 400px;
+}
 .woocommerce .woocommerce-breadcrumb {
-  margin: 8em 2em
+  margin: 7.5em 2em
 }
 
 .woocommerce {
   font-family: $roboto;
 
   a {
-    color: $light-blue;
+    color: $dark-blue;
   }
 }
 
-.woocommerce-breadcrumb {
+.woocommerce .woocommerce-breadcrumb {
   position: fixed;
   top: 0;
   z-index: map-get($zindex, subheader);
   padding-left: em(20px);
   padding-right: em(20px);
-  background: $white;
+  background: $pale-grey-blue;
+
+  a {
+    color: $dark-blue;
+
+    &:hover {
+      background-color: $yellow;
+    }
+  }
+}
+
+.woocommerce-products-header {
+  text-align: center;
+  z-index: 0;
+  display: block;
+
+/* I am hiding the h1 for the shop by moving it off screen */
+  h1 {
+    color: $main-blue;
+    margin-bottom: 0;
+    position: absolute;
+    top: -9999px !important;
+    left: -9999px !important;
+  }
+}
+
+.page-description {
+
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    color: $dark-blue;
+    font-size: 2em;
+    margin-top: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding: 1em;
+    background: $yellow;
+
+  }
+}
+
+.woocommerce-result-count {
+  padding-left: 2em;
+}
+
+.woocommerce-ordering {
+  padding-right: 2em;
+}
+
+.woocommerce .products ul, .woocommerce ul.products {
+  padding-left: 2em;
 }
 
 
@@ -57,16 +116,17 @@ element.style {
 }
 .woocommerce div.product p.price,
 .woocommerce div.product .stock {
-  color: $main-blue;
+  color: $dark-blue;
 }
 
 
-.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
   background-color: $red;
+  color: $white;
 
 }
 
-.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover{
 
   background-color: $yellow;
 }
@@ -86,4 +146,37 @@ element.style {
   margin-top: 10em;
   position: relative;
   background: none;
+}
+
+.star-rating,
+.stars a {
+  color: $yellow;
+}
+
+#respond {
+
+  input#submit.submit {
+    background-color: $red;
+    color: $white;
+
+    &:hover {
+      background-color: $yellow;
+      color: $dark-blue;
+    }
+  }
+}
+
+.woocommerce span.onsale {
+  background-color: $yellow;
+  color: $dark-blue;
+  text-transform: uppercase;
+  margin-left: 1em;
+}
+
+.woocommerce ul.products li.product .price {
+  color: $main-blue;
+}
+
+.woocommerce .widget_shopping_cart {
+  max-width: 350px;
 }
