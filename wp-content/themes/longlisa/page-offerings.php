@@ -5,6 +5,7 @@ Template Name: Offerings
 get_header(); ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
   <nav class="nav_offering container">
     <ul class="container">
     <?php html5blank_nav_offering(); ?>

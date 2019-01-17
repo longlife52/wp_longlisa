@@ -4,6 +4,8 @@ Template Name: Privates
 */
 get_header(); ?>
 
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
 <!-- BREADCRUMBS -->
   <div class="breadcrumb_offering container">
         <?php
@@ -18,15 +20,15 @@ get_header(); ?>
     <section class="billboard_blue_wrapper offering_wrapper">
         <div class="billboard center_text offering_billboard title_space title_nospace">
             <div class="title_line">
-                <h2 class="offering_title_small">get focused in a </h2>
+                <h2 class="offering_title_small"><?php the_field('title_small'); ?></h2>
             </div>
-            <h2 class="offering_title_big title_uppercase title_size_increase">Private</h2>
+            <h2 class="offering_title_big title_uppercase title_size_increase"><?php the_field('title_large'); ?></h2>
             <div class="billboard_para">
-                <p>A one-on-one session with Lisa will help you understand your body better.</p>
+                <p><?php the_field('title_para'); ?></p>
             </div>
 
             <div class="center-text button-box center_text">
-                <a href="offerings.html"><p class="ghost_button ghost_btn_blue">start now</p></a>
+                <a href="<?php the_field('cta_button_link'); ?>"><p class="ghost_button ghost_btn_blue"><?php the_field('cta_button_label'); ?></p></a>
             </div>
         </div>
     </section> <!-- closes .billboard_blue_wrapper -->
@@ -35,80 +37,16 @@ get_header(); ?>
 <?php get_template_part('partials/testimonial_two_block'); ?>
 <!-- end TESTIMONIAL TWO BLOCK  -->
 
-    <!-- start PRIVATE DETAILS  -->
-    <section class="lisa_story" id="lisa_story">
-        <div class="lisa_story_title">
-            <h1 class="story_title_pad">Gain Insight and Understanding</h1>
-            <h3 class="title_justify_right"></h3>
-        </div>
-
-        <div class="lisa_story_para blog_post_content">
-            <p>lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life. it has been challenging. it has been invigorating.
-            </p>
-
-            <p>lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life. <a href="index.html">it's been a great life. </a>  it's been a great life.  it has been challenging. it has been invigorating.
-            </p>
-
-            <figure>
-                <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/reverse_table.png" />
-
-                <figcaption>Let's see how this caption works for an image. Testing a really long caption, too. Let's see how it handles a second line. </figcaption>
-
-            </figure>
-
-            <aside>
-            <h6>Check out if this aside callout works.
-            </h6>
-            </aside>
-
-            <h2>Sub Headers Break Things Up</h2>
-            <p>how does this paragraph work with the aside? the aside above works with this paragraph. lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating.
-            </p>
-
-            <ul class="lisa_story_ul">
-                <li>Great thing one.
-                </li>
-                <li>Great thing two. Checking to see what happens when my list is longer than line.  Just how does it go?
-                </li>
-                <li>Really awesome thing three.
-                </li>
-            </ul>
-
-            <aside>
-                <h6>Let's see what this aside call out does, too, <a href="index.html" >with a hyperlink.</a> </h6>
-            </aside>
-
-            <p>lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating.
-            </p>
-
-            <ol class="lisa_story_ol">
-                <li>Life is good.
-                </li>
-                <li>Travel is fun. Checking to see what happens when my list is longer than line.  Just how does it go?
-                </li>
-                <li>Relax and feel joy.
-                </li>
-            </ol>
-
-            <aside>
-                <h6>Let's see what this aside call out does, too. </h6>
-            </aside>
-
-            <p>lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating. lorem ipsum tell me a story about my life.  it's been a great life.  it has been challenging. it has been invigorating.
-            </p>
-        </div>
-        <!-- end blog_post_content -->
-
-        <div class="center-text button-box center_text">
-            <a href="offerings.html"><p class="ghost_button ghost_btn_blue">contact lisa</p></a>
-        </div> <!-- end PRIVATE DETAIL content -->
-    </section>
-<!-- end PRIVATE DETAILS -->
+<!-- start WP block editor content -->
+<article id="lisa_story" class="content_grid content_editor">
+  <?php the_content(); // Dynamic Content ?>
+</article>
+<!-- end WP block editor content -->
 
 <?php get_template_part('partials/article_icon'); ?>
 
     <!-- start large quote -->
-    <h3 class="large_quote">experience the benefits of therapeutic movement </h3>
+    <h3 class="large_quote"><?php the_field('quote'); ?></h3>
     <!--end large quote -->
 
 <div class="dots dots_hug_up">
@@ -123,6 +61,6 @@ get_header(); ?>
 <?php get_template_part('partials/dots'); ?>
 </div>
 
-
+<?php endwhile; endif; ?>
 
 <?php get_footer(); ?>
