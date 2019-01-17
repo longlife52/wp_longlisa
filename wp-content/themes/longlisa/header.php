@@ -49,14 +49,6 @@
             <label for="nav-toggle" class="nav-toggle-label">
                <span></span>
             </label>
-
-            <!-- change the woocommerce character between pages to match yoast breadcrumbs -->
-            <?php
-            	$args = array(
-            			'delimiter' => '>>'
-            	);
-            ?>
-            <?php woocommerce_breadcrumb( $args ); ?>
         </header>
 
     <!-- open main -->

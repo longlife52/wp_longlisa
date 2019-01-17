@@ -2583,7 +2583,7 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
     .breadcrumb_offering p a {
       color: #f8fcff; }
       .breadcrumb_offering p a:hover {
-        color: #dad445; }
+        background-color: #dad445; }
 
 .title_space {
   padding-top: 8em; }
