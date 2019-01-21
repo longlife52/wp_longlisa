@@ -805,6 +805,20 @@ input[type=submit] {
   text-align: center;
   color: #34738e; }
 
+.wp-block-table {
+  padding-left: 1.25em;
+  padding-top: 1.25em;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.5em;
+  color: #34738e;
+  margin: auto; }
+  .wp-block-table tr:first-child td {
+    color: #9b4856;
+    padding-bottom: 0; }
+  .wp-block-table td {
+    padding-right: 1.25em;
+    padding-bottom: 1.25em; }
+
 /* GRID BREAKPOINTS */
 @media (min-width: 640px) {
   .wp-block-media-text {
@@ -828,9 +842,12 @@ input[type=submit] {
     .content_grid .schema-how-to,
     .content_grid .schema-faq,
     .content_grid .wp-block-embed__wrapper,
-    .content_grid .wp-block-button {
+    .content_grid .wp-block-button,
+    .content_grid .wp-block-table {
       grid-column-start: 5;
       grid-column-end: span 6; }
+    .content_grid .wp-block-table {
+      padding-left: 0; }
     .content_grid .heateor_sss_sharing_container {
       grid-column-start: 7;
       grid-column-end: span 3; }
@@ -3396,5 +3413,6 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
 .woocommerce ul.products li.product .price {
   color: #34738e; }
 
-.woocommerce .widget_shopping_cart {
+.woocommerce .widget_shopping_cart,
+.sidebar-widget {
   max-width: 350px; }

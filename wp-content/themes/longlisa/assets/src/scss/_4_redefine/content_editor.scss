@@ -222,6 +222,31 @@
   color: $main-blue;
 }
 
+// style for wp-table
+.wp-block-table {
+  padding-left: em(20px);
+  padding-top: em(20px);
+  font-family: $roboto;
+  font-size: 1.5em;
+  color: $main-blue;
+  margin: auto;
+
+  tr {
+    &:first-child td {
+      color: $red;
+      padding-bottom: 0;
+    }
+  }
+
+  td {
+  padding-right: em(20px);
+  padding-bottom: em(20px);
+
+  }
+}
+
+
+
 /* GRID BREAKPOINTS */
 @include breakpoint (small) {
 
@@ -248,9 +273,14 @@
     .schema-how-to,
     .schema-faq,
     .wp-block-embed__wrapper,
-    .wp-block-button{
+    .wp-block-button,
+    .wp-block-table {
         grid-column-start: 5;
         grid-column-end: span 6;
+    }
+
+    .wp-block-table {
+      padding-left: 0;
     }
 
 /* sassy social media sharing styles */

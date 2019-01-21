@@ -177,6 +177,7 @@ element.style {
   color: $main-blue;
 }
 
-.woocommerce .widget_shopping_cart {
+.woocommerce .widget_shopping_cart,
+.sidebar-widget {
   max-width: 350px;
 }

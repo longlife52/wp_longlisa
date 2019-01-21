@@ -1,0 +1,9 @@
+2019-01-20T18:25:01+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Error as array in /Users/lisalong/Desktop/wp-new_longlisa/wp-content/plugins/ninja-forms/ninja-forms.php:1135
+Stack trace:
+#0 /Users/lisalong/Desktop/wp-new_longlisa/wp-includes/class-wp-hook.php(286): nf_update_marketing_feed()
+#1 /Users/lisalong/Desktop/wp-new_longlisa/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Users/lisalong/Desktop/wp-new_longlisa/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#3 /Users/lisalong/Desktop/wp-new_longlisa/wp-cron.php(126): do_action_ref_array('nf_marketing_fe...', Array)
+#4 {main}
+  thrown in /Users/lisalong/Desktop/wp-new_longlisa/wp-content/plugins/ninja-forms/ninja-forms.php on line 1135
+
