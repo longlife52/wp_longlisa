@@ -1,0 +1,4 @@
+/* styles for archive page pagination */
+@media (min-width: 900px) {
+  nav .navigation .pagination {
+    display: block; } }

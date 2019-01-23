@@ -1,0 +1,26 @@
+/* styles for archive page pagination */
+.blog_index_pagination {
+  padding-bottom: 3em;
+}
+
+.nav-links {
+  text-align: center;
+  color: $white;
+  font-family: $roboto;
+  font-size: 2em;
+
+  a {
+    color: $white;
+
+    &:hover {
+      background: $yellow;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .blog_index_pagination {
+    padding-top: 3em;
+    margin-right: 3em;
+  }
+}

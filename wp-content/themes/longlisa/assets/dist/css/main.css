@@ -3416,3 +3416,22 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
 .woocommerce .widget_shopping_cart,
 .sidebar-widget {
   max-width: 350px; }
+
+/* styles for archive page pagination */
+.blog_index_pagination {
+  padding-bottom: 3em; }
+
+.nav-links {
+  text-align: center;
+  color: #f8fcff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2em; }
+  .nav-links a {
+    color: #f8fcff; }
+    .nav-links a:hover {
+      background: #dad445; }
+
+@media (min-width: 900px) {
+  .blog_index_pagination {
+    padding-top: 3em;
+    margin-right: 3em; } }
