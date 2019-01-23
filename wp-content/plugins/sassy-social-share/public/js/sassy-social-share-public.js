@@ -400,6 +400,11 @@ function heateorSssMoreSharingPopup(elem, postUrl, postTitle, twitterTitle){
 		locale: "en-US",
 		redirect_url: "https://www.meneame.net/submit.php?url=" + postUrl,
 	  },
+	  MeWe: {
+		title: "MeWe",
+		locale: "en-US",
+		redirect_url: "https://mewe.com/share?link=" + postUrl,
+	  },
 	  Mix: {
 		title: "Mix",
 		locale: "en-US",

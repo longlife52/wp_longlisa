@@ -544,6 +544,9 @@ class Sassy_Social_Share_Follow_Widget extends WP_Widget {
 		if ( $instance['vkontakte'] ) {
 			$html .= '<li class="heateorSssSharingRound"><i style="'. $icon_style .'" alt="Vkontakte" title="Vkontakte" class="heateorSssSharing heateorSssVkontakteBackground"><a target="_blank" aria-label="Vkontakte" href="'. $instance['vkontakte'] .'" rel="noopener"><ss style="display:block" class="heateorSssSharingSvg heateorSssVkontakteSvg"></ss></a></i></li>';
 		}
+		if ( $instance['xing'] ) {
+			$html .= '<li class="heateorSssSharingRound"><i style="'. $icon_style .'" alt="Xing" title="Xing" class="heateorSssSharing heateorSssXingBackground"><a target="_blank" aria-label="Xing" href="'. $instance['xing'] .'" rel="noopener"><ss style="display:block" class="heateorSssSharingSvg heateorSssXingSvg"></ss></a></i></li>';
+		}
 		if ( $instance['youtube'] ) {
 			$html .= '<li class="heateorSssSharingRound"><i style="'. $icon_style .'" alt="Youtube" title="Youtube" class="heateorSssSharing heateorSssYoutubeBackground"><a target="_blank" aria-label="Youtube" href="'. $instance['youtube'] .'" rel="noopener"><ss style="display:block" class="heateorSssSharingSvg heateorSssYoutubeSvg"></ss></a></i></li>';
 		}
@@ -580,6 +583,7 @@ class Sassy_Social_Share_Follow_Widget extends WP_Widget {
 		$instance['flickr'] = $new_instance['flickr'];
 		$instance['foursquare'] = $new_instance['foursquare'];
 		$instance['github'] = $new_instance['github'];
+		$instance['gitlab'] = $new_instance['gitlab'];
 		$instance['google'] = $new_instance['google'];
 		$instance['linkedin'] = $new_instance['linkedin'];
 		$instance['linkedin_company'] = $new_instance['linkedin_company'];
@@ -589,6 +593,7 @@ class Sassy_Social_Share_Follow_Widget extends WP_Widget {
 		$instance['tumblr'] = $new_instance['tumblr'];
 		$instance['vimeo'] = $new_instance['vimeo'];
 		$instance['vkontakte'] = $new_instance['vkontakte'];
+		$instance['xing'] = $new_instance['xing'];
 		$instance['youtube'] = $new_instance['youtube'];
 		$instance['youtube_channel'] = $new_instance['youtube_channel'];
 		$instance['rss_feed'] = $new_instance['rss_feed'];
@@ -607,7 +612,7 @@ class Sassy_Social_Share_Follow_Widget extends WP_Widget {
 	public function form( $instance ) { 
 		
 		/* default widget settings. */ 
-		$defaults = array( 'title' => '', 'size' => '32', 'icon_shape' => 'round', 'facebook' => '', 'twitter' => '', 'instagram' => '', 'pinterest' => '', 'behance' => '', 'flickr' => '', 'foursquare' => '', 'github' => '', 'google' => '', 'linkedin' => '', 'linkedin_company' => '', 'medium' => '', 'odnoklassniki' => '', 'snapchat' => '', 'tumblr' => '', 'vimeo' => '', 'vkontakte' => '', 'youtube' => '', 'youtube_channel' => '', 'rss_feed' => '', 'before_widget_content' => '', 'after_widget_content' => '' );
+		$defaults = array( 'title' => '', 'size' => '32', 'icon_shape' => 'round', 'facebook' => '', 'twitter' => '', 'instagram' => '', 'pinterest' => '', 'behance' => '', 'flickr' => '', 'foursquare' => '', 'github' => '', 'gitlab' => '', 'google' => '', 'linkedin' => '', 'linkedin_company' => '', 'medium' => '', 'odnoklassniki' => '', 'snapchat' => '', 'tumblr' => '', 'vimeo' => '', 'vkontakte' => '', 'xing' => '', 'youtube' => '', 'youtube_channel' => '', 'rss_feed' => '', 'before_widget_content' => '', 'after_widget_content' => '' );
 
 		foreach ( $instance as $key => $value ) {
 			if ( is_string( $value ) ) {
@@ -680,6 +685,9 @@ class Sassy_Social_Share_Follow_Widget extends WP_Widget {
 			<label for="<?php echo $this->get_field_id( 'vkontakte' ); ?>"><?php _e( 'Vkontakte URL:', 'sassy-social-share' ); ?></label> 
 			<input style="width: 95%" class="widefat" id="<?php echo $this->get_field_id( 'vkontakte' ); ?>" name="<?php echo $this->get_field_name( 'vkontakte' ); ?>" type="text" value="<?php echo $instance['vkontakte']; ?>" /><br/>
 			<span>https://vk.com/ID</span><br/><br/>
+			<label for="<?php echo $this->get_field_id( 'xing' ); ?>"><?php _e( 'Xing URL:', 'sassy-social-share' ); ?></label> 
+			<input style="width: 95%" class="widefat" id="<?php echo $this->get_field_id( 'xing' ); ?>" name="<?php echo $this->get_field_name( 'xing' ); ?>" type="text" value="<?php echo $instance['xing']; ?>" /><br/>
+			<span>https://www.xing.com/profile/ID</span><br/><br/>
 			<label for="<?php echo $this->get_field_id( 'youtube' ); ?>"><?php _e( 'Youtube URL:', 'sassy-social-share' ); ?></label> 
 			<input style="width: 95%" class="widefat" id="<?php echo $this->get_field_id( 'youtube' ); ?>" name="<?php echo $this->get_field_name( 'youtube' ); ?>" type="text" value="<?php echo $instance['youtube']; ?>" /><br/>
 			<span>https://www.youtube.com/user/ID</span><br/><br/>

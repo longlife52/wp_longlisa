@@ -64,6 +64,14 @@
         </div>  <!-- end blog card wrapper -->
     </section>
 
+    <!-- START PAGINATION -->
+    <?php the_posts_pagination( array(
+        'mid_size'  => 2,
+        'prev_text' => __( 'Back', 'textdomain' ),
+        'next_text' => __( 'Onward', 'textdomain' ),
+    ) ); ?>
+    <!-- END PAGINATION -->
+
       <?php else: ?>
         <em>No Posts Found</em>
     <?php endif; ?>
