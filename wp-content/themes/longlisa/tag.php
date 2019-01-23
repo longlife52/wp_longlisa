@@ -61,6 +61,19 @@
 
     <?php endwhile; ?>
     </div>  <!-- end blog card wrapper -->
+    <!-- START PAGINATION -->
+  <section class="blog_index_pagination">
+  <div class="pagination_block">
+    <?php the_posts_pagination( array(
+        'mid_size'  => 2,
+        'prev_text' => __( 'Back', 'textdomain' ),
+        'next_text' => __( 'Onward', 'textdomain' ),
+    ) ); ?>
+  </div>
+</section>
+    <!-- END PAGINATION -->
+
+
 </section>
 
   <?php else: ?>
