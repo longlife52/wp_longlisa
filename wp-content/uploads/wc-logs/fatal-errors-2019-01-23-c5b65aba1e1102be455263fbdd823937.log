@@ -1,0 +1,7 @@
+2019-01-23T22:03:31+00:00 CRITICAL Uncaught GuzzleHttp\Ring\Exception\ConnectException: cURL error 35: Unknown SSL protocol error in connection to api.constantcontact.com:443  in /Users/lisalong/Desktop/wp-new_longlisa/wp-content/plugins/constant-contact-forms/vendor/constantcontact/guzzlehttp/ringphp/src/Client/CurlFactory.php:126
+Stack trace:
+#0 /Users/lisalong/Desktop/wp-new_longlisa/wp-content/plugins/constant-contact-forms/vendor/constantcontact/guzzlehttp/ringphp/src/Client/CurlFactory.php(91): GuzzleHttp\Ring\Client\CurlFactory::createErrorResponse(Array, Array, Array)
+#1 /Users/lisalong/Desktop/wp-new_longlisa/wp-content/plugins/constant-contact-forms/vendor/constantcontact/guzzlehttp/ringphp/src/Client/CurlHandler.php(96): GuzzleHttp\Ring\Client\CurlFactory::createResponse(Array, Array, Array, Array, Resource id #1319)
+#2 /Users/lisalong/Desktop/wp-new_longlisa/wp-content/plugins/constant-contact-forms/vendor/constantcontact/guzzlehttp/ringphp/src/Client/CurlHandler.php(68): GuzzleHttp\Ring\Client\CurlHandler->_invokeAsArray(Array)
+#3 in /Users/lisalong/Desktop/wp-new_longlisa/wp-content/plugins/constant-contact-forms/vendor/constantcontact/guzzlehttp/guzzle/src/Exception/RequestException.php on line 49
+

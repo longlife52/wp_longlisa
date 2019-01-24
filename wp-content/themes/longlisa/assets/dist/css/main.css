@@ -1047,6 +1047,8 @@ header {
     margin-bottom: 0; }
   .nav {
     background: none; }
+  header {
+    max-width: 1300px; }
   nav {
     all: unset;
     grid-column: 3 / 4;
