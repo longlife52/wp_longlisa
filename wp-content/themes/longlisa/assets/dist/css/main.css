@@ -3062,6 +3062,11 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
     background: #92c5da;
     color: #f8fcff; }
 
+.comments {
+  font-family: "Roboto Condensed", sans-serif; }
+  .comments a {
+    color: #214a5b; }
+
 @media (min-width: 350px) {
   .blog_post_content aside {
     margin-left: 4em;

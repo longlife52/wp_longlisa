@@ -231,6 +231,14 @@
   }
 }
 
+.comments {
+  font-family: $roboto;
+
+  a {
+    color: $dark-blue;
+  }
+}
+
 @media (min-width: 350px) {
     .blog_post_content {
         aside {
