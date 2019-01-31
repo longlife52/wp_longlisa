@@ -4,7 +4,7 @@ Donate link: https://www.heateor.com/donate/?action=Sassy+Social+Share
 Tags: social share, social sharing, social media share, share facebook, facebook social share, wordpress social share, share buttons, social share buttons, facebook like, twitter tweet, google +1, google plus share
 Requires at least: 2.5.0
 Tested up to: 5.0.3
-Stable tag: 3.2.11
+Stable tag: 3.2.12
 License: GPLv2 or later
 
 Slickest, Simplest and Optimized Share buttons. Facebook, Twitter, Google+, Pinterest, WhatsApp and over 100 more.
@@ -124,6 +124,11 @@ Yes, we can help you with it. Just drop an email at support[at]heateor[dot]com
 4. **Universal Sharing Popup**: Universal Sharing popup having all the supported sharing and bookmarking services
 
 == Changelog ==
+= 3.2.12 =
+* [New] Included MeWe in social media follow icons
+* [Bugfix] Social share icons stopped working in Classic mode of <a href="https://wordpress.org/plugins/amp">AMP</a> plugin after last update
+* [Improvement] Updated background color of Reddit icon according to Reddit branding guidelines
+
 = 3.2.11 =
 * [New] Included MeWe in social share networks
 * [New] Included Xing in social media follow icons
@@ -653,3 +658,8 @@ Yes, we can help you with it. Just drop an email at support[at]heateor[dot]com
 * [New] Included MeWe in social share networks
 * [New] Included Xing in social media follow icons
 * [Improvement] Added compatibility with Paired and Native modes of <a href="https://wordpress.org/plugins/amp">AMP</a> plugin
+
+= 3.2.12 =
+* [New] Included MeWe in social media follow icons
+* [Bugfix] Social share icons stopped working in Classic mode of <a href="https://wordpress.org/plugins/amp">AMP</a> plugin after last update
+* [Improvement] Updated background color of Reddit icon according to Reddit branding guidelines

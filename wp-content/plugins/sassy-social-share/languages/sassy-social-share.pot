@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sassy Social Share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-19 06:44+0530\n"
-"PO-Revision-Date: 2019-01-19 06:44+0530\n"
+"POT-Creation-Date: 2019-01-22 08:35+0530\n"
+"PO-Revision-Date: 2019-01-22 08:35+0530\n"
 "Last-Translator: Heateor <hello@heateor.com>\n"
 "Language-Team: Heateor <hello@heateor.com>\n"
 "Language: en_IN\n"
@@ -27,51 +27,51 @@ msgstr ""
 msgid "Sassy Social Share"
 msgstr ""
 
-#: ../admin/class-sassy-social-share-admin.php:141
+#: ../admin/class-sassy-social-share-admin.php:139
 msgid "Disable Standard Sharing interface on this "
 msgstr ""
 
-#: ../admin/class-sassy-social-share-admin.php:146
+#: ../admin/class-sassy-social-share-admin.php:144
 msgid "Disable Floating Sharing interface on this "
 msgstr ""
 
-#: ../admin/class-sassy-social-share-admin.php:153
+#: ../admin/class-sassy-social-share-admin.php:151
 msgid "Standard sharing"
 msgstr ""
 
-#: ../admin/class-sassy-social-share-admin.php:159
-#: ../admin/class-sassy-social-share-admin.php:178
+#: ../admin/class-sassy-social-share-admin.php:157
+#: ../admin/class-sassy-social-share-admin.php:176
 msgid "Starting share count for "
 msgstr ""
 
-#: ../admin/class-sassy-social-share-admin.php:172
+#: ../admin/class-sassy-social-share-admin.php:170
 msgid "Floating sharing"
 msgstr ""
 
-#: ../admin/class-sassy-social-share-admin.php:351
+#: ../admin/class-sassy-social-share-admin.php:338
 msgid "Click to show help"
 msgstr ""
 
-#: ../admin/class-sassy-social-share-admin.php:351
+#: ../admin/class-sassy-social-share-admin.php:338
 msgid "Click to hide help"
 msgstr ""
 
-#: ../admin/class-sassy-social-share-admin.php:384
+#: ../admin/class-sassy-social-share-admin.php:371
 msgid "Settings saved"
 msgstr ""
 
-#: ../admin/class-sassy-social-share-admin.php:384
+#: ../admin/class-sassy-social-share-admin.php:371
 msgid "Dismiss this notice"
 msgstr ""
 
-#: ../admin/class-sassy-social-share-admin.php:483
+#: ../admin/class-sassy-social-share-admin.php:470
 msgid ""
 "Update \"Social Share myCRED Integration\" add-on for maximum compatibility "
 "with current version of Sassy Social Share"
 msgstr ""
 
-#: ../admin/class-sassy-social-share-admin.php:507
-#: ../admin/class-sassy-social-share-admin.php:580
+#: ../admin/class-sassy-social-share-admin.php:494
+#: ../admin/class-sassy-social-share-admin.php:567
 #, php-format
 msgid ""
 "This plugin is GDPR compliant. You need to update the privacy policy of your "
@@ -79,14 +79,14 @@ msgid ""
 "\"%s\" target=\"_blank\">here</a>"
 msgstr ""
 
-#: ../admin/class-sassy-social-share-admin.php:507
-#: ../admin/class-sassy-social-share-admin.php:533
-#: ../admin/class-sassy-social-share-admin.php:556
-#: ../admin/class-sassy-social-share-admin.php:580
+#: ../admin/class-sassy-social-share-admin.php:494
+#: ../admin/class-sassy-social-share-admin.php:520
+#: ../admin/class-sassy-social-share-admin.php:543
+#: ../admin/class-sassy-social-share-admin.php:567
 msgid "Okay"
 msgstr ""
 
-#: ../admin/class-sassy-social-share-admin.php:533
+#: ../admin/class-sassy-social-share-admin.php:520
 #, php-format
 msgid ""
 "Twitter share counts are no longer working as newsharecounts.com is down. To "
@@ -94,7 +94,7 @@ msgid ""
 "\"_blank\">here</a> with this domain. No other steps needed."
 msgstr ""
 
-#: ../admin/class-sassy-social-share-admin.php:556
+#: ../admin/class-sassy-social-share-admin.php:543
 #, php-format
 msgid ""
 "Now plugin supports a new service Twitcount.com to show Twitter shares. To "
@@ -103,15 +103,15 @@ msgid ""
 "your website %s with them. No need to copy-paste any code from their website."
 msgstr ""
 
-#: ../admin/class-sassy-social-share-admin.php:597
+#: ../admin/class-sassy-social-share-admin.php:584
 msgid "Add-Ons"
 msgstr ""
 
-#: ../admin/class-sassy-social-share-admin.php:598
+#: ../admin/class-sassy-social-share-admin.php:585
 msgid "Support Documentation"
 msgstr ""
 
-#: ../admin/class-sassy-social-share-admin.php:599
+#: ../admin/class-sassy-social-share-admin.php:586
 msgid "Settings"
 msgstr ""
 
@@ -182,13 +182,13 @@ msgstr ""
 
 #: ../admin/partials/sassy-social-share-options-page.php:133
 #: ../admin/partials/sassy-social-share-options-page.php:441
-#: ../includes/class-sassy-social-share-widgets.php:634
+#: ../includes/class-sassy-social-share-widgets.php:638
 msgid "Round"
 msgstr ""
 
 #: ../admin/partials/sassy-social-share-options-page.php:135
 #: ../admin/partials/sassy-social-share-options-page.php:443
-#: ../includes/class-sassy-social-share-widgets.php:635
+#: ../includes/class-sassy-social-share-widgets.php:639
 msgid "Square"
 msgstr ""
 
@@ -418,7 +418,7 @@ msgid "Url to share"
 msgstr ""
 
 #: ../admin/partials/sassy-social-share-options-page.php:714
-#: ../includes/class-sassy-social-share-widgets.php:628
+#: ../includes/class-sassy-social-share-widgets.php:632
 msgid "Title"
 msgstr ""
 
@@ -1171,12 +1171,12 @@ msgid "Select"
 msgstr ""
 
 #: ../includes/class-sassy-social-share-widgets.php:200
-#: ../includes/class-sassy-social-share-widgets.php:626
+#: ../includes/class-sassy-social-share-widgets.php:630
 msgid "Before widget content:"
 msgstr ""
 
 #: ../includes/class-sassy-social-share-widgets.php:202
-#: ../includes/class-sassy-social-share-widgets.php:700
+#: ../includes/class-sassy-social-share-widgets.php:707
 msgid "After widget content:"
 msgstr ""
 
@@ -1221,95 +1221,99 @@ msgstr ""
 msgid "These icons link to your Social Media accounts"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:630
+#: ../includes/class-sassy-social-share-widgets.php:634
 msgid "Size of icons"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:632
+#: ../includes/class-sassy-social-share-widgets.php:636
 msgid "Icon Shape"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:637
+#: ../includes/class-sassy-social-share-widgets.php:641
 msgid "Facebook URL:"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:640
+#: ../includes/class-sassy-social-share-widgets.php:644
 msgid "Twitter URL:"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:643
+#: ../includes/class-sassy-social-share-widgets.php:647
 msgid "Instagram URL:"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:646
+#: ../includes/class-sassy-social-share-widgets.php:650
 msgid "Pinterest URL:"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:649
+#: ../includes/class-sassy-social-share-widgets.php:653
 msgid "Behance URL:"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:652
+#: ../includes/class-sassy-social-share-widgets.php:656
 msgid "Flickr URL:"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:655
+#: ../includes/class-sassy-social-share-widgets.php:659
 msgid "Foursquare URL:"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:658
+#: ../includes/class-sassy-social-share-widgets.php:662
 msgid "Github URL:"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:661
+#: ../includes/class-sassy-social-share-widgets.php:665
 msgid "Google+ URL:"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:664
+#: ../includes/class-sassy-social-share-widgets.php:668
 msgid "LinkedIn URL:"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:667
+#: ../includes/class-sassy-social-share-widgets.php:671
 msgid "LinkedIn Company URL:"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:670
+#: ../includes/class-sassy-social-share-widgets.php:674
 msgid "Medium URL:"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:673
+#: ../includes/class-sassy-social-share-widgets.php:677
+msgid "MeWe URL:"
+msgstr ""
+
+#: ../includes/class-sassy-social-share-widgets.php:680
 msgid "Odnoklassniki URL:"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:676
+#: ../includes/class-sassy-social-share-widgets.php:683
 msgid "Snapchat URL:"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:679
+#: ../includes/class-sassy-social-share-widgets.php:686
 msgid "Tumblr URL:"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:682
+#: ../includes/class-sassy-social-share-widgets.php:689
 msgid "Vimeo URL:"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:685
+#: ../includes/class-sassy-social-share-widgets.php:692
 msgid "Vkontakte URL:"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:688
+#: ../includes/class-sassy-social-share-widgets.php:695
 msgid "Xing URL:"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:691
+#: ../includes/class-sassy-social-share-widgets.php:698
 msgid "Youtube URL:"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:694
+#: ../includes/class-sassy-social-share-widgets.php:701
 msgid "Youtube Channel URL:"
 msgstr ""
 
-#: ../includes/class-sassy-social-share-widgets.php:697
+#: ../includes/class-sassy-social-share-widgets.php:704
 msgid "RSS Feed URL:"
 msgstr ""
 

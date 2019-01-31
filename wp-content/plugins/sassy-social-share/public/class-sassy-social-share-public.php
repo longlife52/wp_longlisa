@@ -91,10 +91,10 @@ class Sassy_Social_Share_Public {
 				$amp_options = get_option( AMP_Options_Manager::OPTION_NAME );
 				if ( isset( $amp_options['theme_support'] ) && ( $amp_options['theme_support'] == 'paired' || $amp_options['theme_support'] == 'native' ) ) {
 					add_action( 'wp_print_styles', array( $this, 'frontend_amp_css' ) );
+				} else {
+					// stylesheet files for AMP pages
+					add_action( 'amp_post_template_css', array( $this, 'frontend_amp_css' ) );
 				}
-			} else {
-				// stylesheet files for AMP pages
-				add_action( 'amp_post_template_css', array( $this, 'frontend_amp_css' ) );
 			}
 		}
 	

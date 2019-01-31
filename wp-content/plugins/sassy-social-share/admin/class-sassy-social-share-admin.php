@@ -59,8 +59,6 @@ class Sassy_Social_Share_Admin {
 		$page = add_menu_page( __( 'Sassy Social Share by Heateor', 'sassy-social-share' ), 'Sassy Social Share', 'manage_options', 'heateor-sss-options', array( $this, 'options_page' ), plugins_url( '../images/logo.png', __FILE__ ) );
 		// options
 		$options_page = add_submenu_page( 'heateor-sss-options', __( "Sassy Social Share - General Options", 'sassy-social-share' ), __( "Sassy Social Share", 'sassy-social-share' ), 'manage_options', 'heateor-sss-options', array( $this, 'options_page' ) );
-		// What's new (keep it for next release)
-		//$whats_new_page = add_submenu_page( 'heateor-sss-options', __( "Sassy Social Share - What's New", 'sassy-social-share' ), __( "What's New", 'sassy-social-share' ), 'manage_options', 'heateor-sss-whats-new', array( $this, 'whats_new_page' ) );
 		add_action( 'admin_print_scripts-' . $page, array( $this, 'admin_scripts' ) );
 		add_action( 'admin_print_scripts-' . $page, array( $this, 'admin_style' ) );
 		add_action( 'admin_print_scripts-' . $page, array( $this, 'fb_sdk_script' ) );
@@ -241,18 +239,7 @@ class Sassy_Social_Share_Admin {
 	}
 
 	/**
-	 * "Whats's New" page.
-	 *
-	 * @since    1.0.0
-	 */	
-	public function whats_new_page() {
-
-		//wp_enqueue_script( 'heateor_sss_fb_sdk_script', plugins_url( '../admin/js/fb_sdk.js', __FILE__ ), false, $this->version );
-	
-	}
-
-	/**
-	 * Include Javascript at plugin options page in admin area.
+	 * Include Javascript at plugin options page in admin area
 	 *
 	 * @since    1.0.0
 	 */	
