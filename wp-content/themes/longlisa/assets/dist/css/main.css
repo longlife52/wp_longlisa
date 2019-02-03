@@ -710,11 +710,13 @@ input[type=submit] {
   padding-right: 1.25em;
   max-width: 750px; }
 
+.content_editor .schema-faq-section {
+  margin-left: 2em; }
+
 .content_editor .schema-faq-question {
   font-family: "Roboto Condensed", sans-serif;
   color: #9b4856;
-  font-size: 2em;
-  margin-left: 1em; }
+  font-size: 1.5em; }
 
 .content_editor .schema-how-to {
   background: #edf1f3; }
@@ -871,9 +873,6 @@ input[type=submit] {
   .wp-block-quote {
     grid-column-start: 2;
     grid-column-end: span 10; }
-  .content_editor .schema-faq-question {
-    margin-left: 0; }
-  /* closes content editor in the mq */
   .first_para {
     border-left: 0.1875em solid #9b4856; } }
 

@@ -87,11 +87,14 @@
     max-width: 750px;
   }
 
+  .schema-faq-section {
+    margin-left: 2em;
+  }
+
   .schema-faq-question {
     font-family: $roboto;
     color: $red;
-    font-size: 2em;
-    margin-left: 1em;
+    font-size: 1.5em;
   }
 
   .schema-how-to {
@@ -325,13 +328,6 @@
     grid-column-end: span 10;
   }
 
-.content_editor {
-
-  .schema-faq-question {
-    margin-left: 0;
-  }
-
-} /* closes content editor in the mq */
 
 .first_para {
   border-left: em(3px) solid $red;
