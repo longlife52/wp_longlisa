@@ -2904,7 +2904,7 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
     .breadcrumb p a {
       color: #34738e; }
       .breadcrumb p a:hover {
-        color: #dad445; }
+        background-color: #dad445; }
 
 .sidebar {
   padding-left: 2em; }
