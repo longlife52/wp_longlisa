@@ -2677,6 +2677,12 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
   .schedule_description p a:hover {
     background: #dad445; }
 
+.schedule_description ul li {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.25em;
+  color: #214a5b;
+  padding-bottom: 1em; }
+
 /* removes styles on button box to pull it up */
 .no_pad {
   padding: 0; }

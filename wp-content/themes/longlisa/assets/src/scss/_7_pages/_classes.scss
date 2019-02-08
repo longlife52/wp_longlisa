@@ -106,6 +106,15 @@
             }
         }
     }
+
+    ul {
+      li {
+        font-family: $roboto;
+        font-size: 1.25em;
+        color: $dark-blue;
+        padding-bottom: 1em;
+      }
+    }
 }
 
 /* removes styles on button box to pull it up */
