@@ -1198,6 +1198,12 @@ header {
   .ctct-disclosure sub a {
     color: #34738e; }
 
+.ctct-form-wrapper .success {
+  background-color: #f8fcff;
+  border-color: none;
+  border: none;
+  color: #214a5b; }
+
 .page-template-default section {
   padding: 5em 1.25em 5em 1.25em; }
 

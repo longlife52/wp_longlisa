@@ -94,6 +94,7 @@
     opacity: 1;
 }
 
+//Constant Contact form styles
 .ctct-form {
   padding: 4em 2em 2em 2em;
 
@@ -113,6 +114,13 @@
       color: $main-blue;
     }
   }
+}
+
+.ctct-form-wrapper .success {
+  background-color: $white;
+  border-color: none;
+  border: none;
+  color: $dark-blue;
 }
 
 //styles for Terms/Conditions, Privacy Policy, Disclaimers pages
