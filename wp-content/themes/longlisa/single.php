@@ -111,7 +111,7 @@
           <div class="blog_card bottom_edge_shadow">
               <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
                 <div class="blog_card_details">
-                  <img src="<?php bloginfo('template_url'); ?>/assets/dist/img/sidebend.jpg">
+                  <img src="<?php the_post_thumbnail(); ?>">
                   <h5><?php the_category(); ?></h5>
                   <h4><?php the_title(); ?></h4>
                   <p><?php  the_excerpt(); ?></p>

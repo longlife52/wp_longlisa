@@ -450,6 +450,8 @@
             }
 
             figure {
+              grid-column-start: 5;
+              grid-column-end: span 6;
 
                 figcaption {
                     grid-column-start: 5;
