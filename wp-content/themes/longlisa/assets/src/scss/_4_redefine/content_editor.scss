@@ -177,6 +177,10 @@
 
 .content_grid {
 
+} /*close all .content_grid styles */
+
+//this style is to make an image full width of the screen
+.full_width {
   figure {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -200,8 +204,7 @@
         text-align: center;
     }
   }
-
-} /*close all .content_grid styles */
+} // closes .full_width
 
 .wp-block-media-text {
   display: block;
@@ -248,8 +251,6 @@
   }
 }
 
-
-
 /* GRID BREAKPOINTS */
 @include breakpoint (small) {
 
@@ -277,7 +278,8 @@
     .schema-faq,
     .wp-block-embed__wrapper,
     .wp-block-button,
-    .wp-block-table {
+    .wp-block-table,
+    .wp-block-image {
         grid-column-start: 5;
         grid-column-end: span 6;
     }
