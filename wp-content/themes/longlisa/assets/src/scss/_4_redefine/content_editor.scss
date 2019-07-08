@@ -179,7 +179,11 @@
 
 } /*close all .content_grid styles */
 
-//this style is to make an image full width of the screen
+//this style is to make an image full width of the screen -- it is not working, yet; as of 2/23/19;
+//styles still show .content_grid in dev tools on live version
+//i took these styles from .content_grid
+//the plan is to add this class to an .wp-block-image that i want to go full screen
+// i would  use the advanced setting to add the class
 .full_width {
   figure {
     display: grid;
@@ -325,15 +329,15 @@
 
   } /* close .content_grid landscape breakpoint */
 
+//Styles to have the wp-block-editor quote display full max-width
   .wp-block-quote {
     grid-column-start: 2;
     grid-column-end: span 10;
   }
 
 
-.first_para {
-  border-left: em(3px) solid $red;
-}
-
+  .first_para {
+    border-left: em(3px) solid $red;
+  }
 
 } /* closes landscape breakpoint */

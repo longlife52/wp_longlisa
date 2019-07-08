@@ -185,7 +185,9 @@ element.style {
 /* STYLES for using Woo Commmerce INSIDE a BLOG POST placing products on the BLOG page  */
 /* STYLES for the product button add to cart link */
  .content-editor {
-   .wp-block-button__link {
+   .wp-block-button__link,
+   .wp-block-button,
+   .wc-block-grid__product-add-to-cart {
      a {
        color: $white;
      }
