@@ -169,9 +169,23 @@
     margin-bottom: 4em;
   }
 
+/* these code suggestions from https://www.billerickson.net/wordpress-color-palette-button-styling-gutenberg/ */
   .wp-block-button__link {
     font-family: $roboto;
+    border-radius: 0;
+
+    &:hover {
+		text-decoration: none;
+	}
+
+	&:not(.has-text-color) {
+		color: white;
+
+		&:hover {
+			color: white;
+		}
   }
+} /* this closes .wp-block-button__link */
 
 } /*this closes the .content_editor styles */
 

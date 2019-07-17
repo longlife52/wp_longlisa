@@ -646,151 +646,141 @@ input[type=submit] {
 */
 /* STYLES FOR WORDPRESS CONTENT EDITOR 2019 VERSION */
 /* grid for the wp content editor */
-.content_editor h3 {
-  margin: 0;
-  font-size: 3em;
-  color: #34738e;
-  padding-left: 0.625em;
-  padding-right: 0.625em; }
-
-.content_editor p {
-  color: #214a5b; }
-  .content_editor p a {
-    color: #34738e; }
-    .content_editor p a:hover {
-      background: #dad445; }
-
-.content_editor h2,
-.content_editor p {
-  padding-right: 1.25em; }
-
-.content_editor h2 {
-  padding-top: 1em;
-  color: #9b4856;
-  font-size: 2em;
-  padding-left: 1em;
-  margin-bottom: 0em; }
-
-.content_editor p {
-  color: #214a5b;
-  font-size: 1.5em;
-  padding-left: 1.25em; }
-
-.content_editor ol,
-.content_editor ul {
-  font-family: "Roboto Condensed", sans-serif;
-  color: #214a5b;
-  padding-left: 0.9375em; }
-  .content_editor ol li,
-  .content_editor ul li {
+.content_editor {
+  /* these code suggestions from https://www.billerickson.net/wordpress-color-palette-button-styling-gutenberg/ */
+  /* this closes .wp-block-button__link */ }
+  .content_editor h3 {
+    margin: 0;
+    font-size: 3em;
+    color: #34738e;
+    padding-left: 0.625em;
+    padding-right: 0.625em; }
+  .content_editor p {
+    color: #214a5b; }
+    .content_editor p a {
+      color: #34738e; }
+      .content_editor p a:hover {
+        background: #dad445; }
+  .content_editor h2,
+  .content_editor p {
+    padding-right: 1.25em; }
+  .content_editor h2 {
+    padding-top: 1em;
+    color: #9b4856;
+    font-size: 2em;
+    padding-left: 1em;
+    margin-bottom: 0em; }
+  .content_editor p {
     color: #214a5b;
     font-size: 1.5em;
-    margin-left: 3em;
-    line-height: 1.5;
-    padding-bottom: 1em; }
-    .content_editor ol li a,
-    .content_editor ul li a {
-      color: #34738e; }
-      .content_editor ol li a:hover,
-      .content_editor ul li a:hover {
-        background: #dad445; }
-
-.content_editor aside a {
-  color: #9b4856;
-  text-decoration: underline; }
-  .content_editor aside a:hover {
-    background: #dad445; }
-
-.content_editor .first_para {
-  border-left: 0.1875em solid #dad445;
-  font-weight: bold;
-  font-size: 2em;
-  margin-left: 20px;
-  padding-left: 1em;
-  padding-right: 1.25em;
-  max-width: 750px; }
-
-.content_editor .schema-faq-section {
-  margin-left: 2em; }
-
-.content_editor .schema-faq-question {
-  font-family: "Roboto Condensed", sans-serif;
-  color: #9b4856;
-  font-size: 1.5em; }
-
-.content_editor .schema-how-to {
-  background: #edf1f3; }
-
-.content_editor .schema-how-to-total-time,
-.content_editor .schema-how-to-description,
-.content_editor .schema-how-to-steps {
-  margin-left: 1em; }
-
-.content_editor .schema-how-to-step-text {
-  font-size: 1em; }
-  .content_editor .schema-how-to-step-text img {
+    padding-left: 1.25em; }
+  .content_editor ol,
+  .content_editor ul {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #214a5b;
+    padding-left: 0.9375em; }
+    .content_editor ol li,
+    .content_editor ul li {
+      color: #214a5b;
+      font-size: 1.5em;
+      margin-left: 3em;
+      line-height: 1.5;
+      padding-bottom: 1em; }
+      .content_editor ol li a,
+      .content_editor ul li a {
+        color: #34738e; }
+        .content_editor ol li a:hover,
+        .content_editor ul li a:hover {
+          background: #dad445; }
+  .content_editor aside a {
+    color: #9b4856;
+    text-decoration: underline; }
+    .content_editor aside a:hover {
+      background: #dad445; }
+  .content_editor .first_para {
+    border-left: 0.1875em solid #dad445;
+    font-weight: bold;
+    font-size: 2em;
+    margin-left: 20px;
+    padding-left: 1em;
+    padding-right: 1.25em;
+    max-width: 750px; }
+  .content_editor .schema-faq-section {
+    margin-left: 2em; }
+  .content_editor .schema-faq-question {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #9b4856;
+    font-size: 1.5em; }
+  .content_editor .schema-how-to {
+    background: #edf1f3; }
+  .content_editor .schema-how-to-total-time,
+  .content_editor .schema-how-to-description,
+  .content_editor .schema-how-to-steps {
+    margin-left: 1em; }
+  .content_editor .schema-how-to-step-text {
+    font-size: 1em; }
+    .content_editor .schema-how-to-step-text img {
+      width: 100%;
+      height: auto; }
+  .content_editor .blocks-gallery-item figure img {
     width: 100%;
     height: auto; }
-
-.content_editor .blocks-gallery-item figure img {
-  width: 100%;
-  height: auto; }
-
-.content_editor .wp-block-quote p,
-.content_editor .wp-block-quote cite {
-  color: #6b91a1;
-  font-family: "Roboto Condensed", sans-serif; }
-
-.content_editor .wp-block-quote p {
-  font-size: 2em;
-  margin-bottom: 0; }
-
-.content_editor .wp-block-quote cite {
-  padding-left: 3em; }
-
-.content_editor aside {
-  margin-left: 2em;
-  margin-right: 1em; }
-  .content_editor aside p {
-    border-left: 0.1875em solid #92c5da;
-    color: #34738e;
-    font-size: 1.5em;
-    padding-left: 0.5em;
-    margin: 0; }
-
-.content_editor .wp-block-media-text__content p {
-  color: #6b91a1;
-  padding: 0; }
-
-.content_editor .wp-block-button {
-  text-align: center;
-  margin-top: 4em;
-  margin-bottom: 4em; }
-
-.content_editor .wp-block-button__link {
-  font-family: "Roboto Condensed", sans-serif; }
+  .content_editor .wp-block-quote p,
+  .content_editor .wp-block-quote cite {
+    color: #6b91a1;
+    font-family: "Roboto Condensed", sans-serif; }
+  .content_editor .wp-block-quote p {
+    font-size: 2em;
+    margin-bottom: 0; }
+  .content_editor .wp-block-quote cite {
+    padding-left: 3em; }
+  .content_editor aside {
+    margin-left: 2em;
+    margin-right: 1em; }
+    .content_editor aside p {
+      border-left: 0.1875em solid #92c5da;
+      color: #34738e;
+      font-size: 1.5em;
+      padding-left: 0.5em;
+      margin: 0; }
+  .content_editor .wp-block-media-text__content p {
+    color: #6b91a1;
+    padding: 0; }
+  .content_editor .wp-block-button {
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: 4em; }
+  .content_editor .wp-block-button__link {
+    font-family: "Roboto Condensed", sans-serif;
+    border-radius: 0; }
+    .content_editor .wp-block-button__link:hover {
+      text-decoration: none; }
+    .content_editor .wp-block-button__link:not(.has-text-color) {
+      color: white; }
+      .content_editor .wp-block-button__link:not(.has-text-color):hover {
+        color: white; }
 
 /*this closes the .content_editor styles */
-.content_grid figure {
+/*close all .content_grid styles */
+.full_width figure {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr 6.25em;
   margin: 0;
   grid-column-start: 1;
   grid-column-end: -1; }
-  .content_grid figure img {
+  .full_width figure img {
     grid-column-start: 1;
     grid-column-end: -1;
     grid-row: 1;
     height: auto;
     width: 100%; }
-  .content_grid figure figcaption {
+  .full_width figure figcaption {
     font-family: "Roboto Condensed", sans-serif;
     grid-column-start: 2;
     grid-column-end: 12;
     text-align: center; }
 
-/*close all .content_grid styles */
 .wp-block-media-text {
   display: block;
   background: #edf1f3; }
@@ -845,7 +835,8 @@ input[type=submit] {
     .content_grid .schema-faq,
     .content_grid .wp-block-embed__wrapper,
     .content_grid .wp-block-button,
-    .content_grid .wp-block-table {
+    .content_grid .wp-block-table,
+    .content_grid .wp-block-image {
       grid-column-start: 5;
       grid-column-end: span 6; }
     .content_grid .wp-block-table {
@@ -2424,7 +2415,7 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
   margin-bottom: 2em; }
 
 .offering_title_big {
-  font-size: 4em;
+  font-size: 3.5em;
   text-transform: lowercase; }
 
 .offering_title_small {
@@ -3236,9 +3227,12 @@ https://codepen.io/vincesamoy/pen/mEmqbJ */
       .blog_post_content ol li,
       .blog_post_content ul li {
         padding-left: 0; }
-    .blog_post_content figure figcaption {
+    .blog_post_content figure {
       grid-column-start: 5;
       grid-column-end: span 6; }
+      .blog_post_content figure figcaption {
+        grid-column-start: 5;
+        grid-column-end: span 6; }
     .blog_post_content aside {
       margin-left: 0;
       margin-top: 0;
