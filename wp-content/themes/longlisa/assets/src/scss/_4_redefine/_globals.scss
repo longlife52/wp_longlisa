@@ -10,7 +10,6 @@ body {
 
 body {
 	font-size: 16px;
-    background-color: $background-blue;
 }
 
 ::selection {
@@ -59,4 +58,11 @@ body {
      p {
          padding-bottom: 0;
      }
+}
+
+//breakpoints
+@include breakpoint (regular-screen) {
+  body {
+    background-color: $background-blue;
+  }
 }

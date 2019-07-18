@@ -297,7 +297,8 @@
     .wp-block-embed__wrapper,
     .wp-block-button,
     .wp-block-table,
-    .wp-block-image {
+    .wp-block-image,
+    .wp-block-embed-youtube {
         grid-column-start: 5;
         grid-column-end: span 6;
     }
